@@ -64,7 +64,7 @@ const STATUS_COLORS: Record<ReferralStatus, string> = {
   attended: "bg-amber-100 text-amber-700",
   saved: "bg-emerald-100 text-emerald-700",
   baptized: "bg-purple-100 text-purple-700",
-  member: "bg-[#4A148C] text-white",
+  member: "bg-[#28166F] text-white",
   lost_contact: "bg-gray-100 text-gray-600",
 };
 
@@ -112,12 +112,12 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
   const recentReferrals = member.referralsMade.slice(0, 5);
 
   return (
-    <section className="py-12 md:py-16 bg-[#F3E5F5] min-h-screen">
+    <section className="py-12 md:py-16 bg-[#E8E0F0] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Header row */}
         <SectionWrapper className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C]">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#28166F]">
               Hello, {member.fullName.split(" ")[0]}! 👋
             </h2>
             <p className="text-sm text-gray-600 mt-1">
@@ -156,7 +156,7 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
                     >
                       <Icon className="size-5" />
                     </div>
-                    <div className="text-2xl md:text-3xl font-bold text-[#4A148C]">
+                    <div className="text-2xl md:text-3xl font-bold text-[#28166F]">
                       {stat.value}
                     </div>
                     <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
@@ -188,14 +188,14 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
           <Card className="border-0 shadow-md">
             <CardHeader className="border-b border-gray-100">
               <div className="flex items-center justify-between">
-                <CardTitle className="text-lg text-[#4A148C]">
+                <CardTitle className="text-lg text-[#28166F]">
                   Recent Referrals
                 </CardTitle>
                 <Button
                   asChild
                   variant="ghost"
                   size="sm"
-                  className="text-[#4A148C] hover:bg-[#4A148C]/5"
+                  className="text-[#28166F] hover:bg-[#28166F]/5"
                 >
                   <Link href="/go-a-fishing/my-referrals">
                     View all
@@ -213,7 +213,7 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
                   </p>
                   <Button
                     asChild
-                    className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                    className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
                   >
                     <Link href="/go-a-fishing/my-referrals">
                       <Fish className="size-4" />
@@ -229,7 +229,7 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
                       className="flex items-center justify-between p-4 hover:bg-gray-50"
                     >
                       <div className="min-w-0">
-                        <p className="font-medium text-[#4A148C] truncate">
+                        <p className="font-medium text-[#28166F] truncate">
                           {ref.inviteeName}
                         </p>
                         <p className="text-xs text-gray-500 mt-0.5">
@@ -261,7 +261,7 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
           <SectionWrapper>
             <Card className="border-0 shadow-md bg-gradient-to-br from-amber-50 to-yellow-50">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-lg text-[#4A148C]">
+                <CardTitle className="flex items-center gap-2 text-lg text-[#28166F]">
                   <Award className="size-5 text-amber-600" />
                   Pastoral Commendations
                 </CardTitle>
@@ -272,14 +272,14 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
                     key={c.id}
                     className="bg-white/60 rounded-xl p-4 border border-amber-200/50"
                   >
-                    <p className="font-semibold text-[#4A148C]">{c.title}</p>
+                    <p className="font-semibold text-[#28166F]">{c.title}</p>
                     <p className="text-sm text-gray-700 mt-1 leading-relaxed">
                       {c.message}
                     </p>
                     <div className="flex items-center justify-between mt-3">
                       <p className="text-xs text-gray-500">— {c.givenBy}</p>
                       {c.scriptureReference && (
-                        <p className="text-xs font-medium text-[#D32F2F]">
+                        <p className="text-xs font-medium text-[#DA251D]">
                           {c.scriptureReference}
                         </p>
                       )}
@@ -297,61 +297,61 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
             <Button
               asChild
               variant="outline"
-              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
             >
               <Link href="/go-a-fishing/my-referrals">
-                <Users className="size-6 text-[#4A148C]" />
-                <span className="text-[#4A148C]">My Referrals</span>
+                <Users className="size-6 text-[#28166F]" />
+                <span className="text-[#28166F]">My Referrals</span>
               </Link>
             </Button>
             <Button
               asChild
               variant="outline"
-              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
             >
               <Link href="/go-a-fishing/my-outreach">
                 <MapPin className="size-6 text-purple-600" />
-                <span className="text-[#4A148C]">My Outreach</span>
+                <span className="text-[#28166F]">My Outreach</span>
               </Link>
             </Button>
             <Button
               asChild
               variant="outline"
-              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
             >
               <Link href="/go-a-fishing/leaderboard">
                 <Trophy className="size-6 text-amber-600" />
-                <span className="text-[#4A148C]">Leaderboard</span>
+                <span className="text-[#28166F]">Leaderboard</span>
               </Link>
             </Button>
             <Button
               asChild
               variant="outline"
-              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
             >
               <Link href="/go-a-fishing/awards">
                 <Award className="size-6 text-rose-600" />
-                <span className="text-[#4A148C]">Awards</span>
+                <span className="text-[#28166F]">Awards</span>
               </Link>
             </Button>
             <Button
               asChild
               variant="outline"
-              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
             >
               <Link href="/go-a-fishing/notifications">
                 <Bell className="size-6 text-purple-600" />
-                <span className="text-[#4A148C]">Notifications</span>
+                <span className="text-[#28166F]">Notifications</span>
               </Link>
             </Button>
             <Button
               asChild
               variant="outline"
-              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+              className="h-auto py-6 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
             >
               <Link href="/go-a-fishing/profile">
                 <User className="size-6 text-gray-600" />
-                <span className="text-[#4A148C]">Profile</span>
+                <span className="text-[#28166F]">Profile</span>
               </Link>
             </Button>
           </div>
@@ -359,12 +359,12 @@ export function GafDashboard({ member, baseUrl }: GafDashboardProps) {
 
         {/* Scripture footer */}
         <SectionWrapper className="text-center py-8">
-          <Heart className="size-8 mx-auto text-[#D32F2F] mb-3" />
+          <Heart className="size-8 mx-auto text-[#DA251D] mb-3" />
           <p className="text-sm text-gray-600 italic max-w-md mx-auto leading-relaxed">
             &ldquo;Let us not become weary in doing good, for at the proper time
             we will reap a harvest if we do not give up.&rdquo;
             <br />
-            <span className="text-[#D32F2F] font-medium">— Galatians 6:9</span>
+            <span className="text-[#DA251D] font-medium">— Galatians 6:9</span>
           </p>
         </SectionWrapper>
       </div>

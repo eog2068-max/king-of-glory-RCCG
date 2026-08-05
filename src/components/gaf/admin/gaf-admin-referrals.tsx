@@ -23,7 +23,7 @@ const STATUS_COLORS: Record<string, string> = {
   attended: "bg-amber-100 text-amber-700",
   saved: "bg-emerald-100 text-emerald-700",
   baptized: "bg-purple-100 text-purple-700",
-  member: "bg-[#4A148C] text-white",
+  member: "bg-[#28166F] text-white",
   lost_contact: "bg-gray-100 text-gray-600",
 };
 
@@ -101,7 +101,7 @@ export function GafAdminReferrals() {
   return (
     <div className="p-4 lg:p-8 space-y-6">
       <div>
-        <h1 className="text-2xl lg:text-3xl font-bold text-[#4A148C]">
+        <h1 className="text-2xl lg:text-3xl font-bold text-[#28166F]">
           All Referrals
         </h1>
         <p className="text-sm text-gray-500 mt-1">
@@ -118,7 +118,7 @@ export function GafAdminReferrals() {
             onClick={() => setFilter(s)}
             className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors capitalize ${
               filter === s
-                ? "bg-[#4A148C] text-white"
+                ? "bg-[#28166F] text-white"
                 : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
             }`}
           >
@@ -137,7 +137,7 @@ export function GafAdminReferrals() {
       {loading ? (
         <Card className="border-0 shadow-md">
           <CardContent className="py-16 flex justify-center">
-            <Loader2 className="size-8 text-[#4A148C] animate-spin" />
+            <Loader2 className="size-8 text-[#28166F] animate-spin" />
           </CardContent>
         </Card>
       ) : referrals.length === 0 ? (
@@ -164,7 +164,7 @@ export function GafAdminReferrals() {
                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3">
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <p className="font-semibold text-[#4A148C]">
+                          <p className="font-semibold text-[#28166F]">
                             {ref.inviteeName}
                           </p>
                           <span
@@ -186,7 +186,7 @@ export function GafAdminReferrals() {
                           <span>{new Date(ref.createdAt).toLocaleDateString()}</span>
                         </div>
                         {ref.prayerPoint && (
-                          <p className="text-xs text-[#D32F2F] mt-1">
+                          <p className="text-xs text-[#DA251D] mt-1">
                             🙏 {ref.prayerPoint}
                           </p>
                         )}

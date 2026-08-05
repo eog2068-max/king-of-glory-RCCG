@@ -110,7 +110,7 @@ export function DevotionalReader({
             </span>
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-bold text-[#4A148C] leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold text-[#28166F] leading-tight">
             {devotional.title}
           </h1>
 
@@ -136,7 +136,7 @@ export function DevotionalReader({
               onClick={handleBookmark}
             >
               {isBookmarked ? (
-                <BookmarkCheck className="size-3.5 text-[#4A148C]" />
+                <BookmarkCheck className="size-3.5 text-[#28166F]" />
               ) : (
                 <Bookmark className="size-3.5" />
               )}
@@ -152,10 +152,10 @@ export function DevotionalReader({
           transition={{ duration: 0.5, delay: 0.1 }}
           className="relative rounded-2xl overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#4A148C] via-[#6A1B9A] to-[#7B1FA2]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#28166F] via-[#3D2080] to-[#3D2080]" />
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-4 right-4 w-32 h-32 bg-white rounded-full blur-[64px]" />
-            <div className="absolute bottom-4 left-4 w-24 h-24 bg-[#D32F2F] rounded-full blur-[48px]" />
+            <div className="absolute bottom-4 left-4 w-24 h-24 bg-[#DA251D] rounded-full blur-[48px]" />
           </div>
           <div className="relative z-10 p-6 md:p-8">
             <div className="flex items-center gap-2 mb-3">
@@ -198,10 +198,10 @@ export function DevotionalReader({
         {/* Reflection Questions */}
         <Collapsible open={reflectionsOpen} onOpenChange={setReflectionsOpen}>
           <div className="rounded-xl border border-gray-100 bg-[#F8FAFF] overflow-hidden">
-            <CollapsibleTrigger className="w-full flex items-center justify-between p-5 hover:bg-[#F3E5F5] transition-colors cursor-pointer">
+            <CollapsibleTrigger className="w-full flex items-center justify-between p-5 hover:bg-[#E8E0F0] transition-colors cursor-pointer">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-lg bg-[#F3E5F5] flex items-center justify-center">
-                  <HelpCircle className="size-4.5 text-[#4A148C]" />
+                <div className="w-9 h-9 rounded-lg bg-[#E8E0F0] flex items-center justify-center">
+                  <HelpCircle className="size-4.5 text-[#28166F]" />
                 </div>
                 <div className="text-left">
                   <h3 className="text-sm font-bold text-gray-800">
@@ -226,7 +226,7 @@ export function DevotionalReader({
                     key={i}
                     className="flex gap-3 p-3 bg-white rounded-lg border border-gray-50"
                   >
-                    <span className="shrink-0 w-6 h-6 rounded-full bg-[#F3E5F5] flex items-center justify-center text-xs font-bold text-[#4A148C]">
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-[#E8E0F0] flex items-center justify-center text-xs font-bold text-[#28166F]">
                       {i + 1}
                     </span>
                     <p className="text-sm text-gray-600 leading-relaxed pt-0.5">
@@ -241,13 +241,13 @@ export function DevotionalReader({
 
         {/* Prayer Section */}
         <div className="relative rounded-xl overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#F3E5F5] to-[#EBF0FA]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#E8E0F0] to-[#EBF0FA]" />
           <div className="relative z-10 p-6 border border-purple-100/50 rounded-xl">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-sm">
-                <MessageCircle className="size-4 text-[#D32F2F]" />
+                <MessageCircle className="size-4 text-[#DA251D]" />
               </div>
-              <h3 className="text-sm font-bold text-[#4A148C] uppercase tracking-wider">
+              <h3 className="text-sm font-bold text-[#28166F] uppercase tracking-wider">
                 Prayer
               </h3>
             </div>

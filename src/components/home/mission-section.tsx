@@ -18,14 +18,14 @@ const missions = [
     description:
       "Help your Church communicate, coordinate and manage its activities.",
     icon: Settings,
-    accentColor: "#4A148C",
+    accentColor: "#28166F",
   },
   {
     name: "REACH",
     purpose: "Go-A-Fishing",
     description: "Mobilize your Church family to reach beyond the walls.",
     icon: Fish,
-    accentColor: "#7B1FA2",
+    accentColor: "#3D2080",
   },
 ];
 

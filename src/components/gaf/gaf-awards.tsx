@@ -204,7 +204,7 @@ export function GafAwards() {
     : (data?.commendations || []).slice(0, 6);
 
   return (
-    <section className="py-12 md:py-16 bg-[#F3E5F5] min-h-screen">
+    <section className="py-12 md:py-16 bg-[#E8E0F0] min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* ── Hero ── */}
         <SectionWrapper className="text-center">
@@ -216,7 +216,7 @@ export function GafAwards() {
             <Trophy className="size-4" />
             Hall of Faith
           </motion.div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A148C] mb-3">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#28166F] mb-3">
             Awards &amp; Commendations
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -230,7 +230,7 @@ export function GafAwards() {
           <SectionWrapper>
             <Card className="border-0 shadow-md">
               <CardContent className="py-20 flex flex-col items-center gap-3">
-                <Loader2 className="size-10 text-[#4A148C] animate-spin" />
+                <Loader2 className="size-10 text-[#28166F] animate-spin" />
                 <p className="text-gray-500 text-sm">Loading awards...</p>
               </CardContent>
             </Card>
@@ -246,7 +246,7 @@ export function GafAwards() {
                 <p className="text-gray-700">{error}</p>
                 <Button
                   onClick={fetchAwards}
-                  className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                  className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
                 >
                   Try again
                 </Button>
@@ -261,7 +261,7 @@ export function GafAwards() {
             {/* Active cycles banner */}
             {data.activeCycles.length > 0 && (
               <SectionWrapper>
-                <div className="bg-gradient-to-r from-[#4A148C] to-[#1A0033] rounded-xl p-5 text-white">
+                <div className="bg-gradient-to-r from-[#28166F] to-[#0D0B1A] rounded-xl p-5 text-white">
                   <div className="flex items-center gap-2 mb-3">
                     <Fish className="size-5 text-purple-300" />
                     <p className="font-semibold text-lg">Active Competitions</p>
@@ -304,7 +304,7 @@ export function GafAwards() {
                 <SectionWrapper className="text-center">
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <Crown className="size-5 text-amber-600" />
-                    <h3 className="text-2xl font-bold text-[#4A148C]">
+                    <h3 className="text-2xl font-bold text-[#28166F]">
                       Cycle Champions
                     </h3>
                   </div>
@@ -322,7 +322,7 @@ export function GafAwards() {
                     >
                       <Card className="border-0 shadow-lg overflow-hidden">
                         {/* Cycle header */}
-                        <div className="bg-gradient-to-r from-[#4A148C] to-[#1A0033] px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <div className="bg-gradient-to-r from-[#28166F] to-[#0D0B1A] px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <div>
                             <div className="flex items-center gap-2">
                               <Star className="size-4 text-amber-300" />
@@ -399,7 +399,7 @@ export function GafAwards() {
                                             >
                                               #{winner.rank}
                                             </div>
-                                            <p className="font-bold text-[#4A148C] text-lg truncate">
+                                            <p className="font-bold text-[#28166F] text-lg truncate">
                                               {winner.member.fullName}
                                             </p>
                                             <p className="text-xs text-gray-400 font-mono mt-0.5">
@@ -500,7 +500,7 @@ export function GafAwards() {
                                             >
                                               #{winner.rank}
                                             </span>
-                                            <p className="font-bold text-[#4A148C] truncate">
+                                            <p className="font-bold text-[#28166F] truncate">
                                               {winner.member.fullName}
                                             </p>
                                           </div>
@@ -546,7 +546,7 @@ export function GafAwards() {
                     <Button
                       variant="outline"
                       onClick={() => setShowAllCycles(true)}
-                      className="gap-2 rounded-xl border-[#4A148C]/20 text-[#4A148C] hover:bg-[#4A148C]/5"
+                      className="gap-2 rounded-xl border-[#28166F]/20 text-[#28166F] hover:bg-[#28166F]/5"
                     >
                       <ChevronDown className="size-4" />
                       Show all {data.cycles.length} cycles
@@ -577,8 +577,8 @@ export function GafAwards() {
               <div className="space-y-8">
                 <SectionWrapper className="text-center">
                   <div className="flex items-center justify-center gap-2 mb-2">
-                    <Heart className="size-5 text-[#D32F2F]" />
-                    <h3 className="text-2xl font-bold text-[#4A148C]">
+                    <Heart className="size-5 text-[#DA251D]" />
+                    <h3 className="text-2xl font-bold text-[#28166F]">
                       Pastoral Commendations
                     </h3>
                   </div>
@@ -599,7 +599,7 @@ export function GafAwards() {
                         <div className="h-1.5 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400" />
                         <CardHeader className="pb-2">
                           <div className="flex items-start justify-between gap-2">
-                            <CardTitle className="text-base text-[#4A148C] leading-snug">
+                            <CardTitle className="text-base text-[#28166F] leading-snug">
                               {c.title}
                             </CardTitle>
                             <Award className="size-5 text-amber-500 shrink-0 mt-0.5" />
@@ -611,7 +611,7 @@ export function GafAwards() {
                           </p>
                           <div className="flex items-center justify-between pt-2 border-t border-amber-200/50">
                             <div className="min-w-0">
-                              <p className="text-sm font-semibold text-[#4A148C] truncate">
+                              <p className="text-sm font-semibold text-[#28166F] truncate">
                                 {c.member.fullName}
                               </p>
                               <p className="text-xs text-gray-500">
@@ -620,7 +620,7 @@ export function GafAwards() {
                             </div>
                             <div className="text-right shrink-0">
                               {c.scriptureReference && (
-                                <p className="text-xs font-medium text-[#D32F2F] flex items-center gap-1 justify-end">
+                                <p className="text-xs font-medium text-[#DA251D] flex items-center gap-1 justify-end">
                                   <BookOpen className="size-3" />
                                   {c.scriptureReference}
                                 </p>
@@ -642,7 +642,7 @@ export function GafAwards() {
                     <Button
                       variant="outline"
                       onClick={() => setShowAllCommendations(true)}
-                      className="gap-2 rounded-xl border-[#4A148C]/20 text-[#4A148C] hover:bg-[#4A148C]/5"
+                      className="gap-2 rounded-xl border-[#28166F]/20 text-[#28166F] hover:bg-[#28166F]/5"
                     >
                       <ChevronDown className="size-4" />
                       Show all {data.commendations.length} commendations
@@ -678,7 +678,7 @@ export function GafAwards() {
                 move you. Always give yourselves fully to the work of the Lord,
                 because you know that your labor in the Lord is not in vain.&rdquo;
                 <br />
-                <span className="text-[#D32F2F] font-medium">
+                <span className="text-[#DA251D] font-medium">
                   — 1 Corinthians 15:58
                 </span>
               </p>

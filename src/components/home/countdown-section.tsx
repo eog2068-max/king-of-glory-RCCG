@@ -93,8 +93,8 @@ function useCountdown() {
 function CountdownBox({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-white rounded-2xl shadow-lg shadow-black/5 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center border border-[#4A148C]/10">
-        <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4A148C] tabular-nums" suppressHydrationWarning>
+      <div className="bg-white rounded-2xl shadow-lg shadow-black/5 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center border border-[#28166F]/10">
+        <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#28166F] tabular-nums" suppressHydrationWarning>
           {String(value).padStart(2, "0")}
         </span>
       </div>
@@ -110,40 +110,40 @@ export function CountdownSection() {
   const isZero = timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0;
 
   return (
-    <SectionWrapper className="bg-[#F3E5F5] py-16 md:py-24">
+    <SectionWrapper className="bg-[#E8E0F0] py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-3 sm:px-6 text-center">
         <SectionTitle title="Next Service" subtitle="Counting down to our next worship gathering" />
 
         {!isZero && (
           <>
-            <p className="mt-6 text-sm md:text-base font-semibold text-[#4A148C]">{label}</p>
+            <p className="mt-6 text-sm md:text-base font-semibold text-[#28166F]">{label}</p>
             <div className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-6 mt-6 px-1">
               <CountdownBox value={timeLeft.days} label="Days" />
-              <span className="text-xl sm:text-2xl font-bold text-[#4A148C]/30 mt-[-16px] sm:mt-[-20px]">:</span>
+              <span className="text-xl sm:text-2xl font-bold text-[#28166F]/30 mt-[-16px] sm:mt-[-20px]">:</span>
               <CountdownBox value={timeLeft.hours} label="Hours" />
-              <span className="text-xl sm:text-2xl font-bold text-[#4A148C]/30 mt-[-16px] sm:mt-[-20px]">:</span>
+              <span className="text-xl sm:text-2xl font-bold text-[#28166F]/30 mt-[-16px] sm:mt-[-20px]">:</span>
               <CountdownBox value={timeLeft.minutes} label="Min" />
-              <span className="text-xl sm:text-2xl font-bold text-[#4A148C]/30 mt-[-16px] sm:mt-[-20px]">:</span>
+              <span className="text-xl sm:text-2xl font-bold text-[#28166F]/30 mt-[-16px] sm:mt-[-20px]">:</span>
               <CountdownBox value={timeLeft.seconds} label="Sec" />
             </div>
           </>
         )}
 
         <div className="mt-8 sm:mt-10 inline-flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-4 gap-y-1 bg-white rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 shadow-md shadow-black/5 text-xs sm:text-sm md:text-base text-gray-600 max-w-[95vw] sm:max-w-full">
-          <span className="font-semibold text-[#4A148C]">
+          <span className="font-semibold text-[#28166F]">
             <Clock className="size-3.5 sm:size-4 inline mr-1 -mt-0.5" />
             Our Services:
           </span>
           <span>
-            <strong className="text-[#4A148C]">Sun 7:00 AM</strong> — Worship Service
+            <strong className="text-[#28166F]">Sun 7:00 AM</strong> — Worship Service
           </span>
           <span className="text-gray-300 hidden sm:inline">|</span>
           <span>
-            <strong className="text-[#4A148C]">Tue 5:30 PM</strong> — Digging Deep
+            <strong className="text-[#28166F]">Tue 5:30 PM</strong> — Digging Deep
           </span>
           <span className="text-gray-300 hidden sm:inline">|</span>
           <span>
-            <strong className="text-[#4A148C]">Thu 5:30 PM</strong> — Faith Clinic
+            <strong className="text-[#28166F]">Thu 5:30 PM</strong> — Faith Clinic
           </span>
         </div>
 
@@ -153,11 +153,11 @@ export function CountdownSection() {
             <Heart className="size-3.5" />
             YouthConnect
           </Link>
-          <Link href="/announcements" className="inline-flex items-center gap-1.5 bg-[#4A148C]/10 text-[#4A148C] rounded-full px-4 py-2 text-xs font-semibold hover:bg-[#4A148C]/20 transition-colors">
+          <Link href="/announcements" className="inline-flex items-center gap-1.5 bg-[#28166F]/10 text-[#28166F] rounded-full px-4 py-2 text-xs font-semibold hover:bg-[#28166F]/20 transition-colors">
             <Megaphone className="size-3.5" />
             Announcements
           </Link>
-          <Link href="/go-a-fishing" className="inline-flex items-center gap-1.5 bg-[#7B1FA2]/10 text-[#7B1FA2] rounded-full px-4 py-2 text-xs font-semibold hover:bg-[#7B1FA2]/20 transition-colors">
+          <Link href="/go-a-fishing" className="inline-flex items-center gap-1.5 bg-[#3D2080]/10 text-[#3D2080] rounded-full px-4 py-2 text-xs font-semibold hover:bg-[#3D2080]/20 transition-colors">
             <Fish className="size-3.5" />
             Go-A-Fishing
           </Link>

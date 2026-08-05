@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import path from 'path';
 import { mkdirSync } from 'fs';
 
-const INPUT = path.join(__dirname, '../public/rccg-logo.png');
+const INPUT = path.join(__dirname, '../public/king-of-glory-logo.png');
 const OUT_DIR = path.join(__dirname, '../public/icons');
 
 const SIZES = [
@@ -23,7 +23,7 @@ async function generate() {
     await sharp(INPUT)
       .resize(size, size, {
         fit: 'contain',
-        background: { r: 26, g: 35, b: 126, alpha: 0 },
+        background: { r: 40, g: 22, b: 111, alpha: 0 },
       })
       .png()
       .toFile(path.join(OUT_DIR, name));
@@ -34,7 +34,7 @@ async function generate() {
   await sharp(INPUT)
     .resize(180, 180, {
       fit: 'contain',
-      background: { r: 26, g: 35, b: 126, alpha: 0 },
+      background: { r: 40, g: 22, b: 111, alpha: 0 },
     })
     .png()
     .toFile(path.join(__dirname, '../public/apple-touch-icon.png'));
@@ -44,7 +44,7 @@ async function generate() {
   await sharp(INPUT)
     .resize(32, 32, {
       fit: 'contain',
-      background: { r: 26, g: 35, b: 126, alpha: 0 },
+      background: { r: 40, g: 22, b: 111, alpha: 0 },
     })
     .png()
     .toFile(path.join(__dirname, '../public/favicon-32x32.png'));

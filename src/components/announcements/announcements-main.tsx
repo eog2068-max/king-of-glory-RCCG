@@ -117,7 +117,7 @@ export function AnnouncementsMain() {
         <SectionWrapper>
           <SectionTitle
             title="Latest Announcements"
-            subtitle="Stay informed about everything happening at Youth Church, Utako, Abuja."
+            subtitle="Stay informed about everything happening at RCCG King of Glory, Utako, Abuja."
           />
         </SectionWrapper>
 
@@ -126,15 +126,15 @@ export function AnnouncementsMain() {
           <SectionWrapper>
             <div className="mb-8">
               <div className="flex items-center gap-2 mb-4">
-                <Pin className="size-4 text-[#D32F2F]" />
-                <h3 className="text-base font-bold text-[#4A148C]">
+                <Pin className="size-4 text-[#DA251D]" />
+                <h3 className="text-base font-bold text-[#28166F]">
                   Pinned Announcements
                 </h3>
                 <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
                   {pinnedAnnouncements.length}
                 </span>
               </div>
-              <div className="bg-gradient-to-br from-[#F3E5F5] to-[#EBF0FA] rounded-2xl p-1">
+              <div className="bg-gradient-to-br from-[#E8E0F0] to-[#EBF0FA] rounded-2xl p-1">
                 <div className="space-y-4">
                   {pinnedAnnouncements.map((ann, i) => (
                     <AnnouncementCard
@@ -164,7 +164,7 @@ export function AnnouncementsMain() {
                     setSearch(e.target.value);
                     setVisibleCount(ITEMS_PER_PAGE);
                   }}
-                  className="pl-10 rounded-xl border-gray-200 bg-[#F8FAFF] h-10 focus:border-[#4A148C]/30"
+                  className="pl-10 rounded-xl border-gray-200 bg-[#F8FAFF] h-10 focus:border-[#28166F]/30"
                 />
                 {search && (
                   <button
@@ -233,7 +233,7 @@ export function AnnouncementsMain() {
                   }}
                   className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors whitespace-nowrap shrink-0 ${
                     category === "all"
-                      ? "bg-[#4A148C] text-white"
+                      ? "bg-[#28166F] text-white"
                       : "bg-[#F8FAFF] text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                   }`}
                 >
@@ -248,7 +248,7 @@ export function AnnouncementsMain() {
                     }}
                     className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors whitespace-nowrap shrink-0 ${
                       category === cat
-                        ? "bg-[#4A148C] text-white"
+                        ? "bg-[#28166F] text-white"
                         : "bg-[#F8FAFF] text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                     }`}
                   >
@@ -273,7 +273,7 @@ export function AnnouncementsMain() {
                     }}
                     className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors whitespace-nowrap ${
                       priorityFilter === p
-                        ? "bg-[#4A148C] text-white"
+                        ? "bg-[#28166F] text-white"
                         : "bg-[#F8FAFF] text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                     }`}
                   >
@@ -290,7 +290,7 @@ export function AnnouncementsMain() {
             <div className="flex items-center justify-between pt-3 border-t border-gray-50">
               <div className="flex items-center gap-3">
                 <span className="text-sm text-gray-500">
-                  <span className="font-semibold text-[#4A148C]">
+                  <span className="font-semibold text-[#28166F]">
                     {sortedAnnouncements.length}
                   </span>{" "}
                   announcement{sortedAnnouncements.length !== 1 ? "s" : ""}
@@ -298,7 +298,7 @@ export function AnnouncementsMain() {
                 {hasActiveFilters && (
                   <button
                     onClick={clearAll}
-                    className="text-xs text-[#D32F2F] hover:text-[#B71C1C] font-medium"
+                    className="text-xs text-[#DA251D] hover:text-[#B91C1C] font-medium"
                   >
                     Clear all filters
                   </button>
@@ -333,7 +333,7 @@ export function AnnouncementsMain() {
                   {hasActiveFilters && (
                     <button
                       onClick={clearAll}
-                      className="mt-4 text-sm text-[#4A148C] font-medium hover:underline"
+                      className="mt-4 text-sm text-[#28166F] font-medium hover:underline"
                     >
                       Reset filters
                     </button>
@@ -382,7 +382,7 @@ export function AnnouncementsMain() {
                   onClick={() =>
                     setVisibleCount((prev) => prev + ITEMS_PER_PAGE)
                   }
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-gray-200 bg-white text-sm font-medium text-gray-600 hover:border-[#4A148C]/30 hover:text-[#4A148C] transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-gray-200 bg-white text-sm font-medium text-gray-600 hover:border-[#28166F]/30 hover:text-[#28166F] transition-colors shadow-sm"
                 >
                   <ChevronDown className="size-4" />
                   Load More ({sortedAnnouncements.length - visibleCount}{" "}
@@ -402,11 +402,11 @@ export function AnnouncementsMain() {
 
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#F3E5F5] flex items-center justify-center shrink-0">
-                      <Megaphone className="size-5 text-[#4A148C]" />
+                    <div className="w-10 h-10 rounded-xl bg-[#E8E0F0] flex items-center justify-center shrink-0">
+                      <Megaphone className="size-5 text-[#28166F]" />
                     </div>
                     <div>
-                      <p className="text-xl font-bold text-[#4A148C]">
+                      <p className="text-xl font-bold text-[#28166F]">
                         {getActiveAnnouncements().length}
                       </p>
                       <p className="text-[11px] text-gray-400">
@@ -417,10 +417,10 @@ export function AnnouncementsMain() {
 
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center shrink-0">
-                      <AlertTriangle className="size-5 text-[#D32F2F]" />
+                      <AlertTriangle className="size-5 text-[#DA251D]" />
                     </div>
                     <div>
-                      <p className="text-xl font-bold text-[#D32F2F]">
+                      <p className="text-xl font-bold text-[#DA251D]">
                         {urgentCount}
                       </p>
                       <p className="text-[11px] text-gray-400">
@@ -446,14 +446,14 @@ export function AnnouncementsMain() {
               </div>
 
               {/* Pinned count card */}
-              <div className="bg-gradient-to-br from-[#F3E5F5] to-[#EBF0FA] rounded-2xl border border-purple-100 p-5">
+              <div className="bg-gradient-to-br from-[#E8E0F0] to-[#EBF0FA] rounded-2xl border border-purple-100 p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <Pin className="size-4 text-[#D32F2F]" />
-                  <h4 className="text-xs font-semibold text-[#4A148C] uppercase tracking-wider">
+                  <Pin className="size-4 text-[#DA251D]" />
+                  <h4 className="text-xs font-semibold text-[#28166F] uppercase tracking-wider">
                     Pinned
                   </h4>
                 </div>
-                <p className="text-3xl font-bold text-[#4A148C]">
+                <p className="text-3xl font-bold text-[#28166F]">
                   {pinnedAnnouncements.length}
                 </p>
                 <p className="text-[11px] text-gray-500 mt-1">

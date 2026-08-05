@@ -120,7 +120,7 @@ export function TestimonyForm() {
         <div className="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-6">
           <CheckCircle2 className="size-10 text-[#2E7D32]" />
         </div>
-        <h2 className="text-2xl font-bold text-[#4A148C] mb-2">
+        <h2 className="text-2xl font-bold text-[#28166F] mb-2">
           Testimony Shared Successfully
         </h2>
         <p className="text-gray-500 mb-4 max-w-md mx-auto">
@@ -128,7 +128,7 @@ export function TestimonyForm() {
           will encourage and strengthen the faith of others. God bless you
           abundantly.
         </p>
-        <div className="bg-gradient-to-br from-[#1A0033] to-[#4A148C] rounded-2xl p-6 text-white max-w-lg mx-auto mb-8">
+        <div className="bg-gradient-to-br from-[#0D0B1A] to-[#28166F] rounded-2xl p-6 text-white max-w-lg mx-auto mb-8">
           <BookOpen className="size-6 text-white/60 mx-auto mb-3" />
           <p className="text-lg font-semibold leading-relaxed mb-2 italic">
             &ldquo;And they overcame him by the blood of the Lamb and by the
@@ -141,7 +141,7 @@ export function TestimonyForm() {
         </div>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Button
-            className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl px-6"
+            className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl px-6"
             onClick={() => {
               setSubmitted(false);
               setFormData({
@@ -166,7 +166,7 @@ export function TestimonyForm() {
   return (
     <div>
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-        <div className="bg-gradient-to-r from-[#4A148C] to-[#6A1B9A] px-6 py-5">
+        <div className="bg-gradient-to-r from-[#28166F] to-[#3D2080] px-6 py-5">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center">
               <Sparkles className="size-5 text-white" />
@@ -186,7 +186,7 @@ export function TestimonyForm() {
           {/* Category selector */}
           <div>
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 block">
-              Category <span className="text-[#D32F2F]">*</span>
+              Category <span className="text-[#DA251D]">*</span>
             </label>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {allCategories.map((cat) => {
@@ -200,13 +200,13 @@ export function TestimonyForm() {
                     onClick={() => handleChange("category", cat)}
                     className={`flex items-center gap-2 p-3 rounded-xl border-2 text-left transition-all ${
                       isSelected
-                        ? "border-[#4A148C] bg-[#F3E5F5]"
+                        ? "border-[#28166F] bg-[#E8E0F0]"
                         : "border-gray-100 hover:border-gray-200"
                     }`}
                   >
                     <div
                       className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${
-                        isSelected ? "bg-[#4A148C]" : "bg-gray-100"
+                        isSelected ? "bg-[#28166F]" : "bg-gray-100"
                       }`}
                     >
                       <IconComp
@@ -217,7 +217,7 @@ export function TestimonyForm() {
                     </div>
                     <span
                       className={`text-xs font-semibold leading-snug ${
-                        isSelected ? "text-[#4A148C]" : "text-gray-700"
+                        isSelected ? "text-[#28166F]" : "text-gray-700"
                       }`}
                     >
                       {categoryLabels[cat]}
@@ -227,7 +227,7 @@ export function TestimonyForm() {
               })}
             </div>
             {errors.category && (
-              <p className="text-xs text-[#D32F2F] mt-1.5">
+              <p className="text-xs text-[#DA251D] mt-1.5">
                 {errors.category}
               </p>
             )}
@@ -239,16 +239,16 @@ export function TestimonyForm() {
           <div>
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
               <Sparkles className="size-3.5" />
-              Testimony Title <span className="text-[#D32F2F]">*</span>
+              Testimony Title <span className="text-[#DA251D]">*</span>
             </label>
             <Input
               value={formData.title}
               onChange={(e) => handleChange("title", e.target.value)}
               placeholder="e.g., God Healed Me of Chronic Illness"
-              className="rounded-xl border-gray-200 h-11 focus:border-[#4A148C]/30"
+              className="rounded-xl border-gray-200 h-11 focus:border-[#28166F]/30"
             />
             {errors.title && (
-              <p className="text-xs text-[#D32F2F] mt-1">{errors.title}</p>
+              <p className="text-xs text-[#DA251D] mt-1">{errors.title}</p>
             )}
           </div>
 
@@ -256,18 +256,18 @@ export function TestimonyForm() {
           <div>
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
               <MessageSquare className="size-3.5" />
-              Your Testimony <span className="text-[#D32F2F]">*</span>
+              Your Testimony <span className="text-[#DA251D]">*</span>
             </label>
             <Textarea
               value={formData.body}
               onChange={(e) => handleChange("body", e.target.value)}
               placeholder="Share your testimony in detail. What happened? How did you pray? What did God do? Be specific — your story matters and will encourage others."
               rows={6}
-              className="rounded-xl border-gray-200 focus:border-[#4A148C]/30 resize-none"
+              className="rounded-xl border-gray-200 focus:border-[#28166F]/30 resize-none"
             />
             <div className="flex items-center justify-between mt-1">
               {errors.body && (
-                <p className="text-xs text-[#D32F2F]">{errors.body}</p>
+                <p className="text-xs text-[#DA251D]">{errors.body}</p>
               )}
               {!errors.body && (
                 <p className="text-[11px] text-gray-400">
@@ -292,7 +292,7 @@ export function TestimonyForm() {
                     onClick={() => toggleTag(tag)}
                     className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
                       isSelected
-                        ? "bg-[#4A148C] text-white border-[#4A148C]"
+                        ? "bg-[#28166F] text-white border-[#28166F]"
                         : "bg-gray-50 text-gray-500 border-gray-200 hover:border-gray-300"
                     }`}
                   >
@@ -319,7 +319,7 @@ export function TestimonyForm() {
                 value={formData.name}
                 onChange={(e) => handleChange("name", e.target.value)}
                 placeholder="Your name (optional)"
-                className="rounded-xl border-gray-200 h-11 focus:border-[#4A148C]/30"
+                className="rounded-xl border-gray-200 h-11 focus:border-[#28166F]/30"
               />
             </div>
             <div className={formData.isAnonymous ? "opacity-40 pointer-events-none" : ""}>
@@ -332,7 +332,7 @@ export function TestimonyForm() {
                 value={formData.email}
                 onChange={(e) => handleChange("email", e.target.value)}
                 placeholder="your@email.com"
-                className="rounded-xl border-gray-200 h-11 focus:border-[#4A148C]/30"
+                className="rounded-xl border-gray-200 h-11 focus:border-[#28166F]/30"
               />
             </div>
           </div>
@@ -348,7 +348,7 @@ export function TestimonyForm() {
               value={formData.phone}
               onChange={(e) => handleChange("phone", e.target.value)}
               placeholder="+234 800 000 0000"
-              className="rounded-xl border-gray-200 h-11 focus:border-[#4A148C]/30 max-w-sm"
+              className="rounded-xl border-gray-200 h-11 focus:border-[#28166F]/30 max-w-sm"
             />
           </div>
 
@@ -358,12 +358,12 @@ export function TestimonyForm() {
             onClick={() =>
               handleChange("isAnonymous", !formData.isAnonymous)
             }
-            className="flex items-center gap-2 text-xs text-gray-500 hover:text-[#4A148C] transition-colors"
+            className="flex items-center gap-2 text-xs text-gray-500 hover:text-[#28166F] transition-colors"
           >
             <div
               className={`w-4 h-4 rounded border-2 flex items-center justify-center transition-colors ${
                 formData.isAnonymous
-                  ? "bg-[#4A148C] border-[#4A148C]"
+                  ? "bg-[#28166F] border-[#28166F]"
                   : "border-gray-300"
               }`}
             >
@@ -389,7 +389,7 @@ export function TestimonyForm() {
           <Button
             type="submit"
             disabled={submitting}
-            className="w-full bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl h-12 text-base font-semibold"
+            className="w-full bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl h-12 text-base font-semibold"
           >
             {submitting ? "Sharing..." : "Share My Testimony"}
           </Button>

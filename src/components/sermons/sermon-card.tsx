@@ -24,14 +24,14 @@ export function SermonCard({ sermon, index, series, onOpen, activeId }: SermonCa
       onClick={() => onOpen(sermon)}
       className={`group bg-white rounded-xl border shadow-sm overflow-hidden cursor-pointer transition-all duration-200 hover:shadow-md ${
         isActive
-          ? "border-[#4A148C]/30 shadow-md ring-1 ring-[#4A148C]/10"
+          ? "border-[#28166F]/30 shadow-md ring-1 ring-[#28166F]/10"
           : "border-gray-100 hover:border-gray-200"
       }`}
     >
       <div className="p-4 md:p-5">
         {/* Top row: category + format badges */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="inline-flex text-[10px] font-semibold uppercase tracking-wider text-[#4A148C] bg-[#F3E5F5] px-2 py-0.5 rounded-md">
+          <span className="inline-flex text-[10px] font-semibold uppercase tracking-wider text-[#28166F] bg-[#E8E0F0] px-2 py-0.5 rounded-md">
             {sermon.category}
           </span>
           <div className="flex items-center gap-1.5">
@@ -58,7 +58,7 @@ export function SermonCard({ sermon, index, series, onOpen, activeId }: SermonCa
 
         {/* Title */}
         <h3 className={`text-base font-bold mb-2 leading-snug transition-colors ${
-          isActive ? "text-[#4A148C]" : "text-gray-800 group-hover:text-[#4A148C]"
+          isActive ? "text-[#28166F]" : "text-gray-800 group-hover:text-[#28166F]"
         }`}>
           {sermon.title}
         </h3>
@@ -94,7 +94,7 @@ export function SermonCard({ sermon, index, series, onOpen, activeId }: SermonCa
             {sermon.scriptures.slice(0, 3).map((scripture) => (
               <span
                 key={scripture}
-                className="inline-flex items-center text-[10px] font-medium text-[#4A148C]/70 bg-[#F8FAFF] px-2 py-0.5 rounded-md border border-[#4A148C]/5"
+                className="inline-flex items-center text-[10px] font-medium text-[#28166F]/70 bg-[#F8FAFF] px-2 py-0.5 rounded-md border border-[#28166F]/5"
               >
                 <BookOpen className="size-2.5 mr-1" />
                 {scripture}
@@ -124,8 +124,8 @@ export function SermonCard({ sermon, index, series, onOpen, activeId }: SermonCa
               </span>
             )}
             {sermon.hasAudio && (
-              <div className="w-8 h-8 rounded-full bg-[#4A148C]/8 flex items-center justify-center group-hover:bg-[#4A148C] transition-colors">
-                <Headphones className="size-3.5 text-[#4A148C] group-hover:text-white transition-colors" />
+              <div className="w-8 h-8 rounded-full bg-[#28166F]/8 flex items-center justify-center group-hover:bg-[#28166F] transition-colors">
+                <Headphones className="size-3.5 text-[#28166F] group-hover:text-white transition-colors" />
               </div>
             )}
           </div>

@@ -52,7 +52,7 @@ export function AudioGallery() {
             placeholder="Search audio..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="pl-10 rounded-xl border-gray-200 bg-white h-10 focus:border-[#4A148C]/30"
+            className="pl-10 rounded-xl border-gray-200 bg-white h-10 focus:border-[#28166F]/30"
           />
         </div>
 
@@ -64,7 +64,7 @@ export function AudioGallery() {
               onClick={() => setType(t)}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                 type === t
-                  ? "bg-[#4A148C] text-white"
+                  ? "bg-[#28166F] text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
             >
@@ -99,28 +99,28 @@ export function AudioGallery() {
                 transition={{ duration: 0.3, delay: i * 0.03 }}
                 onClick={() => setPlaying(isPlaying ? null : track.id)}
                 className={`group grid grid-cols-[40px_1fr_40px] md:grid-cols-[40px_1fr_140px_80px_100px_40px] gap-3 items-center px-5 py-3.5 cursor-pointer transition-colors ${
-                  isPlaying ? "bg-[#F3E5F5]" : "hover:bg-gray-50"
+                  isPlaying ? "bg-[#E8E0F0]" : "hover:bg-gray-50"
                 }`}
               >
                 {/* Index / Play button */}
                 <div className="flex items-center justify-center">
                   {isPlaying ? (
-                    <div className="w-8 h-8 rounded-full bg-[#4A148C] flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-full bg-[#28166F] flex items-center justify-center">
                       <Pause className="size-3.5 text-white" />
                     </div>
                   ) : (
                     <span className="text-sm text-gray-400 group-hover:hidden">{i + 1}</span>
                   )}
                   {!isPlaying && (
-                    <div className="w-8 h-8 rounded-full bg-[#4A148C]/10 items-center justify-center hidden group-hover:flex">
-                      <Play className="size-3.5 text-[#4A148C] ml-0.5" />
+                    <div className="w-8 h-8 rounded-full bg-[#28166F]/10 items-center justify-center hidden group-hover:flex">
+                      <Play className="size-3.5 text-[#28166F] ml-0.5" />
                     </div>
                   )}
                 </div>
 
                 {/* Title + speaker (mobile) */}
                 <div className="min-w-0">
-                  <p className={`text-sm font-semibold truncate ${isPlaying ? "text-[#4A148C]" : "text-gray-800"}`}>
+                  <p className={`text-sm font-semibold truncate ${isPlaying ? "text-[#28166F]" : "text-gray-800"}`}>
                     {track.title}
                   </p>
                   <p className="text-xs text-gray-400 truncate md:hidden">{track.speaker}</p>
@@ -161,11 +161,11 @@ export function AudioGallery() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-4">
               {/* Track info */}
               <div className="flex items-center gap-3 flex-1 min-w-0">
-                <div className="w-10 h-10 rounded-lg bg-[#F3E5F5] flex items-center justify-center shrink-0">
-                  <Music className="size-5 text-[#4A148C]" />
+                <div className="w-10 h-10 rounded-lg bg-[#E8E0F0] flex items-center justify-center shrink-0">
+                  <Music className="size-5 text-[#28166F]" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-[#4A148C] truncate">
+                  <p className="text-sm font-semibold text-[#28166F] truncate">
                     {mockAudio.find((a) => a.id === playing)?.title}
                   </p>
                   <p className="text-xs text-gray-500 truncate">
@@ -176,16 +176,16 @@ export function AudioGallery() {
 
               {/* Controls */}
               <div className="flex items-center gap-3">
-                <button className="p-2 text-gray-400 hover:text-[#4A148C] transition-colors">
+                <button className="p-2 text-gray-400 hover:text-[#28166F] transition-colors">
                   <SkipBack className="size-4" />
                 </button>
                 <button
                   onClick={() => setPlaying(null)}
-                  className="w-10 h-10 rounded-full bg-[#4A148C] text-white flex items-center justify-center hover:bg-[#1A0033] transition-colors"
+                  className="w-10 h-10 rounded-full bg-[#28166F] text-white flex items-center justify-center hover:bg-[#0D0B1A] transition-colors"
                 >
                   <Pause className="size-5" />
                 </button>
-                <button className="p-2 text-gray-400 hover:text-[#4A148C] transition-colors">
+                <button className="p-2 text-gray-400 hover:text-[#28166F] transition-colors">
                   <SkipForward className="size-4" />
                 </button>
               </div>
@@ -194,7 +194,7 @@ export function AudioGallery() {
               <div className="hidden sm:flex items-center gap-2">
                 <Volume2 className="size-4 text-gray-400" />
                 <div className="w-20 h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                  <div className="w-3/4 h-full bg-[#4A148C] rounded-full" />
+                  <div className="w-3/4 h-full bg-[#28166F] rounded-full" />
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@
 /**
  * GafAdminShell — shared admin sidebar + header for all /admin/gaf/* pages.
  *
- * Uses the same visual style as the existing admin sidebar (dark navy #4A148C)
+ * Uses the same visual style as the existing admin sidebar (dark navy #28166F)
  * but scoped to Go-A-Fishing admin navigation only.
  *
  * Stage 6 of Go-A-Fishing.
@@ -63,7 +63,7 @@ export function GafAdminShell({ children, role, userEmail }: GafAdminShellProps)
   return (
     <div className="flex min-h-screen">
       {/* Desktop sidebar */}
-      <aside className="hidden lg:flex flex-col w-64 bg-[#4A148C] text-white fixed inset-y-0 left-0 z-40">
+      <aside className="hidden lg:flex flex-col w-64 bg-[#28166F] text-white fixed inset-y-0 left-0 z-40">
         <div className="flex items-center gap-3 h-16 px-4 border-b border-white/10">
           <div className="flex size-9 items-center justify-center rounded-lg bg-white/15">
             <Fish className="size-5" />
@@ -120,7 +120,7 @@ export function GafAdminShell({ children, role, userEmail }: GafAdminShellProps)
       {/* Mobile header + overlay sidebar */}
       <div className="lg:hidden fixed inset-0 z-40">
         {/* Mobile top bar */}
-        <header className="fixed top-0 left-0 right-0 h-14 bg-[#4A148C] text-white z-50 flex items-center justify-between px-4">
+        <header className="fixed top-0 left-0 right-0 h-14 bg-[#28166F] text-white z-50 flex items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <Fish className="size-5" />
             <span className="text-sm font-bold">GAF Admin</span>
@@ -145,7 +145,7 @@ export function GafAdminShell({ children, role, userEmail }: GafAdminShellProps)
               className="absolute inset-0 bg-black/50"
               onClick={() => setMobileOpen(false)}
             />
-            <aside className="absolute left-0 top-0 bottom-0 w-72 bg-[#4A148C] text-white">
+            <aside className="absolute left-0 top-0 bottom-0 w-72 bg-[#28166F] text-white">
               <div className="flex items-center justify-between h-14 px-4 border-b border-white/10">
                 <div className="flex items-center gap-2">
                   <Fish className="size-5" />

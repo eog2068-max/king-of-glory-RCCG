@@ -61,24 +61,24 @@ export function GafLanding() {
   return (
     <>
       {/* Hero / Scripture */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-[#F3E5F5]">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-[#E8E0F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionWrapper className="text-center max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#4A148C]/10 text-[#4A148C] rounded-full text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#28166F]/10 text-[#28166F] rounded-full text-sm font-medium mb-6"
             >
               <Fish className="size-4" />
               Evangelism &amp; Soul-Winning Program
             </motion.div>
 
             <blockquote className="mb-8">
-              <p className="text-2xl md:text-3xl font-serif text-[#4A148C] leading-relaxed italic">
+              <p className="text-2xl md:text-3xl font-serif text-[#28166F] leading-relaxed italic">
                 &ldquo;{SCRIPTURE.text}&rdquo;
               </p>
-              <footer className="mt-3 text-sm font-semibold text-[#D32F2F]">
+              <footer className="mt-3 text-sm font-semibold text-[#DA251D]">
                 — {SCRIPTURE.ref}
               </footer>
             </blockquote>
@@ -94,7 +94,7 @@ export function GafLanding() {
               <Button
                 asChild
                 size="lg"
-                className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
               >
                 <Link href="/go-a-fishing/login">
                   Get Started
@@ -105,7 +105,7 @@ export function GafLanding() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="rounded-xl border-[#4A148C]/30"
+                className="rounded-xl border-[#28166F]/30"
               >
                 <Link href="/go-a-fishing/leaderboard">View Leaderboard</Link>
               </Button>
@@ -136,7 +136,7 @@ export function GafLanding() {
                       <div className="text-xs text-gray-400 font-mono mb-2">
                         STEP {idx + 1}
                       </div>
-                      <h3 className="text-xl font-bold text-[#4A148C] mb-2">
+                      <h3 className="text-xl font-bold text-[#28166F] mb-2">
                         {pillar.title}
                       </h3>
                       <p className="text-sm text-gray-600 leading-relaxed">
@@ -152,7 +152,7 @@ export function GafLanding() {
       </section>
 
       {/* Stats */}
-      <section className="py-12 bg-[#4A148C] text-white">
+      <section className="py-12 bg-[#28166F] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {STATS.map((stat) => (
@@ -171,7 +171,7 @@ export function GafLanding() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#4A148C] text-white">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#28166F] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionWrapper>
             <BookOpen className="size-12 mx-auto mb-6 text-amber-400" />
@@ -187,7 +187,7 @@ export function GafLanding() {
             <Button
               asChild
               size="lg"
-              className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-xl"
+              className="bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-xl"
             >
               <Link href="/go-a-fishing/login">
                 Become a Fisher

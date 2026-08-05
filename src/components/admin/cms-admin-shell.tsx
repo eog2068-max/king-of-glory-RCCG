@@ -73,7 +73,7 @@ export function CmsAdminShell({ role, userEmail, children }: CmsAdminShellProps)
   return (
     <div className="flex min-h-screen">
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:flex w-64 bg-[#1A0033] flex-col">
+      <aside className="hidden lg:flex w-64 bg-[#0D0B1A] flex-col">
         <div className="p-5 border-b border-white/10">
           <h1 className="text-lg font-bold text-white">CMS Admin</h1>
           <p className="text-xs text-purple-200/50 mt-1">Church Management System</p>
@@ -97,7 +97,7 @@ export function CmsAdminShell({ role, userEmail, children }: CmsAdminShellProps)
                   <Menu className="size-5 text-gray-600" />
                 </button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-64 p-0 bg-[#1A0033] text-white">
+              <SheetContent side="left" className="w-64 p-0 bg-[#0D0B1A] text-white">
                 <SheetHeader className="p-5 border-b border-white/10">
                   <SheetTitle className="text-white text-left">CMS Admin</SheetTitle>
                 </SheetHeader>
@@ -108,7 +108,7 @@ export function CmsAdminShell({ role, userEmail, children }: CmsAdminShellProps)
           </div>
           <div className="flex items-center gap-2">
             <span className="hidden sm:inline text-xs text-gray-500">{userEmail}</span>
-            <span className="text-[10px] bg-purple-50 text-[#4A148C] px-2 py-0.5 rounded-full font-medium uppercase">{role}</span>
+            <span className="text-[10px] bg-purple-50 text-[#28166F] px-2 py-0.5 rounded-full font-medium uppercase">{role}</span>
           </div>
         </header>
 

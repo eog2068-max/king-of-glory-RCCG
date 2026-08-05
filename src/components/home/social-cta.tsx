@@ -16,7 +16,7 @@ export function SocialCTA() {
   return (
     <SectionWrapper className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#6A1B9A] rounded-3xl overflow-hidden relative">
+        <div className="bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080] rounded-3xl overflow-hidden relative">
           {/* Decorative elements */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
@@ -87,7 +87,7 @@ export function SocialCTA() {
             >
               <Link
                 href="/social"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#4A148C] px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition-colors shadow-lg text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#28166F] px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition-colors shadow-lg text-sm"
               >
                 <Sparkles className="size-4" />
                 ENTER YOUTHCONNECT

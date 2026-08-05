@@ -5,7 +5,7 @@ import { GafAwards } from "@/components/gaf/gaf-awards";
 export const metadata: Metadata = {
   title: "Awards & Commendations | Go-A-Fishing",
   description:
-    "Celebrating the faithful soul winners and pastoral commendations at MFM Youth Church.",
+    "Celebrating the faithful soul winners and pastoral commendations at RCCG King of Glory.",
 };
 
 export default async function GafAwardsPage() {

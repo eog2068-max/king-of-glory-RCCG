@@ -40,11 +40,11 @@ export function AnnouncementPreview() {
             >
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#FFEBEE] flex items-center justify-center shrink-0">
-                  <item.icon className="size-5 text-[#D32F2F]" />
+                  <item.icon className="size-5 text-[#DA251D]" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-2 mb-1">
-                    <h3 className="font-bold text-[#4A148C] text-base">{item.title}</h3>
+                    <h3 className="font-bold text-[#28166F] text-base">{item.title}</h3>
                     <span className="text-xs text-gray-400 shrink-0 mt-1">{item.date}</span>
                   </div>
                   <p className="text-sm text-gray-600 leading-relaxed">{item.excerpt}</p>
@@ -57,7 +57,7 @@ export function AnnouncementPreview() {
         <div className="text-center mt-10">
           <Link
             href="/announcements"
-            className="inline-flex items-center gap-1.5 text-[#D32F2F] font-semibold hover:gap-2.5 transition-all text-sm"
+            className="inline-flex items-center gap-1.5 text-[#DA251D] font-semibold hover:gap-2.5 transition-all text-sm"
           >
             View All Announcements
             <ArrowRight className="size-4" />

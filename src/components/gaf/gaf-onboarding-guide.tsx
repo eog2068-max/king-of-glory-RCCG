@@ -115,7 +115,7 @@ export function GafOnboardingGuide({
       >
         <Card className="border-0 shadow-lg overflow-hidden">
           {/* Header with gradient */}
-          <div className="bg-gradient-to-r from-[#4A148C] to-[#1A0033] px-6 py-4 flex items-center justify-between">
+          <div className="bg-gradient-to-r from-[#28166F] to-[#0D0B1A] px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="flex items-center justify-center size-10 rounded-xl bg-white/15">
                 <Sparkles className="size-5 text-amber-300" />
@@ -146,7 +146,7 @@ export function GafOnboardingGuide({
                 key={idx}
                 className={`h-1.5 flex-1 rounded-full transition-all ${
                   idx <= currentStep
-                    ? "bg-[#4A148C]"
+                    ? "bg-[#28166F]"
                     : "bg-gray-200"
                 }`}
               />
@@ -160,7 +160,7 @@ export function GafOnboardingGuide({
             >
               <Icon className="size-8" />
             </div>
-            <h4 className="text-xl font-bold text-[#4A148C] mb-2">
+            <h4 className="text-xl font-bold text-[#28166F] mb-2">
               {step.title}
             </h4>
             <p className="text-sm text-gray-600 leading-relaxed max-w-md mx-auto">
@@ -185,7 +185,7 @@ export function GafOnboardingGuide({
               {isLast ? (
                 <Button
                   onClick={handleDismiss}
-                  className="gap-2 bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                  className="gap-2 bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
                 >
                   <CheckCircle className="size-4" />
                   Get Started!
@@ -205,7 +205,7 @@ export function GafOnboardingGuide({
                     onClick={() =>
                       setCurrentStep(Math.min(STEPS.length - 1, currentStep + 1))
                     }
-                    className="gap-1 bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                    className="gap-1 bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
                   >
                     Next
                     <ChevronRight className="size-4" />

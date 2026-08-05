@@ -50,7 +50,7 @@ export function WeeklyChallenge() {
           <BackToSocial />
           <div className="text-center py-20">
             <span className="text-5xl mb-4 block">🔥</span>
-            <h1 className="text-2xl font-bold text-[#4A148C] mb-2">No Active Challenge</h1>
+            <h1 className="text-2xl font-bold text-[#28166F] mb-2">No Active Challenge</h1>
             <p className="text-gray-500">Check back soon for a new weekly challenge!</p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export function WeeklyChallenge() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gradient-to-br from-[#6A1B9A] to-[#8E24AA] rounded-2xl p-6 md:p-8 mb-6 shadow-lg"
+          className="bg-gradient-to-br from-[#3D2080] to-[#8E24AA] rounded-2xl p-6 md:p-8 mb-6 shadow-lg"
         >
           <p className="text-purple-200/70 text-sm font-medium mb-2">🔥 THIS WEEK&apos;S CHALLENGE</p>
           <h1 className="text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
@@ -85,7 +85,7 @@ export function WeeklyChallenge() {
           transition={{ delay: 0.1 }}
           className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 text-center mb-6"
         >
-          <p className="text-3xl md:text-4xl font-bold text-[#6A1B9A] mb-1">
+          <p className="text-3xl md:text-4xl font-bold text-[#3D2080] mb-1">
             {challenge.participationCount}
           </p>
           <p className="text-sm text-gray-500">people have accepted this challenge</p>
@@ -106,7 +106,7 @@ export function WeeklyChallenge() {
             className={`inline-flex items-center gap-3 px-10 py-4 rounded-2xl text-lg font-bold transition-all shadow-lg ${
               joined
                 ? "bg-green-500 text-white shadow-green-500/30"
-                : "bg-[#6A1B9A] hover:bg-[#4A148C] text-white shadow-purple-500/30"
+                : "bg-[#3D2080] hover:bg-[#28166F] text-white shadow-purple-500/30"
             }`}
           >
             {joined ? (

@@ -165,7 +165,7 @@ export const mockAnnouncements: Announcement[] = [
   {
     id: "ann-005",
     title: "New Members' Classes Begin Next Month",
-    body: "If you have been worshipping with us for three months or more and have not yet attended the New Members' Class, this is your opportunity. The next batch of classes begins on Sunday, August 3rd, immediately after the first service. The six-week programme covers the foundational doctrines of the Christian faith, the history and vision of MFM, the structure of Youth Church, spiritual gifts discovery, and how to get plugged into a department. Completion of the class is a prerequisite for becoming a full member of the parish. Please register at the church office or speak with Deaconess Adeyinka after service.",
+    body: "If you have been worshipping with us for three months or more and have not yet attended the New Members' Class, this is your opportunity. The next batch of classes begins on Sunday, August 3rd, immediately after the first service. The six-week programme covers the foundational doctrines of the Christian faith, the history and vision of RCCG, the structure of RCCG King of Glory, spiritual gifts discovery, and how to get plugged into a department. Completion of the class is a prerequisite for becoming a full member of the parish. Please register at the church office or speak with Deaconess Adeyinka after service.",
     category: "general",
     priority: "normal",
     date: "2025-07-14",
@@ -230,7 +230,7 @@ export const mockAnnouncements: Announcement[] = [
   {
     id: "ann-010",
     title: "Women's Fellowship Monthly Meeting",
-    body: "The Youth Women's Fellowship invites all sisters to the July edition of our monthly meeting holding this Saturday, July 19th, from 10:00 AM to 1:00 PM in the church fellowship hall. Our guest speaker, Pastor (Mrs) Folake Adeyemi from MFM Dominion Parish, Gwarinpa, will be ministering on the topic 'Walking in Divine Health: God's Promise for His Daughters.' There will also be a special prayer session for families, time for fellowship, and light refreshment. All women, young and old, married and single, are warmly welcome. Please come with your Bible and notebook. Childcare will be provided for mothers with young children.",
+    body: "The Youth Women's Fellowship invites all sisters to the July edition of our monthly meeting holding this Saturday, July 19th, from 10:00 AM to 1:00 PM in the church fellowship hall. Our guest speaker, Pastor (Mrs) Folake Adeyemi from RCCG Dominion Parish, Gwarinpa, will be ministering on the topic 'Walking in Divine Health: God's Promise for His Daughters.' There will also be a special prayer session for families, time for fellowship, and light refreshment. All women, young and old, married and single, are warmly welcome. Please come with your Bible and notebook. Childcare will be provided for mothers with young children.",
     category: "ministry",
     priority: "normal",
     date: "2025-07-14",
@@ -256,7 +256,7 @@ export const mockAnnouncements: Announcement[] = [
   {
     id: "ann-012",
     title: "Church Website and Mobile App Update",
-    body: "We are excited to announce that the Youth Church website and mobile app have been updated with new features to serve you better. You can now stream live services directly from the app, submit prayer requests, register for events, give your tithes and offerings online, and access sermon notes and devotionals. To get the latest version of the app, please update it from the Google Play Store or Apple App Store. If you do not have the app yet, search for 'Youth Assembly' in your app store to download it. Your feedback is valuable — please share your experience with the ICT team.",
+    body: "We are excited to announce that the RCCG King of Glory website and mobile app have been updated with new features to serve you better. You can now stream live services directly from the app, submit prayer requests, register for events, give your tithes and offerings online, and access sermon notes and devotionals. To get the latest version of the app, please update it from the Google Play Store or Apple App Store. If you do not have the app yet, search for 'Youth Assembly' in your app store to download it. Your feedback is valuable — please share your experience with the ICT team.",
     category: "general",
     priority: "low",
     date: "2025-07-13",

@@ -20,11 +20,11 @@ function getDayIcon(day: string) {
 function getDayColor(day: string) {
   switch (day) {
     case "Sunday":
-      return "bg-[#4A148C]";
+      return "bg-[#28166F]";
     case "Tuesday":
       return "bg-[#2E7D32]";
     case "Thursday":
-      return "bg-[#D32F2F]";
+      return "bg-[#DA251D]";
     default:
       return "bg-gray-500";
   }
@@ -103,7 +103,7 @@ export function ServiceTimesCard() {
                         }
                         className={`flex items-center justify-between p-2.5 rounded-xl transition-colors ${
                           isUpcoming
-                            ? "bg-[#EBF0FA] border border-[#4A148C]/15"
+                            ? "bg-[#EBF0FA] border border-[#28166F]/15"
                             : "hover:bg-gray-50"
                         }`}
                       >
@@ -112,14 +112,14 @@ export function ServiceTimesCard() {
                             <p
                               className={`text-sm font-semibold ${
                                 isUpcoming
-                                  ? "text-[#4A148C]"
+                                  ? "text-[#28166F]"
                                   : "text-gray-700"
                               }`}
                             >
                               {service.name}
                             </p>
                             {isUpcoming && (
-                              <span className="text-[10px] font-bold text-[#4A148C] bg-[#4A148C]/10 px-1.5 py-0.5 rounded-md uppercase tracking-wider">
+                              <span className="text-[10px] font-bold text-[#28166F] bg-[#28166F]/10 px-1.5 py-0.5 rounded-md uppercase tracking-wider">
                                 Next
                               </span>
                             )}
@@ -132,7 +132,7 @@ export function ServiceTimesCard() {
                         </div>
                         <p
                           className={`text-xs font-semibold whitespace-nowrap ml-3 ${
-                            isUpcoming ? "text-[#4A148C]" : "text-gray-500"
+                            isUpcoming ? "text-[#28166F]" : "text-gray-500"
                           }`}
                         >
                           {service.startTime}
@@ -184,7 +184,7 @@ export function ServiceTimesCard() {
                         }
                         className={`flex items-center justify-between p-2.5 rounded-xl transition-colors ${
                           isUpcoming
-                            ? "bg-[#EBF0FA] border border-[#4A148C]/15"
+                            ? "bg-[#EBF0FA] border border-[#28166F]/15"
                             : "hover:bg-gray-50"
                         }`}
                       >
@@ -193,14 +193,14 @@ export function ServiceTimesCard() {
                             <p
                               className={`text-sm font-semibold ${
                                 isUpcoming
-                                  ? "text-[#4A148C]"
+                                  ? "text-[#28166F]"
                                   : "text-gray-700"
                               }`}
                             >
                               {service.name}
                             </p>
                             {isUpcoming && (
-                              <span className="text-[10px] font-bold text-[#4A148C] bg-[#4A148C]/10 px-1.5 py-0.5 rounded-md uppercase tracking-wider">
+                              <span className="text-[10px] font-bold text-[#28166F] bg-[#28166F]/10 px-1.5 py-0.5 rounded-md uppercase tracking-wider">
                                 Next
                               </span>
                             )}
@@ -213,7 +213,7 @@ export function ServiceTimesCard() {
                         </div>
                         <p
                           className={`text-xs font-semibold whitespace-nowrap ml-3 ${
-                            isUpcoming ? "text-[#4A148C]" : "text-gray-500"
+                            isUpcoming ? "text-[#28166F]" : "text-gray-500"
                           }`}
                         >
                           {service.startTime}

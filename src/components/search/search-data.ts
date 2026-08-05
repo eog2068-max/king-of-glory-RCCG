@@ -224,12 +224,12 @@ const mockSearchResults: SearchResult[] = [
   {
     id: "evt3",
     type: "event",
-    title: "MFM Holy Ghost Congress",
+    title: "RCCG Holy Ghost Congress",
     description:
-      "The annual Holy Ghost Congress of Mountain of Fire and Miracles Ministries. A gathering of millions of believers worldwide for supernatural encounters, miracles, and divine empowerment.",
+      "The annual Holy Ghost Congress of The Redeemed Christian Church of God. A gathering of millions of believers worldwide for supernatural encounters, miracles, and divine empowerment.",
     url: "/events#evt3",
     date: "2025-12-08",
-    tags: ["congress", "holy ghost", "miracles", "MFM"],
+    tags: ["congress", "holy ghost", "miracles", "RCCG"],
     meta: { location: "Redemption Camp", time: "6:00 PM" },
   },
   {
@@ -261,7 +261,7 @@ const mockSearchResults: SearchResult[] = [
     type: "announcement",
     title: "New Member Classes Begin",
     description:
-      "Welcome to MFM Youth Church! New member orientation classes begin this Sunday. Learn about our church history, beliefs, departments, and how to get plugged into the life of the church.",
+      "Welcome to RCCG King of Glory! New member orientation classes begin this Sunday. Learn about our church history, beliefs, departments, and how to get plugged into the life of the church.",
     url: "/announcements#ann1",
     date: "2025-07-14",
     tags: ["new members", "orientation", "welcome", "classes"],
@@ -421,7 +421,7 @@ const mockSearchResults: SearchResult[] = [
     type: "page",
     title: "About Us",
     description:
-      "Learn about MFM Youth Church, our history, mission, vision, and core values. Discover who we are and what drives our passion for kingdom advancement and community impact.",
+      "Learn about RCCG King of Glory, our history, mission, vision, and core values. Discover who we are and what drives our passion for kingdom advancement and community impact.",
     url: "/about",
     date: "2025-01-01",
     tags: ["about", "history", "mission", "vision"],
@@ -432,7 +432,7 @@ const mockSearchResults: SearchResult[] = [
     type: "page",
     title: "Leadership",
     description:
-      "Meet the dedicated leaders and pastors who serve at MFM Youth Church. Our leadership team is committed to shepherding the flock with integrity, love, and the Word of God.",
+      "Meet the dedicated leaders and pastors who serve at RCCG King of Glory. Our leadership team is committed to shepherding the flock with integrity, love, and the Word of God.",
     url: "/leadership",
     date: "2025-01-01",
     tags: ["leadership", "pastors", "elders", "team"],
@@ -467,7 +467,7 @@ const mockSearchResults: SearchResult[] = [
     type: "leader",
     title: "Pastor Adebayo",
     description:
-      "Senior Pastor of MFM Youth Church, Utako, Abuja. A dedicated servant of God with over 20 years of ministry experience, passionate about teaching the Word and raising leaders.",
+      "Senior Pastor of RCCG King of Glory, Utako, Abuja. A dedicated servant of God with over 20 years of ministry experience, passionate about teaching the Word and raising leaders.",
     url: "/leadership#lead1",
     date: "2025-01-01",
     tags: ["pastor", "senior pastor", "leader", "teacher"],
@@ -478,7 +478,7 @@ const mockSearchResults: SearchResult[] = [
     type: "leader",
     title: "Minister Chukwu",
     description:
-      "Associate Minister at MFM Youth Church. A gifted teacher of the Word with a passion for discipleship and youth mentorship. Leads the Bible Study ministry.",
+      "Associate Minister at RCCG King of Glory. A gifted teacher of the Word with a passion for discipleship and youth mentorship. Leads the Bible Study ministry.",
     url: "/leadership#lead2",
     date: "2025-01-01",
     tags: ["minister", "teacher", "discipleship", "youth"],

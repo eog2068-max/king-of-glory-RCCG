@@ -55,7 +55,7 @@ function CountdownTimer({ targetTime, targetDay }: { targetTime: string; targetD
     <div className="flex items-center gap-2">
       {units.map((unit) => (
         <div key={unit.label} className="text-center">
-          <div className="bg-[#1A0033] text-white text-xl md:text-2xl font-bold w-14 md:w-16 h-14 md:h-16 rounded-xl flex items-center justify-center tabular-nums">
+          <div className="bg-[#0D0B1A] text-white text-xl md:text-2xl font-bold w-14 md:w-16 h-14 md:h-16 rounded-xl flex items-center justify-center tabular-nums">
             {String(unit.value).padStart(2, "0")}
           </div>
           <p className="text-[10px] text-gray-400 mt-1 uppercase tracking-wider">{unit.label}</p>
@@ -103,10 +103,10 @@ export function ServiceScheduleSection() {
         >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
-              <Badge className="bg-[#F3E5F5] text-[#4A148C] border-0 text-xs font-semibold uppercase tracking-wider mb-3">
+              <Badge className="bg-[#E8E0F0] text-[#28166F] border-0 text-xs font-semibold uppercase tracking-wider mb-3">
                 Next Live Stream
               </Badge>
-              <h3 className="text-xl md:text-2xl font-bold text-[#4A148C] mb-1">
+              <h3 className="text-xl md:text-2xl font-bold text-[#28166F] mb-1">
                 {nextService.title}
               </h3>
               <p className="text-sm text-gray-500 max-w-md">
@@ -132,7 +132,7 @@ export function ServiceScheduleSection() {
 
       {/* Full schedule */}
       <div>
-        <h3 className="text-lg font-bold text-[#4A148C] mb-4">Weekly Service Schedule</h3>
+        <h3 className="text-lg font-bold text-[#28166F] mb-4">Weekly Service Schedule</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {serviceSchedules.map((service, i) => {
             const IconComp = iconMap[service.icon] || Radio;
@@ -147,21 +147,21 @@ export function ServiceScheduleSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.08 }}
                 className={`bg-white rounded-xl border shadow-sm overflow-hidden transition-all ${
-                  isNext ? "border-[#4A148C]/20 shadow-md ring-1 ring-[#4A148C]/5" : "border-gray-100"
+                  isNext ? "border-[#28166F]/20 shadow-md ring-1 ring-[#28166F]/5" : "border-gray-100"
                 }`}
               >
                 <div className="p-5">
                   <div className="flex items-start gap-4">
                     <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 ${
-                      isNext ? "bg-[#4A148C]" : "bg-[#F3E5F5]"
+                      isNext ? "bg-[#28166F]" : "bg-[#E8E0F0]"
                     }`}>
-                      <IconComp className={`size-5 ${isNext ? "text-white" : "text-[#4A148C]"}`} />
+                      <IconComp className={`size-5 ${isNext ? "text-white" : "text-[#28166F]"}`} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <h4 className="text-sm font-bold text-[#4A148C]">{service.title}</h4>
+                        <h4 className="text-sm font-bold text-[#28166F]">{service.title}</h4>
                         {isNext && (
-                          <span className="text-[10px] font-bold text-[#D32F2F] bg-red-50 px-2 py-0.5 rounded-md uppercase tracking-wider">
+                          <span className="text-[10px] font-bold text-[#DA251D] bg-red-50 px-2 py-0.5 rounded-md uppercase tracking-wider">
                             Up Next
                           </span>
                         )}
@@ -200,8 +200,8 @@ export function ServiceScheduleSection() {
                     onClick={() => toggleReminder(service.id)}
                     className={`text-xs font-medium rounded-lg h-8 px-3 ${
                       hasReminder
-                        ? "text-[#D32F2F] hover:text-[#B71C1C] hover:bg-red-50"
-                        : "text-gray-500 hover:text-[#4A148C] hover:bg-[#F3E5F5]"
+                        ? "text-[#DA251D] hover:text-[#B91C1C] hover:bg-red-50"
+                        : "text-gray-500 hover:text-[#28166F] hover:bg-[#E8E0F0]"
                     }`}
                   >
                     {hasReminder ? (

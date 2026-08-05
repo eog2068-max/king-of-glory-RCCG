@@ -20,7 +20,7 @@ export async function GET() {
       create: {
         id: "singleton",
         referralLinkBaseUrl: "https://mfm-youthchurch.app/r/",
-        qrCodeDefaultColor: "#4A148C",
+        qrCodeDefaultColor: "#28166F",
         qrCodeDefaultSize: 512,
         leaderboardRefreshIntervalSec: 300,
         leaderboardShowRealNames: true,

@@ -178,7 +178,7 @@ export const quickActions: QuickAction[] = [
     icon: "BookOpen",
     description: "Upload a new sermon to the library",
     href: "#",
-    color: "#4A148C",
+    color: "#28166F",
   },
   {
     id: "qa-2",
@@ -194,7 +194,7 @@ export const quickActions: QuickAction[] = [
     icon: "Megaphone",
     description: "Post a new announcement",
     href: "#",
-    color: "#D32F2F",
+    color: "#DA251D",
   },
   {
     id: "qa-4",
@@ -202,7 +202,7 @@ export const quickActions: QuickAction[] = [
     icon: "MessageSquare",
     description: "Review submitted prayer requests",
     href: "#",
-    color: "#6A1B9A",
+    color: "#3D2080",
   },
   {
     id: "qa-5",

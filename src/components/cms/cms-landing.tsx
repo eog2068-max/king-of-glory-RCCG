@@ -31,7 +31,7 @@ const cmsFeatures = [
     href: "/announcements",
     icon: Megaphone,
     emoji: "📢",
-    gradient: "from-[#4A148C] to-[#7B1FA2]",
+    gradient: "from-[#28166F] to-[#3D2080]",
   },
   {
     name: "Events & Registration",
@@ -39,7 +39,7 @@ const cmsFeatures = [
     href: "/events",
     icon: CalendarDays,
     emoji: "📅",
-    gradient: "from-[#6A1B9A] to-[#9C27B0]",
+    gradient: "from-[#3D2080] to-[#9C27B0]",
   },
   {
     name: "Devotionals",
@@ -47,7 +47,7 @@ const cmsFeatures = [
     href: "/devotionals",
     icon: BookOpen,
     emoji: "📖",
-    gradient: "from-[#1A0033] to-[#4A148C]",
+    gradient: "from-[#0D0B1A] to-[#28166F]",
   },
   {
     name: "Sermons",
@@ -63,7 +63,7 @@ const cmsFeatures = [
     href: "/prayer",
     icon: HandHeart,
     emoji: "🙏",
-    gradient: "from-[#D32F2F] to-[#EF5350]",
+    gradient: "from-[#DA251D] to-[#EF4444]",
   },
   {
     name: "Ministries",
@@ -71,7 +71,7 @@ const cmsFeatures = [
     href: "/join-ministry",
     icon: Music,
     emoji: "🎵",
-    gradient: "from-[#4A148C] to-[#6A1B9A]",
+    gradient: "from-[#28166F] to-[#3D2080]",
   },
   {
     name: "Departments",
@@ -79,7 +79,7 @@ const cmsFeatures = [
     href: "/departments",
     icon: Building2,
     emoji: "🏛️",
-    gradient: "from-[#7B1FA2] to-[#9C27B0]",
+    gradient: "from-[#3D2080] to-[#9C27B0]",
   },
   {
     name: "Church Media",
@@ -87,7 +87,7 @@ const cmsFeatures = [
     href: "/media",
     icon: Film,
     emoji: "🎬",
-    gradient: "from-[#1A0033] to-[#303F9F]",
+    gradient: "from-[#0D0B1A] to-[#303F9F]",
   },
   {
     name: "Photo Gallery",
@@ -95,7 +95,7 @@ const cmsFeatures = [
     href: "/gallery",
     icon: Camera,
     emoji: "📸",
-    gradient: "from-[#6A1B9A] to-[#7B1FA2]",
+    gradient: "from-[#3D2080] to-[#3D2080]",
   },
   {
     name: "Member Gallery",
@@ -103,7 +103,7 @@ const cmsFeatures = [
     href: "/members",
     icon: Users,
     emoji: "👥",
-    gradient: "from-[#4A148C] to-[#9C27B0]",
+    gradient: "from-[#28166F] to-[#9C27B0]",
   },
   {
     name: "Giving",
@@ -111,7 +111,7 @@ const cmsFeatures = [
     href: "/giving",
     icon: Gift,
     emoji: "💝",
-    gradient: "from-[#D32F2F] to-[#E57373]",
+    gradient: "from-[#DA251D] to-[#E57373]",
   },
   {
     name: "Testimonies",
@@ -127,7 +127,7 @@ const cmsFeatures = [
     href: "/contact",
     icon: Mail,
     emoji: "✉️",
-    gradient: "from-[#7B1FA2] to-[#7986CB]",
+    gradient: "from-[#3D2080] to-[#7986CB]",
   },
 ];
 
@@ -149,9 +149,9 @@ const highlights = [
 
 export function CmsLanding() {
   return (
-    <div className="min-h-screen bg-[#F3E5F5]">
+    <div className="min-h-screen bg-[#E8E0F0]">
       {/* ===== HERO — Rich gradient background with glow ===== */}
-      <section className="relative overflow-hidden bg-[#1A0033] pb-20">
+      <section className="relative overflow-hidden bg-[#0D0B1A] pb-20">
         {/* Animated glow background */}
         <div className="absolute inset-0">
           <div
@@ -277,13 +277,13 @@ export function CmsLanding() {
         >
           {/* Decorative dash */}
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-8 bg-[#4A148C]/30" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#4A148C]/60">
+            <div className="h-px w-8 bg-[#28166F]/30" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#28166F]/60">
               13 Features
             </span>
-            <div className="h-px w-8 bg-[#4A148C]/30" />
+            <div className="h-px w-8 bg-[#28166F]/30" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-[#1A0033] mb-3">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-[#0D0B1A] mb-3">
             All Your Church Needs, One Tap Away
           </h2>
           <p className="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
@@ -321,7 +321,7 @@ export function CmsLanding() {
                       <p className="text-xs text-gray-500 leading-relaxed mb-3.5">
                         {feature.description}
                       </p>
-                      <div className="flex items-center gap-1.5 text-xs text-[#4A148C] font-semibold group-hover:gap-2.5 transition-all duration-300">
+                      <div className="flex items-center gap-1.5 text-xs text-[#28166F] font-semibold group-hover:gap-2.5 transition-all duration-300">
                         <span>Open</span>
                         <ChevronRight className="size-3.5" />
                       </div>
@@ -343,7 +343,7 @@ export function CmsLanding() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C] mb-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#28166F] mb-3">
               Why CMS?
             </h2>
             <p className="text-gray-500 max-w-md mx-auto">
@@ -363,7 +363,7 @@ export function CmsLanding() {
                   transition={{ delay: i * 0.1 }}
                   className="text-center"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#4A148C] to-[#7B1FA2] flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-900/20">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#28166F] to-[#3D2080] flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-900/20">
                     <Icon className="size-7 text-white" />
                   </div>
                   <h3 className="text-sm font-bold text-gray-800 mb-1.5">
@@ -380,7 +380,7 @@ export function CmsLanding() {
       </section>
 
       {/* ===== BOTTOM CTA ===== */}
-      <section className="bg-gradient-to-r from-[#1A0033] via-[#4A148C] to-[#6A1B9A] py-16">
+      <section className="bg-gradient-to-r from-[#0D0B1A] via-[#28166F] to-[#3D2080] py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -399,7 +399,7 @@ export function CmsLanding() {
             </p>
             <Link
               href="/announcements"
-              className="inline-flex items-center gap-2 bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-8 py-3.5 rounded-xl font-bold transition-colors shadow-lg shadow-red-900/30 text-sm"
+              className="inline-flex items-center gap-2 bg-[#DA251D] hover:bg-[#B91C1C] text-white px-8 py-3.5 rounded-xl font-bold transition-colors shadow-lg shadow-red-900/30 text-sm"
             >
               <Megaphone className="size-4" />
               View Announcements

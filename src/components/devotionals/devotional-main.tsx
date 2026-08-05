@@ -31,7 +31,7 @@ import {
 } from "./devotionals-data";
 
 const iconMap: Record<string, React.ReactNode> = {
-  heart: <Heart className="size-5 text-[#D32F2F]" />,
+  heart: <Heart className="size-5 text-[#DA251D]" />,
   flame: <Flame className="size-5 text-red-500" />,
   home: <Home className="size-5 text-[#2E7D32]" />,
   star: <Star className="size-5 text-amber-500" />,
@@ -128,7 +128,7 @@ export function DevotionalMain() {
             <button
               className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                 view === "today"
-                  ? "bg-white text-[#4A148C] shadow-sm"
+                  ? "bg-white text-[#28166F] shadow-sm"
                   : "text-gray-500 hover:text-gray-700"
               }`}
               onClick={() => setView("today")}
@@ -141,7 +141,7 @@ export function DevotionalMain() {
             <button
               className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                 view === "all"
-                  ? "bg-white text-[#4A148C] shadow-sm"
+                  ? "bg-white text-[#28166F] shadow-sm"
                   : "text-gray-500 hover:text-gray-700"
               }`}
               onClick={() => setView("all")}
@@ -207,12 +207,12 @@ export function DevotionalMain() {
                 {/* Quick Stats */}
                 <div className="bg-white rounded-xl border border-gray-100 p-5">
                   <h3 className="text-sm font-bold text-gray-800 mb-4 flex items-center gap-2">
-                    <SlidersHorizontal className="size-4 text-[#4A148C]" />
+                    <SlidersHorizontal className="size-4 text-[#28166F]" />
                     Quick Stats
                   </h3>
                   <div className="grid grid-cols-3 gap-3">
-                    <div className="text-center p-3 rounded-lg bg-[#F3E5F5]">
-                      <div className="text-xl font-bold text-[#4A148C]">
+                    <div className="text-center p-3 rounded-lg bg-[#E8E0F0]">
+                      <div className="text-xl font-bold text-[#28166F]">
                         {devotionals.length}
                       </div>
                       <div className="text-[10px] text-gray-500 mt-0.5 font-medium">
@@ -228,7 +228,7 @@ export function DevotionalMain() {
                       </div>
                     </div>
                     <div className="text-center p-3 rounded-lg bg-red-50">
-                      <div className="text-xl font-bold text-[#D32F2F]">7</div>
+                      <div className="text-xl font-bold text-[#DA251D]">7</div>
                       <div className="text-[10px] text-gray-500 mt-0.5 font-medium">
                         Day Streak
                       </div>
@@ -239,20 +239,20 @@ export function DevotionalMain() {
                 {/* Reading Plans */}
                 <div className="bg-white rounded-xl border border-gray-100 p-5">
                   <h3 className="text-sm font-bold text-gray-800 mb-4 flex items-center gap-2">
-                    <FlameKindling className="size-4 text-[#D32F2F]" />
+                    <FlameKindling className="size-4 text-[#DA251D]" />
                     Reading Plans
                   </h3>
                   <div className="space-y-3 max-h-72 overflow-y-auto">
                     {readingPlans.map((plan) => (
                       <div
                         key={plan.id}
-                        className="flex items-start gap-3 p-3 rounded-lg bg-[#F8FAFF] hover:bg-[#F3E5F5] transition-colors cursor-pointer group"
+                        className="flex items-start gap-3 p-3 rounded-lg bg-[#F8FAFF] hover:bg-[#E8E0F0] transition-colors cursor-pointer group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center shrink-0 mt-0.5">
                           {iconMap[plan.icon]}
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-semibold text-gray-800 group-hover:text-[#4A148C] transition-colors leading-snug">
+                          <p className="text-sm font-semibold text-gray-800 group-hover:text-[#28166F] transition-colors leading-snug">
                             {plan.title}
                           </p>
                           <p className="text-xs text-gray-400 mt-0.5 flex items-center gap-2">
@@ -283,7 +283,7 @@ export function DevotionalMain() {
                 <button
                   className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                     activeCategory === "all"
-                      ? "bg-[#4A148C] text-white"
+                      ? "bg-[#28166F] text-white"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                   }`}
                   onClick={() => setActiveCategory("all")}

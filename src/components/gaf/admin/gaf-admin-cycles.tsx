@@ -130,14 +130,14 @@ export function GafAdminCycles({ categories }: { categories: Category[] }) {
     <div className="p-4 lg:p-8 space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl lg:text-3xl font-bold text-[#4A148C]">Reward Cycles</h1>
+          <h1 className="text-2xl lg:text-3xl font-bold text-[#28166F]">Reward Cycles</h1>
           <p className="text-sm text-gray-500 mt-1">
             Manage quarterly award cycles and compute winners
           </p>
         </div>
         <Dialog open={createOpen} onOpenChange={setCreateOpen}>
           <DialogTrigger asChild>
-            <Button className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl gap-2">
+            <Button className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl gap-2">
               <Plus className="size-4" />
               New Cycle
             </Button>
@@ -186,7 +186,7 @@ export function GafAdminCycles({ categories }: { categories: Category[] }) {
               <Button
                 onClick={handleCreate}
                 disabled={creating || !newCat || !newQuarter}
-                className="bg-[#4A148C] hover:bg-[#1A0033] text-white gap-2"
+                className="bg-[#28166F] hover:bg-[#0D0B1A] text-white gap-2"
               >
                 {creating ? <Loader2 className="size-4 animate-spin" /> : <Plus className="size-4" />}
                 Create
@@ -206,7 +206,7 @@ export function GafAdminCycles({ categories }: { categories: Category[] }) {
       {loading ? (
         <Card className="border-0 shadow-md">
           <CardContent className="py-16 flex justify-center">
-            <Loader2 className="size-8 text-[#4A148C] animate-spin" />
+            <Loader2 className="size-8 text-[#28166F] animate-spin" />
           </CardContent>
         </Card>
       ) : cycles.length === 0 ? (
@@ -224,7 +224,7 @@ export function GafAdminCycles({ categories }: { categories: Category[] }) {
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="font-bold text-[#4A148C]">{cycle.name}</h3>
+                    <h3 className="font-bold text-[#28166F]">{cycle.name}</h3>
                     <p className="text-xs text-gray-500 mt-0.5">{cycle.category.name}</p>
                   </div>
                   <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${STATUS_COLORS[cycle.status] || STATUS_COLORS.closed}`}>

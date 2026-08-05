@@ -132,11 +132,11 @@ export function PWAProvider({ children }: { children: React.ReactNode }) {
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
               <DialogTitle className="flex items-center gap-2">
-                <Download className="h-5 w-5 text-[#4A148C]" />
-                Install Youth Assembly App
+                <Download className="h-5 w-5 text-[#28166F]" />
+                Install RCCG King of Glory App
               </DialogTitle>
               <DialogDescription>
-                Add Youth Church to your home screen for quick access
+                Add RCCG King of Glory to your home screen for quick access
                 and an app-like experience. You&apos;ll be able to access
                 content even offline.
               </DialogDescription>
@@ -144,7 +144,7 @@ export function PWAProvider({ children }: { children: React.ReactNode }) {
             <div className="flex items-center justify-center py-4">
               <img
                 src="/icons/icon-192x192.png"
-                alt="MFM Youth Church"
+                alt="RCCG King of Glory"
                 className="w-24 h-24 rounded-2xl"
               />
             </div>
@@ -158,7 +158,7 @@ export function PWAProvider({ children }: { children: React.ReactNode }) {
               </Button>
               <Button
                 onClick={handleInstall}
-                className="w-full sm:w-auto bg-[#4A148C] hover:bg-[#1A0033] text-white"
+                className="w-full sm:w-auto bg-[#28166F] hover:bg-[#0D0B1A] text-white"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Install App
@@ -170,7 +170,7 @@ export function PWAProvider({ children }: { children: React.ReactNode }) {
 
       {/* Offline Banner */}
       {showOfflineBanner && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#D32F2F] text-white p-3 text-center text-sm flex items-center justify-center gap-2 animate-in slide-in-from-bottom-5 duration-300">
+        <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#DA251D] text-white p-3 text-center text-sm flex items-center justify-center gap-2 animate-in slide-in-from-bottom-5 duration-300">
           <span>
             You are currently offline. Some features may be limited.
           </span>

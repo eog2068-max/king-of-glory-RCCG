@@ -48,7 +48,7 @@ const beliefs = [
   {
     title: "Spiritual Warfare",
     content:
-      "We believe in the reality of spiritual warfare and that believers are called to wage war against the kingdom of darkness through the power of the Holy Spirit, the blood of Jesus, and the Word of God. We are equipped to pull down strongholds, cast out demons, and enforce the victory of Calvary in every area of life.",
+      "We believe in the reality of spiritual warfare and that believers have authority in Christ over the powers of darkness. Through the power of the Holy Spirit, the blood of Jesus, and the Word of God, we stand firm in faith, resist the devil, and walk in the victory that Christ has already won at Calvary.",
   },
   {
     title: "Holiness and Sanctification",
@@ -63,7 +63,7 @@ export function AboutBeliefs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="What We Believe"
-          subtitle="Our statement of faith is rooted in the eternal Word of God and aligned with the foundational beliefs of Mountain of Fire and Miracles Ministries worldwide."
+          subtitle="Our statement of faith is rooted in the eternal Word of God and aligned with the foundational beliefs of The Redeemed Christian Church of God worldwide."
         />
 
         <div className="grid md:grid-cols-2 gap-6 mt-12">
@@ -74,14 +74,14 @@ export function AboutBeliefs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="group p-6 md:p-7 rounded-2xl border border-gray-100 hover:border-[#4A148C]/15 hover:shadow-lg hover:shadow-[#4A148C]/5 transition-all duration-300 bg-white"
+              className="group p-6 md:p-7 rounded-2xl border border-gray-100 hover:border-[#28166F]/15 hover:shadow-lg hover:shadow-[#28166F]/5 transition-all duration-300 bg-white"
             >
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#F3E5F5] flex items-center justify-center shrink-0 group-hover:bg-[#4A148C] transition-colors duration-300">
-                  <CheckCircle className="size-5 text-[#4A148C] group-hover:text-white transition-colors duration-300" />
+                <div className="w-10 h-10 rounded-xl bg-[#E8E0F0] flex items-center justify-center shrink-0 group-hover:bg-[#28166F] transition-colors duration-300">
+                  <CheckCircle className="size-5 text-[#28166F] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#4A148C] mb-2">{belief.title}</h3>
+                  <h3 className="text-lg font-bold text-[#28166F] mb-2">{belief.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{belief.content}</p>
                 </div>
               </div>

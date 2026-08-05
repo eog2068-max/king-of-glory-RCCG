@@ -28,7 +28,7 @@ export async function POST() {
         referralLinkBaseUrl: process.env.NEXT_PUBLIC_GAF_BASE_URL
           ? `${process.env.NEXT_PUBLIC_GAF_BASE_URL}/r/`
           : "https://mfm-youthchurch.app/r/",
-        qrCodeDefaultColor: "#4A148C",
+        qrCodeDefaultColor: "#28166F",
         qrCodeDefaultSize: 512,
         leaderboardRefreshIntervalSec: 300,
         leaderboardShowRealNames: true,
@@ -59,7 +59,7 @@ export async function POST() {
             name: "Soul Winner of the Quarter",
             description: "Awarded to the member who wins the most souls (by total gospel-labor points) during a calendar quarter.",
             icon: "Trophy",
-            color: "#D32F2F",
+            color: "#DA251D",
             criteria: "Highest total gospel-labor points from referrals whose status progressed during the quarter.",
             scoringRule: JSON.stringify({ metric: "total_score", topN: 3 }),
             displayOrder: 1,
@@ -69,7 +69,7 @@ export async function POST() {
             name: "Top Inviter",
             description: "Awarded to the member who invited the most new people (by count, regardless of follow-through).",
             icon: "Users",
-            color: "#4A148C",
+            color: "#28166F",
             criteria: "Highest count of referrals created during the quarter.",
             scoringRule: JSON.stringify({ metric: "invite_count", topN: 3 }),
             displayOrder: 2,

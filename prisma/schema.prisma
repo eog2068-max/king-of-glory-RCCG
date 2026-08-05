@@ -176,7 +176,7 @@ model PastoralCommendation {
 
 model AdminConfig {
   id                                String   @id @default("singleton")
-  referralLinkBaseUrl               String // e.g. "https://rccg-rehoboth.app/r/"
+  referralLinkBaseUrl               String // e.g. "https://rccgkingofglory.org/r/"
   qrCodeDefaultColor                String   @default("#1A237E")
   qrCodeDefaultSize                 Int      @default(512)
   leaderboardRefreshIntervalSec     Int      @default(300)

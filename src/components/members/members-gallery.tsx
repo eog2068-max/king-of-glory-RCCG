@@ -154,7 +154,7 @@ export function MembersGallery() {
         <SectionWrapper>
           <SectionTitle
             title="Our Members"
-            subtitle="The beautiful people who make Youth Church a thriving family of faith"
+            subtitle="The beautiful people who make RCCG King of Glory a thriving family of faith"
           />
         </SectionWrapper>
 
@@ -168,7 +168,7 @@ export function MembersGallery() {
                 placeholder="Search by name, role, or department..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="pl-10 rounded-xl border-gray-200 bg-white h-11 focus:border-[#4A148C]/30"
+                className="pl-10 rounded-xl border-gray-200 bg-white h-11 focus:border-[#28166F]/30"
               />
             </div>
 
@@ -179,7 +179,7 @@ export function MembersGallery() {
                 <select
                   value={selectedDept}
                   onChange={(e) => setSelectedDept(e.target.value)}
-                  className="pl-10 pr-8 h-11 rounded-xl border border-gray-200 bg-white text-sm text-gray-700 appearance-none cursor-pointer focus:outline-none focus:border-[#4A148C]/30 focus:ring-2 focus:ring-[#4A148C]/10"
+                  className="pl-10 pr-8 h-11 rounded-xl border border-gray-200 bg-white text-sm text-gray-700 appearance-none cursor-pointer focus:outline-none focus:border-[#28166F]/30 focus:ring-2 focus:ring-[#28166F]/10"
                 >
                   {departments.map((dept) => (
                     <option key={dept} value={dept}>
@@ -195,7 +195,7 @@ export function MembersGallery() {
                   onClick={() => setViewMode("grid")}
                   className={`p-2 rounded-lg transition-colors ${
                     viewMode === "grid"
-                      ? "bg-[#4A148C] text-white"
+                      ? "bg-[#28166F] text-white"
                       : "text-gray-400 hover:text-gray-600"
                   }`}
                   aria-label="Grid view"
@@ -206,7 +206,7 @@ export function MembersGallery() {
                   onClick={() => setViewMode("list")}
                   className={`p-2 rounded-lg transition-colors ${
                     viewMode === "list"
-                      ? "bg-[#4A148C] text-white"
+                      ? "bg-[#28166F] text-white"
                       : "text-gray-400 hover:text-gray-600"
                   }`}
                   aria-label="List view"
@@ -219,7 +219,7 @@ export function MembersGallery() {
               {isAdmin && (
                 <Button
                   onClick={() => setShowAddModal(true)}
-                  className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl h-11 font-semibold shadow-md"
+                  className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl h-11 font-semibold shadow-md"
                 >
                   <Plus className="size-4" />
                   Add Member
@@ -231,7 +231,7 @@ export function MembersGallery() {
 
         {/* Results count */}
         <p className="text-sm text-gray-500 mb-6">
-          Showing <span className="font-semibold text-[#4A148C]">{filtered.length}</span> member{filtered.length !== 1 ? "s" : ""}
+          Showing <span className="font-semibold text-[#28166F]">{filtered.length}</span> member{filtered.length !== 1 ? "s" : ""}
           {selectedDept !== "All Departments" && (
             <span> in <span className="font-medium text-gray-700">{selectedDept}</span></span>
           )}
@@ -295,14 +295,14 @@ function MemberListItem({ member, index }: { member: Member; index: number }) {
       className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
     >
       {/* Avatar */}
-      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#F3E5F5] to-[#E8EDFF] flex items-center justify-center shrink-0">
-        <span className="text-lg font-bold text-[#4A148C]">
+      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#E8E0F0] to-[#E8EDFF] flex items-center justify-center shrink-0">
+        <span className="text-lg font-bold text-[#28166F]">
           {member.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
         </span>
       </div>
 
       <div className="flex-1 min-w-0">
-        <h3 className="text-sm font-semibold text-[#4A148C] truncate">{member.name}</h3>
+        <h3 className="text-sm font-semibold text-[#28166F] truncate">{member.name}</h3>
         <p className="text-xs text-gray-500 mt-0.5">
           {member.role}
           {member.department && (

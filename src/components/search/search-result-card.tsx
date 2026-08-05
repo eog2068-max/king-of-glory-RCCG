@@ -77,7 +77,7 @@ export function SearchResultCard({ result, index }: SearchResultCardProps) {
             </div>
 
             {/* Title */}
-            <h3 className="text-base font-semibold text-gray-900 group-hover:text-[#4A148C] transition-colors line-clamp-1 mb-1">
+            <h3 className="text-base font-semibold text-gray-900 group-hover:text-[#28166F] transition-colors line-clamp-1 mb-1">
               {result.title}
             </h3>
 

@@ -13,7 +13,7 @@ const stats = [
 
 export function GafCta() {
   return (
-    <section className="relative bg-gradient-to-br from-[#4A148C] via-[#6A1B9A] to-[#7B1FA2] py-20 md:py-28 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#28166F] via-[#3D2080] to-[#3D2080] py-20 md:py-28 overflow-hidden">
       {/* Decorative pattern overlay */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -117,7 +117,7 @@ export function GafCta() {
         >
           <Link
             href="/go-a-fishing"
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#4A148C] px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition-colors shadow-lg text-sm"
+            className="inline-flex items-center justify-center gap-2 bg-white text-[#28166F] px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition-colors shadow-lg text-sm"
           >
             GO-A-FISHING
             <ArrowRight className="w-4 h-4" />

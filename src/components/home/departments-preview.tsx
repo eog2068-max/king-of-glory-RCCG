@@ -7,7 +7,7 @@ const departments = [
     name: "Choir (Music)",
     description: "Leading the congregation in heartfelt worship and praise through music and songs.",
     icon: Music,
-    color: "text-[#4A148C]",
+    color: "text-[#28166F]",
     bg: "bg-[#EBF0FA]",
   },
   {
@@ -21,11 +21,11 @@ const departments = [
     name: "Children Church",
     description: "Nurturing the next generation with Bible-based teachings, fun activities, and godly values.",
     icon: Baby,
-    color: "text-[#D32F2F]",
+    color: "text-[#DA251D]",
     bg: "bg-[#FFEBEE]",
   },
   {
-    name: "Youth Church",
+    name: "RCCG King of Glory",
     description: "Empowering young people to live purpose-driven lives and impact their generation for Christ.",
     icon: Sparkles,
     color: "text-[#C62828]",
@@ -35,8 +35,8 @@ const departments = [
     name: "Media",
     description: "Leveraging technology and creative arts to broadcast the gospel and enhance worship experiences.",
     icon: Camera,
-    color: "text-[#6A1B9A]",
-    bg: "bg-[#F3E5F5]",
+    color: "text-[#3D2080]",
+    bg: "bg-[#E8E0F0]",
   },
   {
     name: "Evangelism",
@@ -49,7 +49,7 @@ const departments = [
 
 export function DepartmentsPreview() {
   return (
-    <SectionWrapper className="bg-[#F3E5F5] py-16 md:py-24">
+    <SectionWrapper className="bg-[#E8E0F0] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionTitle title="Our Departments" subtitle="Serving God together through diverse ministries" />
 
@@ -62,12 +62,12 @@ export function DepartmentsPreview() {
               <div className={`w-12 h-12 ${dept.bg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <dept.icon className={`size-6 ${dept.color}`} />
               </div>
-              <h3 className="text-lg font-bold text-[#4A148C] mb-2">{dept.name}</h3>
+              <h3 className="text-lg font-bold text-[#28166F] mb-2">{dept.name}</h3>
               <p className="text-sm text-gray-600 leading-relaxed">{dept.description}</p>
               {dept.name === "Evangelism" && (
                 <Link
                   href="/go-a-fishing"
-                  className="inline-flex items-center gap-1 mt-2 text-[#7B1FA2] text-xs font-semibold hover:gap-2 transition-all"
+                  className="inline-flex items-center gap-1 mt-2 text-[#3D2080] text-xs font-semibold hover:gap-2 transition-all"
                 >
                   Go-A-Fishing →
                 </Link>
@@ -79,7 +79,7 @@ export function DepartmentsPreview() {
         <div className="text-center mt-10">
           <Link
             href="/departments"
-            className="inline-flex items-center gap-1.5 text-[#D32F2F] font-semibold hover:gap-2.5 transition-all text-sm"
+            className="inline-flex items-center gap-1.5 text-[#DA251D] font-semibold hover:gap-2.5 transition-all text-sm"
           >
             View All Departments
             <ArrowRight className="size-4" />

@@ -12,14 +12,14 @@ export const givingCategories: GivingCategory[] = [
     name: "Tithe",
     description: "Returning 10% of your income as an act of obedience and trust in God's provision.",
     icon: "TrendingUp",
-    color: "from-[#4A148C] to-[#6A1B9A]",
+    color: "from-[#28166F] to-[#3D2080]",
   },
   {
     id: "offering",
     name: "Offering",
     description: "A freewill gift unto the Lord as an expression of your love and gratitude.",
     icon: "Gift",
-    color: "from-[#D32F2F] to-[#E53935]",
+    color: "from-[#DA251D] to-[#E53935]",
   },
   {
     id: "thanksgiving",
@@ -47,7 +47,7 @@ export const givingCategories: GivingCategory[] = [
     name: "Building Fund",
     description: "Contributing towards the church building project and infrastructure development.",
     icon: "Building2",
-    color: "from-[#6A1B9A] to-[#7B1FA2]",
+    color: "from-[#3D2080] to-[#3D2080]",
   },
   {
     id: "welfare",
@@ -61,13 +61,13 @@ export const givingCategories: GivingCategory[] = [
     name: "Youth Fund",
     description: "Empowering the next generation through youth programmes, scholarships, and events.",
     icon: "Flame",
-    color: "from-[#C62828] to-[#B71C1C]",
+    color: "from-[#C62828] to-[#B91C1C]",
   },
 ];
 
 export const bankDetails = {
   bankName: "Access Bank",
-  accountName: "MFM Youth Church",
+  accountName: "RCCG King of Glory",
   accountNumber: "0045678901",
   sortCode: "",
 };

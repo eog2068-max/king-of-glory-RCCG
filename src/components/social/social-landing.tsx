@@ -212,13 +212,13 @@ export function SocialLandingPage() {
         >
           {/* Decorative dash */}
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-8 bg-[#4A148C]/30" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#4A148C]/60">
+            <div className="h-px w-8 bg-[#28166F]/30" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#28166F]/60">
               Explore
             </span>
-            <div className="h-px w-8 bg-[#4A148C]/30" />
+            <div className="h-px w-8 bg-[#28166F]/30" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-[#1A0033] mb-3">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-[#0D0B1A] mb-3">
             Five Ways to Connect
           </h2>
           <p className="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
@@ -259,7 +259,7 @@ export function SocialLandingPage() {
                       <p className="text-xs text-gray-500 leading-relaxed mb-3.5">
                         {feature.description}
                       </p>
-                      <div className="flex items-center gap-1.5 text-xs text-[#4A148C] font-semibold group-hover:gap-2.5 transition-all duration-300">
+                      <div className="flex items-center gap-1.5 text-xs text-[#28166F] font-semibold group-hover:gap-2.5 transition-all duration-300">
                         {feature.featured ? (
                           <>
                             <span>Enter</span>
@@ -290,7 +290,7 @@ export function SocialLandingPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C] mb-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#28166F] mb-3">
               How It Works Together
             </h2>
             <p className="text-gray-500 max-w-md mx-auto">
@@ -329,7 +329,7 @@ export function SocialLandingPage() {
                 transition={{ delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-3 text-xl">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#28166F] to-[#3D2080] flex items-center justify-center mx-auto mb-3 text-xl">
                   {item.emoji}
                 </div>
                 <h3 className="text-sm font-bold text-gray-800 mb-1">
@@ -367,7 +367,7 @@ export function SocialLandingPage() {
             ].map((item) => (
               <div key={item.title} className="text-center">
                 <div className="w-12 h-12 rounded-xl bg-[#E8ECF8] flex items-center justify-center mx-auto mb-3">
-                  <item.icon className="size-6 text-[#4A148C]" />
+                  <item.icon className="size-6 text-[#28166F]" />
                 </div>
                 <h3 className="text-sm font-bold text-gray-800 mb-1">
                   {item.title}
@@ -382,7 +382,7 @@ export function SocialLandingPage() {
       </section>
 
       {/* ===== BOTTOM CTA ===== */}
-      <section className="bg-gradient-to-r from-[#0B0F3A] to-[#4A148C] py-14">
+      <section className="bg-gradient-to-r from-[#0B0F3A] to-[#28166F] py-14">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -401,7 +401,7 @@ export function SocialLandingPage() {
             </p>
             <Link
               href="/social/family-chat"
-              className="inline-flex items-center gap-2 bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-8 py-3.5 rounded-xl font-bold transition-colors shadow-lg shadow-red-900/30 text-sm"
+              className="inline-flex items-center gap-2 bg-[#DA251D] hover:bg-[#B91C1C] text-white px-8 py-3.5 rounded-xl font-bold transition-colors shadow-lg shadow-red-900/30 text-sm"
             >
               <ChatBubbleIcon className="size-4" />
               Enter FamilyChat

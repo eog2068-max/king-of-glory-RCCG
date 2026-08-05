@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function ChurchVision() {
   return (
-    <section className="relative bg-gradient-to-b from-[#1A0033] via-[#4A148C] to-[#1A0033] py-20 md:py-28 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#0D0B1A] via-[#28166F] to-[#0D0B1A] py-20 md:py-28 overflow-hidden">
       {/* Subtle decorative dot pattern overlay */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -27,7 +27,7 @@ export function ChurchVision() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
           className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-relaxed"
         >
-          PRAYER IS THE MASTER KEY.
+          MAKING HEAVEN IS OUR GOAL.
         </motion.h2>
 
         <motion.h2
@@ -37,7 +37,7 @@ export function ChurchVision() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-relaxed mt-2"
         >
-          HOLINESS IS THE STANDARD.
+          HOLINESS UNTO THE LORD.
         </motion.h2>
 
         <motion.h2
@@ -47,7 +47,7 @@ export function ChurchVision() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-relaxed mt-2"
         >
-          POWER IS THE EVIDENCE.
+          SOUL-WINNING IS OUR MISSION.
         </motion.h2>
 
         <motion.p
@@ -57,9 +57,9 @@ export function ChurchVision() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
           className="text-base md:text-lg text-white/90 leading-relaxed mt-6"
         >
-          We are a generation on fire — committed to prayer, spiritual warfare,
-          holiness, and the pursuit of destiny. At MFM INT&rsquo;L HQ ANNEX Youth Church,
-          we enforce the victory of Calvary, walk in power, and raise an army of
+          We are a vibrant community of believers — committed to prayer, the Word of God,
+          holiness, and the pursuit of His purpose. At RCCG King of Glory Parish, Zonal Headquarters,
+          we live in the victory of Christ, walk in love, and raise an army of
           young people who will fulfil their God-given destiny.
         </motion.p>
       </div>

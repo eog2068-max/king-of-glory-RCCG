@@ -8,9 +8,9 @@ import Link from "next/link";
 export function MinistryCTA() {
   return (
     <section className="relative py-16 md:py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#6A1B9A]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080]" />
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#D32F2F] rounded-full blur-[128px] -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#DA251D] rounded-full blur-[128px] -translate-y-1/2 translate-x-1/3" />
         <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-green-400/20 rounded-full blur-[128px] translate-y-1/2" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -30,7 +30,7 @@ export function MinistryCTA() {
             God has equipped you with unique gifts and abilities. Find your place of service and contribute to the growth of God&apos;s kingdom.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Button asChild size="lg" className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-xl h-12 px-8 font-semibold shadow-lg">
+            <Button asChild size="lg" className="bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-xl h-12 px-8 font-semibold shadow-lg">
               <Link href="/contact"><ArrowRight className="size-4" />Contact Us</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover:text-white rounded-xl h-12 px-8 font-semibold">

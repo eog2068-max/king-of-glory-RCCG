@@ -1,11 +1,11 @@
-const CACHE_NAME = 'mfm-youth-church-v1';
+const CACHE_NAME = 'rccg-king-of-glory-v1';
 const STATIC_ASSETS = [
   '/',
   '/manifest.json',
   '/icons/icon-192x192.png',
   '/icons/icon-512x512.png',
   '/apple-touch-icon.png',
-  '/mfm-logo.png',
+  '/king-of-glory-logo.png',
 ];
 
 // Install: cache static assets

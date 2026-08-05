@@ -59,14 +59,14 @@ export function EInviteCard({
       if (!ctx) return;
 
       // Background.
-      ctx.fillStyle = "#4A148C";
+      ctx.fillStyle = "#28166F";
       ctx.fillRect(0, 0, w, h);
 
       // Simple text rendering (basic — for full rendering, html2canvas would be needed).
       ctx.fillStyle = "#ffffff";
       ctx.font = "bold 28px sans-serif";
       ctx.textAlign = "center";
-      ctx.fillText("MFM Youth Church", w / 2, 60);
+      ctx.fillText("RCCG King of Glory", w / 2, 60);
 
       ctx.font = "18px sans-serif";
       ctx.fillStyle = "#bbdefb";
@@ -139,8 +139,8 @@ export function EInviteCard({
     if (typeof navigator !== "undefined" && typeof navigator.share === "function") {
       try {
         await navigator.share({
-          title: `Invitation from ${memberName} — MFM Youth Church`,
-          text: `${memberName} invites you to MFM Youth Church, Abuja. Scan the QR or tap the link to connect!`,
+          title: `Invitation from ${memberName} — RCCG King of Glory`,
+          text: `${memberName} invites you to RCCG King of Glory, Abuja. Scan the QR or tap the link to connect!`,
           url: fullUrl,
         });
       } catch (err) {
@@ -154,11 +154,11 @@ export function EInviteCard({
       {/* Card */}
       <div
         ref={cardRef}
-        className="bg-gradient-to-br from-[#4A148C] via-[#4A148C] to-[#1A0033] rounded-2xl p-8 text-white shadow-xl max-w-md mx-auto"
+        className="bg-gradient-to-br from-[#28166F] via-[#28166F] to-[#0D0B1A] rounded-2xl p-8 text-white shadow-xl max-w-md mx-auto"
       >
         {/* Header */}
         <div className="text-center mb-6">
-          <h3 className="text-xl font-bold">MFM Youth Church</h3>
+          <h3 className="text-xl font-bold">RCCG King of Glory</h3>
           <p className="text-purple-200 text-sm mt-1">Abuja, Nigeria</p>
           <div className="mt-3 inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5">
             <span className="text-amber-300 font-semibold text-sm">
@@ -186,7 +186,7 @@ export function EInviteCard({
               size={180}
               level="M"
               bgColor="#ffffff"
-              fgColor="#4A148C"
+              fgColor="#28166F"
               marginSize={2}
             />
           </div>

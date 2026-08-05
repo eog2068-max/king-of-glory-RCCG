@@ -27,7 +27,7 @@ const testimonies = [
 
 export function Testimonies() {
   return (
-    <SectionWrapper className="bg-[#F3E5F5] py-16 md:py-24">
+    <SectionWrapper className="bg-[#E8E0F0] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionTitle title="Testimonies" subtitle="What our members are saying about God's goodness" />
 
@@ -35,14 +35,14 @@ export function Testimonies() {
           {testimonies.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-md shadow-black/5 border-l-4 border-l-[#D32F2F] border-t-0 border-r-0 border-b-0 hover:shadow-lg transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-md shadow-black/5 border-l-4 border-l-[#DA251D] border-t-0 border-r-0 border-b-0 hover:shadow-lg transition-shadow"
             >
-              <Quote className="size-8 text-[#D32F2F]/20 mb-3" />
+              <Quote className="size-8 text-[#DA251D]/20 mb-3" />
               <p className="text-gray-700 text-sm leading-relaxed mb-5">
                 &ldquo;{item.quote}&rdquo;
               </p>
               <div className="border-t border-gray-100 pt-4">
-                <p className="font-bold text-[#4A148C] text-sm">{item.name}</p>
+                <p className="font-bold text-[#28166F] text-sm">{item.name}</p>
                 <p className="text-xs text-gray-500 mt-0.5">{item.status}</p>
               </div>
             </div>
@@ -51,14 +51,14 @@ export function Testimonies() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/testimonies"
-            className="inline-flex items-center gap-1.5 text-[#4A148C] font-semibold hover:gap-2.5 transition-all text-sm"
+            className="inline-flex items-center gap-1.5 text-[#28166F] font-semibold hover:gap-2.5 transition-all text-sm"
           >
             View All Testimonies
             <ArrowRight className="size-4" />
           </Link>
           <Link
             href="/testimonies"
-            className="inline-flex items-center gap-1.5 text-[#D32F2F] font-semibold hover:gap-2.5 transition-all text-sm"
+            className="inline-flex items-center gap-1.5 text-[#DA251D] font-semibold hover:gap-2.5 transition-all text-sm"
           >
             <Heart className="size-4" />
             Share Your Testimony

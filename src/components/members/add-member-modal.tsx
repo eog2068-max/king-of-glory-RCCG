@@ -63,7 +63,7 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
         {/* Header */}
         <div className="sticky top-0 bg-white z-10 flex items-center justify-between p-5 md:p-6 border-b border-gray-100">
           <div>
-            <h2 className="text-lg font-bold text-[#4A148C]">Add New Member</h2>
+            <h2 className="text-lg font-bold text-[#28166F]">Add New Member</h2>
             <p className="text-xs text-gray-500 mt-0.5">This member will appear in the gallery</p>
           </div>
           <button
@@ -78,11 +78,11 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
         <form onSubmit={handleSubmit} className="p-5 md:p-6 space-y-5">
           {/* Photo upload placeholder */}
           <div className="flex justify-center">
-            <div className="w-28 h-28 rounded-2xl bg-[#F3E5F5] border-2 border-dashed border-[#4A148C]/20 flex flex-col items-center justify-center cursor-pointer hover:bg-[#E8EDFF] hover:border-[#4A148C]/40 transition-colors group">
+            <div className="w-28 h-28 rounded-2xl bg-[#E8E0F0] border-2 border-dashed border-[#28166F]/20 flex flex-col items-center justify-center cursor-pointer hover:bg-[#E8EDFF] hover:border-[#28166F]/40 transition-colors group">
               <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-                <User className="size-5 text-[#4A148C]/50" />
+                <User className="size-5 text-[#28166F]/50" />
               </div>
-              <div className="mt-2 flex items-center gap-1 text-xs text-[#4A148C]/60 font-medium">
+              <div className="mt-2 flex items-center gap-1 text-xs text-[#28166F]/60 font-medium">
                 <Upload className="size-3" />
                 Upload Photo
               </div>
@@ -92,14 +92,14 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
           {/* Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Full Name <span className="text-[#D32F2F]">*</span>
+              Full Name <span className="text-[#DA251D]">*</span>
             </label>
             <Input
               required
               placeholder="e.g. Brother John Doe"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="rounded-xl border-gray-200 h-11 focus:border-[#4A148C]/30"
+              className="rounded-xl border-gray-200 h-11 focus:border-[#28166F]/30"
             />
           </div>
 
@@ -107,12 +107,12 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                Role <span className="text-[#D32F2F]">*</span>
+                Role <span className="text-[#DA251D]">*</span>
               </label>
               <select
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
-                className="w-full h-11 px-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-700 appearance-none cursor-pointer focus:outline-none focus:border-[#4A148C]/30 focus:ring-2 focus:ring-[#4A148C]/10"
+                className="w-full h-11 px-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-700 appearance-none cursor-pointer focus:outline-none focus:border-[#28166F]/30 focus:ring-2 focus:ring-[#28166F]/10"
               >
                 {roles.map((r) => (
                   <option key={r} value={r}>
@@ -123,13 +123,13 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                Department <span className="text-[#D32F2F]">*</span>
+                Department <span className="text-[#DA251D]">*</span>
               </label>
               <select
                 required
                 value={department}
                 onChange={(e) => setDepartment(e.target.value)}
-                className="w-full h-11 px-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-700 appearance-none cursor-pointer focus:outline-none focus:border-[#4A148C]/30 focus:ring-2 focus:ring-[#4A148C]/10"
+                className="w-full h-11 px-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-700 appearance-none cursor-pointer focus:outline-none focus:border-[#28166F]/30 focus:ring-2 focus:ring-[#28166F]/10"
               >
                 <option value="" disabled>
                   Select...
@@ -153,7 +153,7 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
               value={bio}
               onChange={(e) => setBio(e.target.value)}
               rows={3}
-              className="rounded-xl border-gray-200 resize-none focus:border-[#4A148C]/30"
+              className="rounded-xl border-gray-200 resize-none focus:border-[#28166F]/30"
             />
           </div>
 
@@ -170,7 +170,7 @@ export function AddMemberModal({ open, onOpenChange }: AddMemberModalProps) {
             <Button
               type="submit"
               disabled={submitting || !name || !department}
-              className="flex-1 rounded-xl h-11 bg-[#4A148C] hover:bg-[#1A0033] text-white font-semibold disabled:opacity-50"
+              className="flex-1 rounded-xl h-11 bg-[#28166F] hover:bg-[#0D0B1A] text-white font-semibold disabled:opacity-50"
             >
               {submitting ? "Adding..." : "Add Member"}
             </Button>

@@ -30,8 +30,8 @@ const statsData: StatCardData[] = [
     change: "+8.2%",
     changeDirection: "up",
     icon: Users,
-    gradient: "from-[#4A148C] to-[#7B1FA2]",
-    iconBg: "bg-[#4A148C]/10",
+    gradient: "from-[#28166F] to-[#3D2080]",
+    iconBg: "bg-[#28166F]/10",
   },
   {
     label: "Weekly Attendance",
@@ -57,8 +57,8 @@ const statsData: StatCardData[] = [
     change: "+1",
     changeDirection: "up",
     icon: Building2,
-    gradient: "from-[#6A1B9A] to-[#8E24AA]",
-    iconBg: "bg-[#6A1B9A]/10",
+    gradient: "from-[#3D2080] to-[#8E24AA]",
+    iconBg: "bg-[#3D2080]/10",
   },
   {
     label: "Prayer Requests",
@@ -125,15 +125,15 @@ export function StatsCards() {
               <div
                 className={`flex size-10 items-center justify-center rounded-lg ${stat.iconBg}`}
               >
-                <IconComponent className="size-5 text-[#4A148C]" />
+                <IconComponent className="size-5 text-[#28166F]" />
               </div>
 
               {/* Value */}
               <div>
-                <p className="text-2xl font-bold tracking-tight text-[#4A148C] sm:text-3xl">
+                <p className="text-2xl font-bold tracking-tight text-[#28166F] sm:text-3xl">
                   {stat.value}
                 </p>
-                <p className="mt-0.5 text-xs font-medium text-[#4A148C]/50 sm:text-sm">
+                <p className="mt-0.5 text-xs font-medium text-[#28166F]/50 sm:text-sm">
                   {stat.label}
                 </p>
               </div>
@@ -143,18 +143,18 @@ export function StatsCards() {
                 {stat.changeDirection === "up" ? (
                   <ArrowUpRight className="size-3.5 text-[#2E7D32]" />
                 ) : (
-                  <ArrowDownRight className="size-3.5 text-[#D32F2F]" />
+                  <ArrowDownRight className="size-3.5 text-[#DA251D]" />
                 )}
                 <span
                   className={`text-xs font-semibold ${
                     stat.changeDirection === "up"
                       ? "text-[#2E7D32]"
-                      : "text-[#D32F2F]"
+                      : "text-[#DA251D]"
                   }`}
                 >
                   {stat.change}
                 </span>
-                <span className="text-xs text-[#4A148C]/40">vs last period</span>
+                <span className="text-xs text-[#28166F]/40">vs last period</span>
               </div>
             </div>
           </motion.div>

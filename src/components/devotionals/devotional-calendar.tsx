@@ -114,9 +114,9 @@ export function DevotionalCalendar({
               whileTap={hasDevotional ? { scale: 0.9 } : undefined}
               className={`relative size-9 rounded-lg flex flex-col items-center justify-center text-sm transition-colors ${
                 isSelected
-                  ? "bg-[#4A148C] text-white"
+                  ? "bg-[#28166F] text-white"
                   : hasDevotional
-                  ? "bg-[#F3E5F5] text-[#4A148C] font-semibold cursor-pointer hover:bg-[#E8EDFF]"
+                  ? "bg-[#E8E0F0] text-[#28166F] font-semibold cursor-pointer hover:bg-[#E8EDFF]"
                   : "text-gray-600 cursor-default"
               }`}
               onClick={() => {
@@ -127,12 +127,12 @@ export function DevotionalCalendar({
             >
               <span>{day}</span>
               {hasDevotional && !isSelected && (
-                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-[#4A148C]" />
+                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-[#28166F]" />
               )}
               {isToday && (
                 <span
                   className={`absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-4 h-0.5 rounded-full ${
-                    isSelected ? "bg-white/60" : "bg-[#D32F2F]"
+                    isSelected ? "bg-white/60" : "bg-[#DA251D]"
                   }`}
                 />
               )}

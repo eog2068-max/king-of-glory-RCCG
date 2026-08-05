@@ -75,7 +75,7 @@ const STATUS_CHIPS: Array<{
   { key: "attended", label: "Attended", color: "bg-amber-100 text-amber-700" },
   { key: "saved", label: "Saved", color: "bg-emerald-100 text-emerald-700" },
   { key: "baptized", label: "Baptized", color: "bg-purple-100 text-purple-700" },
-  { key: "member", label: "Members", color: "bg-[#4A148C] text-white" },
+  { key: "member", label: "Members", color: "bg-[#28166F] text-white" },
 ];
 
 const REFRESH_INTERVAL_SEC = 300; // 5 min default; matches AdminConfig default
@@ -136,7 +136,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
   }, [fetchData]);
 
   return (
-    <section className="py-12 md:py-16 bg-[#F3E5F5] min-h-screen">
+    <section className="py-12 md:py-16 bg-[#E8E0F0] min-h-screen">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         {/* Header */}
         <SectionWrapper className="text-center">
@@ -148,7 +148,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
             <Trophy className="size-4" />
             Gospel-Labor Leaderboard
           </motion.div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4A148C] mb-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#28166F] mb-2">
             Fishers of Men
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
@@ -169,7 +169,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
                   className={cn(
                     "px-3 py-1.5 rounded-full text-xs font-medium transition-colors",
                     period === p
-                      ? "bg-[#4A148C] text-white"
+                      ? "bg-[#28166F] text-white"
                       : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
                   )}
                 >
@@ -194,7 +194,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
         {/* Cycle info banner */}
         {data?.cycle && (
           <SectionWrapper>
-            <div className="bg-gradient-to-r from-[#4A148C] to-[#1A0033] text-white rounded-xl p-4 flex flex-wrap items-center justify-between gap-2">
+            <div className="bg-gradient-to-r from-[#28166F] to-[#0D0B1A] text-white rounded-xl p-4 flex flex-wrap items-center justify-between gap-2">
               <div>
                 <p className="text-sm text-purple-200">Period</p>
                 <p className="font-bold text-lg">{data.cycle.name}</p>
@@ -228,7 +228,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
           <SectionWrapper>
             <Card className="border-0 shadow-md">
               <CardContent className="py-16 flex flex-col items-center gap-3">
-                <Loader2 className="size-10 text-[#4A148C] animate-spin" />
+                <Loader2 className="size-10 text-[#28166F] animate-spin" />
                 <p className="text-gray-500 text-sm">Loading leaderboard...</p>
               </CardContent>
             </Card>
@@ -244,7 +244,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
                 <p className="text-gray-700">{error}</p>
                 <Button
                   onClick={() => fetchData(false)}
-                  className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                  className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
                 >
                   Try again
                 </Button>
@@ -308,7 +308,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
                         >
                           #{entry.rank}
                         </div>
-                        <p className="font-semibold text-[#4A148C] truncate">
+                        <p className="font-semibold text-[#28166F] truncate">
                           {entry.fullName}
                         </p>
                         <p className="text-xs text-gray-400 font-mono mt-0.5">
@@ -367,7 +367,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
                           </div>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-center gap-2">
-                              <p className="font-semibold text-[#4A148C] truncate">
+                              <p className="font-semibold text-[#28166F] truncate">
                                 {entry.fullName}
                               </p>
                               {isMe && (
@@ -393,7 +393,7 @@ export function GafLeaderboard({ currentMemberId }: { currentMemberId?: string |
                             </div>
                           </div>
                           <div className="text-right shrink-0">
-                            <div className="text-xl font-bold text-[#4A148C]">
+                            <div className="text-xl font-bold text-[#28166F]">
                               {entry.totalScore}
                             </div>
                             <div className="text-xs text-gray-400">pts</div>

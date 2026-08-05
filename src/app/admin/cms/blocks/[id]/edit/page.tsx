@@ -74,10 +74,10 @@ export default function EditContentBlockPage() {
 
   return (
     <div className="max-w-2xl">
-      <Link href="/admin/cms/blocks" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-[#4A148C] mb-4">
+      <Link href="/admin/cms/blocks" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-[#28166F] mb-4">
         <ArrowLeft className="size-4" /> Back to Content Blocks
       </Link>
-      <h1 className="text-2xl font-bold text-[#4A148C] mb-1">Edit Content Block</h1>
+      <h1 className="text-2xl font-bold text-[#28166F] mb-1">Edit Content Block</h1>
       <p className="text-sm text-gray-500 mb-6">
         Editing: <span className="font-mono">{formData.key}</span>
       </p>
@@ -122,7 +122,7 @@ export default function EditContentBlockPage() {
             value={formData.content}
             onChange={(e) => setFormData({ ...formData, content: e.target.value })}
             rows={8}
-            className="mt-1 w-full rounded-md border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#4A148C]/20 focus:border-[#4A148C]"
+            className="mt-1 w-full rounded-md border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#28166F]/20 focus:border-[#28166F]"
           />
         </div>
 
@@ -152,7 +152,7 @@ export default function EditContentBlockPage() {
         </div>
 
         <div className="flex gap-3 pt-2">
-          <Button type="submit" disabled={saving} className="bg-[#4A148C] hover:bg-[#1A0033]">
+          <Button type="submit" disabled={saving} className="bg-[#28166F] hover:bg-[#0D0B1A]">
             {saving ? "Saving..." : "Save Changes"}
           </Button>
           <Button type="button" variant="outline" asChild>

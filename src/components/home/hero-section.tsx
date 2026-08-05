@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-36 pb-3">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#6A1B9A]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080]" />
 
       {/* Decorative overlay pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -34,8 +34,8 @@ export function HeroSection() {
         >
           <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40 mx-auto rounded-full bg-white p-2 shadow-2xl shadow-black/30">
             <Image
-              src="/mfm-logo.png"
-              alt="Mountain of Fire and Miracles Ministries Logo"
+              src="/king-of-glory-logo.png"
+              alt="The Redeemed Christian Church of God Logo"
               fill
               sizes="160px"
               className="object-contain"
@@ -51,7 +51,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
-            MFM INT&rsquo;L HQ ANNEX Youth Church, Abuja
+            RCCG King of Glory Parish, Zonal Headquarters, Abuja
           </h1>
         </motion.div>
 
@@ -60,7 +60,7 @@ export function HeroSection() {
           initial={{ width: 0 }}
           animate={{ width: 80 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="h-1 bg-[#D32F2F] mx-auto rounded-full mt-5"
+          className="h-1 bg-[#DA251D] mx-auto rounded-full mt-5"
         />
 
         {/* Tagline — normal sentence case, pure white, regular (not italic) */}
@@ -70,7 +70,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-5 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-normal"
         >
-          A place of spiritual fire, prayer, and destiny fulfilment.
+          Jesus Christ the same yesterday, and today, and forever. — Heb. 13:8
         </motion.p>
 
         {/* ── 3-Pillar Feature Buttons ── */}
@@ -83,7 +83,7 @@ export function HeroSection() {
           {/* 1. YouthConnect — Same red as Watch Now, compact, barely rounded */}
           <Link
             href="/social"
-            className="flex flex-col items-center justify-center bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-red-500/20 border border-white/20"
+            className="flex flex-col items-center justify-center bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-red-500/20 border border-white/20"
           >
             <span className="text-sm md:text-base font-bold tracking-wide">
               YouthConnect
@@ -99,7 +99,7 @@ export function HeroSection() {
           {/* 2. Go-A-Fishing — Indigo solid, matching section color */}
           <Link
             href="/go-a-fishing"
-            className="flex flex-col items-center justify-center bg-[#7B1FA2] hover:bg-[#4A148C] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-purple-500/20 border border-white/20 shadow-md shadow-black/10"
+            className="flex flex-col items-center justify-center bg-[#3D2080] hover:bg-[#28166F] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-purple-500/20 border border-white/20 shadow-md shadow-black/10"
           >
             <span className="text-sm md:text-base font-bold tracking-wide">
               Go-A-Fishing

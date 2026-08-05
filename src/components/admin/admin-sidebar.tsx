@@ -69,7 +69,7 @@ export function AdminSidebar({ activeItem, isOpen, onClose }: AdminSidebarProps)
   const sidebarContent = (
     <div
       className={cn(
-        "flex h-full flex-col bg-[#4A148C] text-white transition-all duration-300",
+        "flex h-full flex-col bg-[#28166F] text-white transition-all duration-300",
         collapsed ? "w-[72px]" : "w-64"
       )}
     >
@@ -169,7 +169,7 @@ export function AdminSidebar({ activeItem, isOpen, onClose }: AdminSidebarProps)
       <div className="border-t border-white/10 p-3">
         <div className={cn("flex items-center gap-3", collapsed && "justify-center")}>
           <Avatar className="size-9 shrink-0 border-2 border-white/20">
-            <AvatarFallback className="bg-[#D32F2F] text-xs font-bold text-white">
+            <AvatarFallback className="bg-[#DA251D] text-xs font-bold text-white">
               AU
             </AvatarFallback>
           </Avatar>
@@ -183,7 +183,7 @@ export function AdminSidebar({ activeItem, isOpen, onClose }: AdminSidebarProps)
               >
                 <div className="min-w-0">
                   <p className="truncate text-sm font-medium text-white">Admin User</p>
-                  <p className="truncate text-xs text-white/50">admin@mfmannexyouth.org</p>
+                  <p className="truncate text-xs text-white/50">admin@rccgkingofglory.org</p>
                 </div>
                 <Button
                   variant="ghost"

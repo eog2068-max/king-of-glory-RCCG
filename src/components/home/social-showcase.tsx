@@ -111,7 +111,7 @@ export function SocialShowcase() {
         >
           <Link
             href="/social"
-            className="mt-10 inline-flex items-center gap-2 bg-[#C62828] hover:bg-[#B71C1C] text-white px-8 py-3.5 rounded-xl font-semibold transition-colors"
+            className="mt-10 inline-flex items-center gap-2 bg-[#C62828] hover:bg-[#B91C1C] text-white px-8 py-3.5 rounded-xl font-semibold transition-colors"
           >
             ENTER YOUTHCONNECT
             <ArrowRight className="w-4 h-4" />

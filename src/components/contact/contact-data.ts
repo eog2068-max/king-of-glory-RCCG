@@ -1,35 +1,35 @@
 export const churchInfo = {
-  name: "MFM INT'L HQ ANNEX, Youth Church, Abuja",
-  shortName: "MFM Youth Church",
-  address: "14 Ekukinam Street, Opp. Chisco Motor Park Utako, Abuja.",
-  mapsQuery: "14+Ekukinam+Street+Opp+Chisco+Motor+Park+Utako+Abuja",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=14+Ekukinam+Street+Opp+Chisco+Motor+Park+Utako+Abuja",
+  name: "The Redeemed Christian Church of God, King of Glory Parish, Zonal Headquarters, Abuja",
+  shortName: "RCCG King of Glory",
+  address: "No. 13 Ajose Adeogun Street, Utako, Abuja.",
+  mapsQuery: "13+Ajose+Adeogun+Street+Utako+Abuja",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=13+Ajose+Adeogun+Street+Utako+Abuja",
   phone: "+234 905 001 7238",
   phoneRaw: "+2349050017238",
-  email: "thecenaclemfmycr10@gmail.com",
-  website: "www.mfmannexyouth.org",
-  websiteUrl: "https://www.mfmannexyouth.org/",
+  email: "info@rccgkingofglory.org",
+  website: "www.rccgkingofglory.org",
+  websiteUrl: "https://www.rccgkingofglory.org/",
 };
 
 export const socialLinks = [
   {
     name: "Facebook",
-    url: "https://facebook.com/mfmannexyouth",
+    url: "https://facebook.com/rccgkingofglory",
     icon: "facebook" as const,
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/mfmannexyouth",
+    url: "https://instagram.com/rccgkingofglory",
     icon: "instagram" as const,
   },
   {
     name: "YouTube",
-    url: "https://youtube.com/@mfmannexyouth",
+    url: "https://youtube.com/@rccgkingofglory",
     icon: "youtube" as const,
   },
   {
     name: "X (Twitter)",
-    url: "https://x.com/mfmannexyouth",
+    url: "https://x.com/rccgkingofglory",
     icon: "twitter" as const,
   },
 ];

@@ -48,7 +48,7 @@ export const socialFeatures: SocialFeature[] = [
     description:
       "Stay connected with your church family through meaningful conversations throughout the week.",
     href: "/social/family-chat",
-    color: "from-[#4A148C] to-[#6A1B9A]",
+    color: "from-[#28166F] to-[#3D2080]",
     iconBg: "bg-purple-500",
     featured: true,
     extendedDescription:
@@ -82,7 +82,7 @@ export const socialFeatures: SocialFeature[] = [
     description:
       "Share prayer requests and stand in faith with one another. Public or private.",
     href: "/social/prayer-circle",
-    color: "from-[#D32F2F] to-[#E53935]",
+    color: "from-[#DA251D] to-[#E53935]",
     iconBg: "bg-red-500",
     featured: false,
     extendedDescription:
@@ -184,7 +184,7 @@ export const socialFeatures: SocialFeature[] = [
     description:
       "Worship together during live services. We may be apart, but we worship as one.",
     href: "/social/live-together",
-    color: "from-[#C62828] to-[#D32F2F]",
+    color: "from-[#C62828] to-[#DA251D]",
     iconBg: "bg-red-600",
     featured: false,
     extendedDescription:

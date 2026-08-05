@@ -50,13 +50,13 @@ export function TestimonyCard({
     : testimony.name;
 
   const avatarBgColors = [
-    "bg-[#4A148C]",
-    "bg-[#D32F2F]",
+    "bg-[#28166F]",
+    "bg-[#DA251D]",
     "bg-[#2E7D32]",
     "bg-[#C62828]",
-    "bg-[#4A148C]",
+    "bg-[#28166F]",
     "bg-[#006064]",
-    "bg-[#B71C1C]",
+    "bg-[#B91C1C]",
     "bg-[#1B5E20]",
   ];
 
@@ -74,9 +74,9 @@ export function TestimonyCard({
         transition={{ duration: 0.6, delay: index * 0.1 }}
         className="relative rounded-2xl overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#6A1B9A]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080]" />
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-72 h-72 bg-[#D32F2F] rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute top-0 right-0 w-72 h-72 bg-[#DA251D] rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
           <div className="absolute bottom-0 left-0 w-56 h-56 bg-purple-400/30 rounded-full blur-[100px] translate-y-1/2" />
         </div>
 
@@ -203,7 +203,7 @@ export function TestimonyCard({
           </p>
         </div>
 
-        <h3 className="text-base font-bold text-gray-800 mb-2 leading-snug group-hover:text-[#4A148C] transition-colors">
+        <h3 className="text-base font-bold text-gray-800 mb-2 leading-snug group-hover:text-[#28166F] transition-colors">
           {testimony.title}
         </h3>
         <p className="text-sm text-gray-500 leading-relaxed line-clamp-4 mb-4 flex-1">

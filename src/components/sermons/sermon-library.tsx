@@ -148,10 +148,10 @@ export function SermonLibrary() {
 
             <SectionWrapper>
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-xl md:text-2xl font-bold text-[#4A148C]">Sermon Series</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-[#28166F]">Sermon Series</h2>
                 <button
                   onClick={showAllView}
-                  className="text-sm text-[#4A148C] hover:text-[#1A0033] font-medium flex items-center gap-1 transition-colors"
+                  className="text-sm text-[#28166F] hover:text-[#0D0B1A] font-medium flex items-center gap-1 transition-colors"
                 >
                   View All Sermons
                   <ArrowRight className="size-4" />
@@ -173,8 +173,8 @@ export function SermonLibrary() {
                     key={stat.label}
                     className="bg-white rounded-xl border border-gray-100 p-4 text-center"
                   >
-                    <stat.icon className="size-5 text-[#4A148C]/40 mx-auto mb-2" />
-                    <p className="text-2xl font-bold text-[#4A148C]">{stat.value}</p>
+                    <stat.icon className="size-5 text-[#28166F]/40 mx-auto mb-2" />
+                    <p className="text-2xl font-bold text-[#28166F]">{stat.value}</p>
                     <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                   </div>
                 ))}
@@ -188,14 +188,14 @@ export function SermonLibrary() {
           <div className="mb-6">
             <button
               onClick={clearSeries}
-              className="text-sm text-[#4A148C] hover:text-[#1A0033] font-medium flex items-center gap-1.5 transition-colors mb-3"
+              className="text-sm text-[#28166F] hover:text-[#0D0B1A] font-medium flex items-center gap-1.5 transition-colors mb-3"
             >
               <ArrowLeft className="size-4 rotate-180" />
               Back to Series
             </button>
             <div className="bg-white rounded-xl border border-gray-100 p-5 mb-2">
               <div className={`w-full h-3 bg-gradient-to-r ${selectedSeries.coverGradient} rounded-lg mb-4`} />
-              <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C] mb-1">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#28166F] mb-1">
                 {selectedSeries.name}
               </h2>
               <p className="text-sm text-gray-500 mb-2">{selectedSeries.description}</p>
@@ -213,7 +213,7 @@ export function SermonLibrary() {
           <div className="mb-6">
             <button
               onClick={backToHome}
-              className="text-sm text-[#4A148C] hover:text-[#1A0033] font-medium flex items-center gap-1.5 transition-colors mb-2"
+              className="text-sm text-[#28166F] hover:text-[#0D0B1A] font-medium flex items-center gap-1.5 transition-colors mb-2"
             >
               <ArrowLeft className="size-4 rotate-180" />
               Back to Library Home
@@ -232,7 +232,7 @@ export function SermonLibrary() {
                   placeholder="Search by title, speaker, scripture, or topic..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="pl-10 rounded-xl border-gray-200 bg-white h-10 focus:border-[#4A148C]/30"
+                  className="pl-10 rounded-xl border-gray-200 bg-white h-10 focus:border-[#28166F]/30"
                 />
                 {search && (
                   <button
@@ -248,14 +248,14 @@ export function SermonLibrary() {
                 onClick={() => setShowFilters(!showFilters)}
                 className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium border transition-colors h-10 ${
                   showFilters || activeFiltersCount > 0
-                    ? "bg-[#4A148C] text-white border-[#4A148C]"
+                    ? "bg-[#28166F] text-white border-[#28166F]"
                     : "bg-white text-gray-600 border-gray-200 hover:border-gray-300"
                 }`}
               >
                 <SlidersHorizontal className="size-4" />
                 Filters
                 {activeFiltersCount > 0 && (
-                  <span className="w-5 h-5 rounded-full bg-[#D32F2F] text-white text-[10px] font-bold flex items-center justify-center">
+                  <span className="w-5 h-5 rounded-full bg-[#DA251D] text-white text-[10px] font-bold flex items-center justify-center">
                     {activeFiltersCount}
                   </span>
                 )}
@@ -270,7 +270,7 @@ export function SermonLibrary() {
                   onClick={() => setCategory(cat)}
                   className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     category === cat
-                      ? "bg-[#4A148C] text-white"
+                      ? "bg-[#28166F] text-white"
                       : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                   }`}
                 >
@@ -301,7 +301,7 @@ export function SermonLibrary() {
                           <select
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value)}
-                            className="w-full h-10 pl-3 pr-8 rounded-lg border border-gray-200 bg-white text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#4A148C]/30"
+                            className="w-full h-10 pl-3 pr-8 rounded-lg border border-gray-200 bg-white text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#28166F]/30"
                           >
                             {sortOptions.map((opt) => (
                               <option key={opt.value} value={opt.value}>
@@ -323,7 +323,7 @@ export function SermonLibrary() {
                           <select
                             value={speakerFilter}
                             onChange={(e) => setSpeakerFilter(e.target.value)}
-                            className="w-full h-10 pl-3 pr-8 rounded-lg border border-gray-200 bg-white text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#4A148C]/30"
+                            className="w-full h-10 pl-3 pr-8 rounded-lg border border-gray-200 bg-white text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#28166F]/30"
                           >
                             <option value="All">All Speakers</option>
                             {allSpeakers.map((sp) => (
@@ -341,7 +341,7 @@ export function SermonLibrary() {
                       <div className="mt-4 pt-3 border-t border-gray-100">
                         <button
                           onClick={clearAllFilters}
-                          className="text-xs font-medium text-[#D32F2F] hover:text-[#B71C1C] transition-colors"
+                          className="text-xs font-medium text-[#DA251D] hover:text-[#B91C1C] transition-colors"
                         >
                           Clear All Filters
                         </button>
@@ -355,7 +355,7 @@ export function SermonLibrary() {
             {/* Results count */}
             <div className="flex items-center justify-between mb-5">
               <p className="text-sm text-gray-500">
-                <span className="font-semibold text-[#4A148C]">{filteredSermons.length}</span>{" "}
+                <span className="font-semibold text-[#28166F]">{filteredSermons.length}</span>{" "}
                 sermon{filteredSermons.length !== 1 ? "s" : ""}
                 {selectedSeries && (
                   <span> in <span className="font-medium text-gray-700">{selectedSeries.name}</span></span>
@@ -395,7 +395,7 @@ export function SermonLibrary() {
                 <p className="text-sm text-gray-500 mt-1">Try adjusting your search or filters.</p>
                 <button
                   onClick={clearAllFilters}
-                  className="mt-4 text-sm font-medium text-[#4A148C] hover:text-[#1A0033] transition-colors"
+                  className="mt-4 text-sm font-medium text-[#28166F] hover:text-[#0D0B1A] transition-colors"
                 >
                   Clear All Filters
                 </button>

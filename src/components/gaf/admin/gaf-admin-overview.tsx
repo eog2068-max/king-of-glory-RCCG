@@ -79,7 +79,7 @@ export function GafAdminOverview({ stats, recentLogs }: GafAdminOverviewProps) {
     <div className="p-4 lg:p-8 space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl lg:text-3xl font-bold text-[#4A148C]">
+        <h1 className="text-2xl lg:text-3xl font-bold text-[#28166F]">
           Go-A-Fishing Admin
         </h1>
         <p className="text-sm text-gray-500 mt-1">
@@ -105,7 +105,7 @@ export function GafAdminOverview({ stats, recentLogs }: GafAdminOverviewProps) {
                   >
                     <Icon className="size-5" />
                   </div>
-                  <div className="text-2xl font-bold text-[#4A148C]">
+                  <div className="text-2xl font-bold text-[#28166F]">
                     {stats[stat.key]}
                   </div>
                   <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
@@ -119,7 +119,7 @@ export function GafAdminOverview({ stats, recentLogs }: GafAdminOverviewProps) {
       {/* Quick actions */}
       <Card className="border-0 shadow-md">
         <CardHeader className="pb-3">
-          <CardTitle className="text-lg text-[#4A148C] flex items-center gap-2">
+          <CardTitle className="text-lg text-[#28166F] flex items-center gap-2">
             <Activity className="size-5" />
             Quick Actions
           </CardTitle>
@@ -132,11 +132,11 @@ export function GafAdminOverview({ stats, recentLogs }: GafAdminOverviewProps) {
                 key={action.href}
                 asChild
                 variant="outline"
-                className="h-auto py-4 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5"
+                className="h-auto py-4 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5"
               >
                 <Link href={action.href}>
-                  <Icon className="size-5 text-[#4A148C]" />
-                  <span className="text-sm text-[#4A148C]">{action.label}</span>
+                  <Icon className="size-5 text-[#28166F]" />
+                  <span className="text-sm text-[#28166F]">{action.label}</span>
                 </Link>
               </Button>
             );
@@ -149,8 +149,8 @@ export function GafAdminOverview({ stats, recentLogs }: GafAdminOverviewProps) {
         <Card className="border-0 shadow-md">
           <CardHeader className="pb-3">
             <div className="flex items-center justify-between">
-              <CardTitle className="text-lg text-[#4A148C]">Recent Activity</CardTitle>
-              <Button asChild variant="ghost" size="sm" className="text-[#4A148C]">
+              <CardTitle className="text-lg text-[#28166F]">Recent Activity</CardTitle>
+              <Button asChild variant="ghost" size="sm" className="text-[#28166F]">
                 <Link href="/admin/gaf/audit-log">
                   View all
                   <ArrowRight className="size-4" />
@@ -163,7 +163,7 @@ export function GafAdminOverview({ stats, recentLogs }: GafAdminOverviewProps) {
               {recentLogs.map((log, idx) => (
                 <li key={idx} className="flex items-center justify-between py-3">
                   <div className="min-w-0">
-                    <p className="text-sm text-[#4A148C] font-medium truncate">
+                    <p className="text-sm text-[#28166F] font-medium truncate">
                       {formatAction(log.action)}
                     </p>
                     <p className="text-xs text-gray-500">

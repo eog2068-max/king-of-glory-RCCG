@@ -39,7 +39,7 @@ export function ImHere() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#6A1B9A]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080]" />
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,255,255,0.15) 1px, transparent 1px),
@@ -97,7 +97,7 @@ export function ImHere() {
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.6 + i * 0.1 }}
-                    className={`w-8 h-8 rounded-full ${color} border-2 border-[#4A148C] flex items-center justify-center`}
+                    className={`w-8 h-8 rounded-full ${color} border-2 border-[#28166F] flex items-center justify-center`}
                   >
                     <span className="text-[10px] font-bold text-white">
                       {["A", "B", "C", "D", "E"][i]}
@@ -128,7 +128,7 @@ export function ImHere() {
             className={`relative inline-flex items-center gap-3 px-10 py-4 rounded-2xl text-lg font-bold transition-all shadow-lg ${
               isHere
                 ? "bg-green-500 text-white shadow-green-500/30"
-                : "bg-white text-[#4A148C] shadow-white/20 hover:shadow-white/40"
+                : "bg-white text-[#28166F] shadow-white/20 hover:shadow-white/40"
             }`}
           >
             {isHere ? (

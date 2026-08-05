@@ -26,7 +26,7 @@ const pillarLinks = [
   {
     title: "ORGANIZE",
     subtitle: "Church Management System",
-    color: "text-[#4A148C]",
+    color: "text-[#28166F]",
     links: [
       { label: "Announcements", href: "/announcements" },
       { label: "Events", href: "/events" },
@@ -37,7 +37,7 @@ const pillarLinks = [
   {
     title: "REACH",
     subtitle: "Go-A-Fishing",
-    color: "text-[#7B1FA2]",
+    color: "text-[#3D2080]",
     links: [
       { label: "Dashboard", href: "/go-a-fishing/dashboard" },
       { label: "Leaderboard", href: "/go-a-fishing/leaderboard" },
@@ -61,20 +61,20 @@ const generalLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#1A0033] text-white">
+    <footer className="bg-[#0D0B1A] text-white">
       {/* Main Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 space-y-8 lg:space-y-0">
           {/* Column 1 — About */}
           <div>
-            <h3 className="text-lg font-bold leading-tight">Mountain of Fire and Miracles Ministries</h3>
-            <p className="text-sm text-purple-200/70 mt-0.5">(Youth Church)</p>
+            <h3 className="text-lg font-bold leading-tight">RCCG King of Glory Parish, Zonal Headquarters</h3>
+            <p className="text-sm text-purple-200/70 mt-0.5">The Redeemed Christian Church of God</p>
             <p className="text-sm text-purple-200/60 mt-4 leading-relaxed">
-              A place of destiny fulfillment, where lives are transformed by the power of God&apos;s Word and the fellowship of the Holy Spirit.
+              A place of worship, fellowship, and spiritual growth. Jesus Christ the same yesterday, and today, and forever. — Heb. 13:8
             </p>
             <div className="flex items-start gap-2 mt-4 text-sm text-purple-200/60">
               <MapPin className="size-4 shrink-0 mt-0.5" />
-              <span>14 Ekukinam Street, Opp. Chisco Motor Park Utako, Abuja.</span>
+              <span>No. 13 Ajose Adeogun Street, Utako, Abuja.</span>
             </div>
           </div>
 
@@ -175,11 +175,11 @@ export function Footer() {
                 <span>+234 905 001 7238</span>
               </a>
               <a
-                href="mailto:thecenaclemfmycr10@gmail.com"
+                href="mailto:info@rccgkingofglory.org"
                 className="flex items-center gap-2 text-purple-100/70 hover:text-white transition-colors"
               >
                 <Mail className="size-4" />
-                <span>thecenaclemfmycr10@gmail.com</span>
+                <span>info@rccgkingofglory.org</span>
               </a>
               <a
                 href="https://wa.me/2349050017238"
@@ -196,28 +196,28 @@ export function Footer() {
             {/* Social Icons */}
             <div className="flex items-center gap-3 mt-6">
               <a
-                href="https://facebook.com/mfmannexyouth"
+                href="https://facebook.com/rccgkingofglory"
                 aria-label="Facebook"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Facebook className="size-4" />
               </a>
               <a
-                href="https://instagram.com/mfmannexyouth"
+                href="https://instagram.com/rccgkingofglory"
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Instagram className="size-4" />
               </a>
               <a
-                href="https://x.com/mfmannexyouth"
+                href="https://x.com/rccgkingofglory"
                 aria-label="Twitter"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Twitter className="size-4" />
               </a>
               <a
-                href="https://youtube.com/@mfmannexyouth"
+                href="https://youtube.com/@rccgkingofglory"
                 aria-label="YouTube"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
@@ -232,7 +232,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6 lg:my-4">
         <a
           href="/live"
-          className="flex items-center justify-center gap-2 bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-xl py-3 font-semibold transition-colors w-full max-w-md mx-auto"
+          className="flex items-center justify-center gap-2 bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-xl py-3 font-semibold transition-colors w-full max-w-md mx-auto"
         >
           <Radio className="size-4" />
           Watch Live Service
@@ -243,7 +243,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <p className="text-center text-xs sm:text-sm text-purple-200/50">
-            &copy; 2026 Mountain of Fire and Miracles Ministries, Youth Church. All rights reserved.
+            &copy; 2026 RCCG King of Glory Parish, Zonal Headquarters. All rights reserved.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { MediaCTA } from "@/components/media/media-cta";
 export const metadata: Metadata = {
   title: "Media Center",
   description:
-    "Watch live services, browse sermon videos, view photos, and listen to audio content from Mountain of Fire and Miracles Ministries, Youth Church, Utako, Abuja.",
+    "Watch live services, browse sermon videos, view photos, and listen to audio content from The Redeemed Christian Church of God, RCCG King of Glory, Utako, Abuja.",
 };
 
 export default function MediaPage() {
@@ -15,7 +15,7 @@ export default function MediaPage() {
     <>
       <PageBanner
         title="Media Center"
-        subtitle="Watch our services live, catch up on past sermons, browse event photos, and listen to inspiring audio content from Youth Church."
+        subtitle="Watch our services live, catch up on past sermons, browse event photos, and listen to inspiring audio content from RCCG King of Glory."
         breadcrumbs={[{ label: "Media Center" }]}
       />
       <Suspense fallback={<div className="py-20 text-center text-gray-400">Loading media...</div>}>

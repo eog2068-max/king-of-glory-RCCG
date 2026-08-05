@@ -46,7 +46,7 @@ export function LivePlayer() {
   return (
     <div className={`bg-black rounded-2xl overflow-hidden shadow-2xl ${isFullscreen ? "fixed inset-0 z-[70] rounded-none" : ""}`}>
       {/* Player area */}
-      <div className="relative w-full aspect-video bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#1A0033]">
+      <div className="relative w-full aspect-video bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#0D0B1A]">
         {/* Decorative elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-60 h-60 bg-purple-400 rounded-full blur-[100px]" />
@@ -57,7 +57,7 @@ export function LivePlayer() {
         <div className="absolute top-0 left-0 right-0 z-10 p-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             {activeService && (
-              <Badge className="bg-[#D32F2F] text-white border-0 px-3 py-1.5 text-xs font-bold uppercase tracking-wider shadow-lg">
+              <Badge className="bg-[#DA251D] text-white border-0 px-3 py-1.5 text-xs font-bold uppercase tracking-wider shadow-lg">
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse mr-2" />
                 Live
               </Badge>
@@ -148,7 +148,7 @@ export function LivePlayer() {
               </div>
             </div>
             <p className="text-xs text-white/40 hidden sm:block">
-              MFM Youth Church, Utako, Abuja
+              RCCG King of Glory, Utako, Abuja
             </p>
           </div>
         </div>
@@ -156,7 +156,7 @@ export function LivePlayer() {
 
       {/* Below-player info strip (when not fullscreen) */}
       {!isFullscreen && (
-        <div className="bg-[#1A0033] px-5 py-4 flex items-center justify-between">
+        <div className="bg-[#0D0B1A] px-5 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
               <Radio className="size-5 text-white/60" />
@@ -182,7 +182,7 @@ export function LivePlayer() {
             </Button>
             <Button
               size="sm"
-              className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-lg text-xs"
+              className="bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-lg text-xs"
               disabled={!activeService}
             >
               <Share2 className="size-3.5 mr-1" />

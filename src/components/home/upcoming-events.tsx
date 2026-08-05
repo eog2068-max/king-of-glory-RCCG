@@ -9,7 +9,7 @@ const events = [
     date: "Every Sunday",
     time: "7:00 AM",
     venue: "Main Auditorium",
-    color: "bg-[#4A148C]",
+    color: "bg-[#28166F]",
     colorLight: "bg-[#EBF0FA]",
   },
   {
@@ -25,7 +25,7 @@ const events = [
     date: "Every Thursday",
     time: "5:30 PM",
     venue: "Church Hall",
-    color: "bg-[#D32F2F]",
+    color: "bg-[#DA251D]",
     colorLight: "bg-[#FFEBEE]",
   },
   {
@@ -34,7 +34,7 @@ const events = [
     time: "7:00 AM",
     venue: "Main Auditorium",
     color: "bg-[#9C27B0]",
-    colorLight: "bg-[#F3E5F5]",
+    colorLight: "bg-[#E8E0F0]",
   },
 ];
 
@@ -54,19 +54,19 @@ export function UpcomingEvents() {
               <div className={`${event.color} h-2`} />
 
               <div className="p-6">
-                <h3 className="text-lg font-bold text-[#4A148C] mb-3">{event.title}</h3>
+                <h3 className="text-lg font-bold text-[#28166F] mb-3">{event.title}</h3>
 
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center gap-2">
-                    <Calendar className="size-4 text-[#4A148C]/50 shrink-0" />
+                    <Calendar className="size-4 text-[#28166F]/50 shrink-0" />
                     <span>{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="size-4 text-[#4A148C]/50 shrink-0" />
+                    <Clock className="size-4 text-[#28166F]/50 shrink-0" />
                     <span>{event.time}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <MapPin className="size-4 text-[#4A148C]/50 shrink-0" />
+                    <MapPin className="size-4 text-[#28166F]/50 shrink-0" />
                     <span>{event.venue}</span>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export function UpcomingEvents() {
                   <Button
                     asChild
                     variant="outline"
-                    className={`rounded-xl w-full border-[#4A148C]/20 text-[#4A148C] hover:bg-[#EBF0FA]`}
+                    className={`rounded-xl w-full border-[#28166F]/20 text-[#28166F] hover:bg-[#EBF0FA]`}
                   >
                     <Link href="/events">
                       Register
@@ -91,7 +91,7 @@ export function UpcomingEvents() {
         <div className="text-center mt-10">
           <Link
             href="/events"
-            className="inline-flex items-center gap-1.5 text-[#D32F2F] font-semibold hover:gap-2.5 transition-all text-sm"
+            className="inline-flex items-center gap-1.5 text-[#DA251D] font-semibold hover:gap-2.5 transition-all text-sm"
           >
             View All Events
             <ArrowRight className="size-4" />

@@ -3,17 +3,17 @@ import { Camera, ArrowRight } from "lucide-react";
 import { SectionWrapper, SectionTitle } from "./section-wrapper";
 
 const photoSlots = [
-  { bg: "from-[#4A148C]/15 to-[#4A148C]/5", label: "Worship Service" },
-  { bg: "from-[#D32F2F]/15 to-[#D32F2F]/5", label: "Church Events" },
+  { bg: "from-[#28166F]/15 to-[#28166F]/5", label: "Worship Service" },
+  { bg: "from-[#DA251D]/15 to-[#DA251D]/5", label: "Church Events" },
   { bg: "from-[#2E7D32]/15 to-[#2E7D32]/5", label: "Bible Study" },
-  { bg: "from-[#6A1B9A]/15 to-[#6A1B9A]/5", label: "Youth Activities" },
+  { bg: "from-[#3D2080]/15 to-[#3D2080]/5", label: "Youth Activities" },
   { bg: "from-[#C62828]/15 to-[#C62828]/5", label: "Outreach" },
-  { bg: "from-[#4A148C]/10 to-[#7B1FA2]/10", label: "Fellowship" },
+  { bg: "from-[#28166F]/10 to-[#3D2080]/10", label: "Fellowship" },
 ];
 
 export function PhotoGalleryPreview() {
   return (
-    <SectionWrapper className="bg-[#F3E5F5] py-16 md:py-24">
+    <SectionWrapper className="bg-[#E8E0F0] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionTitle title="Photo Gallery" subtitle="Moments from our church family" />
 
@@ -32,7 +32,7 @@ export function PhotoGalleryPreview() {
         <div className="text-center mt-10">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-1.5 text-[#D32F2F] font-semibold hover:gap-2.5 transition-all text-sm"
+            className="inline-flex items-center gap-1.5 text-[#DA251D] font-semibold hover:gap-2.5 transition-all text-sm"
           >
             View Full Gallery
             <ArrowRight className="size-4" />

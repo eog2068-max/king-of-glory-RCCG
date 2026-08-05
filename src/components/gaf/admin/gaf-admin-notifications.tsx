@@ -210,8 +210,8 @@ export function GafAdminNotifications() {
       {/* Header + actions */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-[#4A148C] flex items-center gap-3">
-            <div className="flex items-center justify-center size-10 rounded-xl bg-[#4A148C] text-white">
+          <h1 className="text-2xl font-bold text-[#28166F] flex items-center gap-3">
+            <div className="flex items-center justify-center size-10 rounded-xl bg-[#28166F] text-white">
               <Bell className="size-5" />
             </div>
             Notifications
@@ -223,7 +223,7 @@ export function GafAdminNotifications() {
 
         <Dialog open={broadcastOpen} onOpenChange={setBroadcastOpen}>
           <DialogTrigger asChild>
-            <Button className="gap-2 bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl">
+            <Button className="gap-2 bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl">
               <Send className="size-4" />
               Broadcast
             </Button>
@@ -231,7 +231,7 @@ export function GafAdminNotifications() {
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
               <DialogTitle className="flex items-center gap-2">
-                <Megaphone className="size-5 text-[#4A148C]" />
+                <Megaphone className="size-5 text-[#28166F]" />
                 Broadcast Notification
               </DialogTitle>
             </DialogHeader>
@@ -249,7 +249,7 @@ export function GafAdminNotifications() {
                       onClick={() => setBroadcastType(t)}
                       className={`rounded-full text-xs ${
                         broadcastType === t
-                          ? "bg-[#4A148C] text-white"
+                          ? "bg-[#28166F] text-white"
                           : ""
                       }`}
                     >
@@ -268,7 +268,7 @@ export function GafAdminNotifications() {
                   onChange={(e) => setBroadcastTitle(e.target.value)}
                   maxLength={200}
                   placeholder="e.g. Evangelism Outreach This Saturday"
-                  className="w-full rounded-xl border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#4A148C]/20 focus:border-[#4A148C]"
+                  className="w-full rounded-xl border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#28166F]/20 focus:border-[#28166F]"
                 />
               </div>
               <div>
@@ -281,7 +281,7 @@ export function GafAdminNotifications() {
                   maxLength={2000}
                   rows={4}
                   placeholder="Write your notification message to all active members..."
-                  className="rounded-xl border-gray-200 focus:ring-2 focus:ring-[#4A148C]/20 focus:border-[#4A148C]"
+                  className="rounded-xl border-gray-200 focus:ring-2 focus:ring-[#28166F]/20 focus:border-[#28166F]"
                 />
                 <p className="text-[10px] text-gray-400 mt-1 text-right">
                   {broadcastMessage.length}/2000
@@ -309,7 +309,7 @@ export function GafAdminNotifications() {
               <Button
                 onClick={handleBroadcast}
                 disabled={sending || !broadcastTitle.trim() || !broadcastMessage.trim()}
-                className="gap-2 bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                className="gap-2 bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
               >
                 {sending ? (
                   <div className="animate-spin size-4 border-2 border-white border-t-transparent rounded-full" />
@@ -328,11 +328,11 @@ export function GafAdminNotifications() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <Card className="border-0 shadow-sm p-4">
             <p className="text-xs text-gray-500">Total Sent</p>
-            <p className="text-2xl font-bold text-[#4A148C]">{stats.total}</p>
+            <p className="text-2xl font-bold text-[#28166F]">{stats.total}</p>
           </Card>
           <Card className="border-0 shadow-sm p-4">
             <p className="text-xs text-gray-500">Unread</p>
-            <p className="text-2xl font-bold text-[#D32F2F]">
+            <p className="text-2xl font-bold text-[#DA251D]">
               {stats.totalUnread}
             </p>
           </Card>
@@ -344,7 +344,7 @@ export function GafAdminNotifications() {
                 <p className="text-xs text-gray-500">
                   {NOTIFICATION_TYPE_LABELS[type as NotificationType] || type}
                 </p>
-                <p className="text-2xl font-bold text-[#4A148C]">{count}</p>
+                <p className="text-2xl font-bold text-[#28166F]">{count}</p>
               </Card>
             ))}
         </div>
@@ -359,7 +359,7 @@ export function GafAdminNotifications() {
             onClick={() => setTypeFilter("all")}
             className={`rounded-full shrink-0 gap-1.5 ${
               typeFilter === "all"
-                ? "bg-[#4A148C] text-white hover:bg-[#1A0033]"
+                ? "bg-[#28166F] text-white hover:bg-[#0D0B1A]"
                 : ""
             }`}
           >
@@ -376,7 +376,7 @@ export function GafAdminNotifications() {
                 onClick={() => setTypeFilter(t)}
                 className={`rounded-full shrink-0 gap-1.5 ${
                   typeFilter === t
-                    ? "bg-[#4A148C] text-white hover:bg-[#1A0033]"
+                    ? "bg-[#28166F] text-white hover:bg-[#0D0B1A]"
                     : ""
                 }`}
               >
@@ -394,7 +394,7 @@ export function GafAdminNotifications() {
             value={memberSearch}
             onChange={(e) => setMemberSearch(e.target.value)}
             placeholder="Filter by member ID..."
-            className="pl-9 pr-3 py-1.5 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4A148C]/20 focus:border-[#4A148C] w-56"
+            className="pl-9 pr-3 py-1.5 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#28166F]/20 focus:border-[#28166F] w-56"
           />
           {memberSearch && (
             <button
@@ -410,7 +410,7 @@ export function GafAdminNotifications() {
       {/* Loading */}
       {loading && (
         <div className="flex items-center justify-center py-20">
-          <div className="animate-spin size-8 border-3 border-[#4A148C] border-t-transparent rounded-full" />
+          <div className="animate-spin size-8 border-3 border-[#28166F] border-t-transparent rounded-full" />
         </div>
       )}
 
@@ -472,7 +472,7 @@ export function GafAdminNotifications() {
                             <p
                               className={`text-sm ${
                                 !n.read
-                                  ? "font-semibold text-[#4A148C]"
+                                  ? "font-semibold text-[#28166F]"
                                   : "text-gray-600"
                               }`}
                             >
@@ -480,7 +480,7 @@ export function GafAdminNotifications() {
                             </p>
                             <div className="flex items-center gap-1.5 shrink-0">
                               {!n.read && (
-                                <span className="size-2 rounded-full bg-[#4A148C]" />
+                                <span className="size-2 rounded-full bg-[#28166F]" />
                               )}
                               <Badge
                                 variant="secondary"

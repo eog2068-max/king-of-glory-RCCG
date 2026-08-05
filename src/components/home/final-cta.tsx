@@ -20,7 +20,7 @@ const item = {
 
 export function FinalCta() {
   return (
-    <section className="relative bg-gradient-to-br from-[#1A0033] via-[#4A148C] to-[#7B1FA2] py-20 md:py-28 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080] py-20 md:py-28 overflow-hidden">
       {/* Decorative pattern overlay */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -68,7 +68,7 @@ export function FinalCta() {
         {/* Red divider */}
         <motion.div
           variants={item}
-          className="w-16 h-1 bg-[#D32F2F] mx-auto rounded-full mb-6"
+          className="w-16 h-1 bg-[#DA251D] mx-auto rounded-full mb-6"
         />
 
         {/* Tagline */}
@@ -95,21 +95,21 @@ export function FinalCta() {
         >
           <Link
             href="/social"
-            className="inline-flex items-center justify-center gap-2 bg-[#C62828] hover:bg-[#B71C1C] text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg text-sm"
+            className="inline-flex items-center justify-center gap-2 bg-[#C62828] hover:bg-[#B91C1C] text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg text-sm"
           >
             ENTER YOUTHCONNECT
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
             href="/announcements"
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#4A148C] hover:bg-gray-100 px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg text-sm"
+            className="inline-flex items-center justify-center gap-2 bg-white text-[#28166F] hover:bg-gray-100 px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg text-sm"
           >
             EXPLORE CMS
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
             href="/go-a-fishing"
-            className="inline-flex items-center justify-center gap-2 bg-[#7B1FA2] hover:bg-[#4A148C] text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg text-sm"
+            className="inline-flex items-center justify-center gap-2 bg-[#3D2080] hover:bg-[#28166F] text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg text-sm"
           >
             GO-A-FISHING
             <ArrowRight className="w-4 h-4" />

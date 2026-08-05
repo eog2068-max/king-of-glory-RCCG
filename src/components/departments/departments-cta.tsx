@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 
 export function DepartmentsCTA() {
   return (
-    <SectionWrapper className="py-16 md:py-24 bg-gradient-to-br from-[#4A148C] to-[#1A0033] relative overflow-hidden">
+    <SectionWrapper className="py-16 md:py-24 bg-gradient-to-br from-[#28166F] to-[#0D0B1A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D32F2F] rounded-full blur-[128px]" />
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-[#7B1FA2] rounded-full blur-[128px]" />
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#DA251D] rounded-full blur-[128px]" />
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-[#3D2080] rounded-full blur-[128px]" />
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -34,7 +34,7 @@ export function DepartmentsCTA() {
             <Button
               asChild
               size="lg"
-              className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-xl px-8 font-semibold shadow-lg shadow-[#D32F2F]/25 text-base"
+              className="bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-xl px-8 font-semibold shadow-lg shadow-[#DA251D]/25 text-base"
             >
               <Link href="/join-ministry">
                 Join a Department

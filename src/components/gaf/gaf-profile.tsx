@@ -75,7 +75,7 @@ const STATUS_COLORS: Record<ReferralStatus, string> = {
   attended: "bg-amber-100 text-amber-700",
   saved: "bg-emerald-100 text-emerald-700",
   baptized: "bg-purple-100 text-purple-700",
-  member: "bg-[#4A148C] text-white",
+  member: "bg-[#28166F] text-white",
   lost_contact: "bg-gray-100 text-gray-600",
 };
 
@@ -220,11 +220,11 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
     .slice(0, 2);
 
   return (
-    <section className="py-12 md:py-16 bg-[#F3E5F5] min-h-screen">
+    <section className="py-12 md:py-16 bg-[#E8E0F0] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         {/* Profile Header Card */}
         <Card className="border-0 shadow-md overflow-hidden">
-          <div className="bg-gradient-to-br from-[#4A148C] to-[#1A0033] px-6 py-8 text-white">
+          <div className="bg-gradient-to-br from-[#28166F] to-[#0D0B1A] px-6 py-8 text-white">
             <div className="flex flex-col sm:flex-row sm:items-center gap-5">
               {/* Avatar */}
               <div className="flex items-center justify-center size-20 rounded-2xl bg-white/15 text-3xl font-bold shrink-0">
@@ -309,7 +309,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
               return (
                 <div key={stat.label} className="p-4 text-center">
                   <Icon className={`size-5 mx-auto mb-1 ${stat.color}`} />
-                  <p className="text-xl font-bold text-[#4A148C]">{stat.value}</p>
+                  <p className="text-xl font-bold text-[#28166F]">{stat.value}</p>
                   <p className="text-[10px] text-gray-500 uppercase tracking-wide">
                     {stat.label}
                   </p>
@@ -326,7 +326,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
             animate={{ opacity: 1, y: 0 }}
           >
             <Card className="border-0 shadow-md p-6">
-              <h3 className="text-lg font-semibold text-[#4A148C] mb-4 flex items-center gap-2">
+              <h3 className="text-lg font-semibold text-[#28166F] mb-4 flex items-center gap-2">
                 <Edit3 className="size-5" />
                 Edit Profile
               </h3>
@@ -384,7 +384,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
                   <Button
                     onClick={handleSave}
                     disabled={saving}
-                    className="gap-2 bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                    className="gap-2 bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
                   >
                     {saving ? (
                       <div className="animate-spin size-4 border-2 border-white border-t-transparent rounded-full" />
@@ -404,19 +404,19 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
           <TabsList className="bg-white rounded-xl shadow-sm p-1 h-auto flex-wrap">
             <TabsTrigger
               value="overview"
-              className="rounded-lg data-[state=active]:bg-[#4A148C] data-[state=active]:text-white"
+              className="rounded-lg data-[state=active]:bg-[#28166F] data-[state=active]:text-white"
             >
               Overview
             </TabsTrigger>
             <TabsTrigger
               value="sharing"
-              className="rounded-lg data-[state=active]:bg-[#4A148C] data-[state=active]:text-white"
+              className="rounded-lg data-[state=active]:bg-[#28166F] data-[state=active]:text-white"
             >
               Share & Invite
             </TabsTrigger>
             <TabsTrigger
               value="timeline"
-              className="rounded-lg data-[state=active]:bg-[#4A148C] data-[state=active]:text-white"
+              className="rounded-lg data-[state=active]:bg-[#28166F] data-[state=active]:text-white"
             >
               Activity
             </TabsTrigger>
@@ -427,7 +427,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
             {/* Referral Score Breakdown */}
             <Card className="border-0 shadow-md">
               <CardHeader>
-                <CardTitle className="text-lg text-[#4A148C] flex items-center gap-2">
+                <CardTitle className="text-lg text-[#28166F] flex items-center gap-2">
                   <Trophy className="size-5 text-amber-600" />
                   Gospel-Labor Score Breakdown
                 </CardTitle>
@@ -439,7 +439,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
                     return (
                       <div
                         key={status}
-                        className="bg-[#F3E5F5] rounded-xl p-3 border border-[#4A148C]/10"
+                        className="bg-[#E8E0F0] rounded-xl p-3 border border-[#28166F]/10"
                       >
                         <div className="flex items-center justify-between">
                           <span className="text-xs text-gray-500 capitalize">
@@ -449,7 +449,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
                             ×{weight}
                           </span>
                         </div>
-                        <p className="text-xl font-bold text-[#4A148C] mt-1">
+                        <p className="text-xl font-bold text-[#28166F] mt-1">
                           {count}
                         </p>
                         <p className="text-[10px] text-gray-400">
@@ -461,7 +461,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
                 </div>
                 <div className="mt-4 p-3 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200/50">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-[#4A148C]">
+                    <span className="font-semibold text-[#28166F]">
                       Total Score
                     </span>
                     <span className="text-2xl font-bold text-amber-700">
@@ -475,7 +475,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
             {/* Outreach Stats */}
             <Card className="border-0 shadow-md">
               <CardHeader>
-                <CardTitle className="text-lg text-[#4A148C] flex items-center gap-2">
+                <CardTitle className="text-lg text-[#28166F] flex items-center gap-2">
                   <MapPin className="size-5 text-emerald-600" />
                   Outreach Summary
                 </CardTitle>
@@ -508,7 +508,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
             {member.rewardWinners.length > 0 && (
               <Card className="border-0 shadow-md">
                 <CardHeader>
-                  <CardTitle className="text-lg text-[#4A148C] flex items-center gap-2">
+                  <CardTitle className="text-lg text-[#28166F] flex items-center gap-2">
                     <Award className="size-5 text-yellow-600" />
                     Awards & Recognition
                   </CardTitle>
@@ -521,7 +521,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
                         className="flex items-center justify-between bg-yellow-50/50 rounded-xl p-3 border border-yellow-200/30"
                       >
                         <div>
-                          <p className="font-semibold text-[#4A148C] text-sm">
+                          <p className="font-semibold text-[#28166F] text-sm">
                             {w.cycle.category.name}
                           </p>
                           <p className="text-xs text-gray-500">{w.cycle.name}</p>
@@ -546,28 +546,28 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
 
             {/* Quick links */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5">
+              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5">
                 <Link href="/go-a-fishing/my-referrals">
                   <Fish className="size-5 text-purple-600" />
-                  <span className="text-xs text-[#4A148C]">My Referrals</span>
+                  <span className="text-xs text-[#28166F]">My Referrals</span>
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5">
+              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5">
                 <Link href="/go-a-fishing/my-outreach">
                   <MapPin className="size-5 text-emerald-600" />
-                  <span className="text-xs text-[#4A148C]">My Outreach</span>
+                  <span className="text-xs text-[#28166F]">My Outreach</span>
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5">
+              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5">
                 <Link href="/go-a-fishing/awards">
                   <Award className="size-5 text-amber-600" />
-                  <span className="text-xs text-[#4A148C]">Awards</span>
+                  <span className="text-xs text-[#28166F]">Awards</span>
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#4A148C]/20 hover:bg-[#4A148C]/5">
+              <Button asChild variant="outline" className="h-auto py-5 flex-col gap-2 rounded-xl border-[#28166F]/20 hover:bg-[#28166F]/5">
                 <Link href="/go-a-fishing/notifications">
                   <Bell className="size-5 text-purple-600" />
-                  <span className="text-xs text-[#4A148C]">Notifications</span>
+                  <span className="text-xs text-[#28166F]">Notifications</span>
                 </Link>
               </Button>
             </div>
@@ -577,7 +577,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
           <TabsContent value="sharing" className="space-y-6">
             {/* Enhanced Share Dialog trigger */}
             <Card className="border-0 shadow-md p-6">
-              <h3 className="text-lg font-semibold text-[#4A148C] mb-2 flex items-center gap-2">
+              <h3 className="text-lg font-semibold text-[#28166F] mb-2 flex items-center gap-2">
                 <Sparkles className="size-5 text-amber-600" />
                 Share Your Referral Link
               </h3>
@@ -599,8 +599,8 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
 
             {/* E-Invite Card */}
             <Card className="border-0 shadow-md p-6">
-              <h3 className="text-lg font-semibold text-[#4A148C] mb-2 flex items-center gap-2">
-                <Heart className="size-5 text-[#D32F2F]" />
+              <h3 className="text-lg font-semibold text-[#28166F] mb-2 flex items-center gap-2">
+                <Heart className="size-5 text-[#DA251D]" />
                 E-Invitation Card
               </h3>
               <p className="text-sm text-gray-600 mb-4">
@@ -620,7 +620,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
           <TabsContent value="timeline" className="space-y-6">
             <Card className="border-0 shadow-md">
               <CardHeader>
-                <CardTitle className="text-lg text-[#4A148C] flex items-center gap-2">
+                <CardTitle className="text-lg text-[#28166F] flex items-center gap-2">
                   <Clock className="size-5 text-purple-600" />
                   Your Activity Timeline
                 </CardTitle>
@@ -660,7 +660,7 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
                             <div className="bg-gray-50 rounded-xl p-4 hover:shadow-sm transition-shadow">
                               <div className="flex items-start justify-between gap-2">
                                 <div>
-                                  <p className="font-semibold text-[#4A148C] text-sm">
+                                  <p className="font-semibold text-[#28166F] text-sm">
                                     {event.title}
                                   </p>
                                   <p className="text-xs text-gray-500 mt-0.5">
@@ -693,12 +693,12 @@ export function GafProfile({ member, baseUrl }: GafProfileProps) {
 
         {/* Scripture footer */}
         <div className="text-center py-8">
-          <Heart className="size-8 mx-auto text-[#D32F2F] mb-3" />
+          <Heart className="size-8 mx-auto text-[#DA251D] mb-3" />
           <p className="text-sm text-gray-600 italic max-w-md mx-auto leading-relaxed">
             &ldquo;But the fruit of the Spirit is love, joy, peace, forbearance,
             kindness, goodness, faithfulness, gentleness and self-control.&rdquo;
             <br />
-            <span className="text-[#D32F2F] font-medium">
+            <span className="text-[#DA251D] font-medium">
               — Galatians 5:22-23
             </span>
           </p>

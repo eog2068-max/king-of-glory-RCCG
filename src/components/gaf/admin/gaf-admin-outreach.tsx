@@ -209,7 +209,7 @@ export function GafAdminOutreach() {
     <div className="p-4 lg:p-8 space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl lg:text-3xl font-bold text-[#4A148C]">
+        <h1 className="text-2xl lg:text-3xl font-bold text-[#28166F]">
           Outreach Activities
         </h1>
         <p className="text-sm text-gray-500 mt-1">
@@ -222,7 +222,7 @@ export function GafAdminOutreach() {
         <div className="grid grid-cols-3 gap-4">
           <Card className="border-0 shadow-sm">
             <CardContent className="p-4 text-center">
-              <div className="text-2xl font-bold text-[#4A148C]">
+              <div className="text-2xl font-bold text-[#28166F]">
                 {data.summary.totalActivities}
               </div>
               <div className="text-xs text-gray-500">Total Activities</div>
@@ -255,7 +255,7 @@ export function GafAdminOutreach() {
             onClick={() => setFilterType("")}
             className={cn(
               "px-3 py-1.5 rounded-full text-xs font-medium transition-colors border",
-              !filterType ? "bg-[#4A148C] text-white border-[#4A148C]" : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
+              !filterType ? "bg-[#28166F] text-white border-[#28166F]" : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
             )}
           >
             All Types
@@ -267,7 +267,7 @@ export function GafAdminOutreach() {
               onClick={() => setFilterType(key)}
               className={cn(
                 "px-3 py-1.5 rounded-full text-xs font-medium transition-colors border",
-                filterType === key ? "bg-[#4A148C] text-white border-[#4A148C]" : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
+                filterType === key ? "bg-[#28166F] text-white border-[#28166F]" : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
               )}
             >
               {label}
@@ -284,7 +284,7 @@ export function GafAdminOutreach() {
                 onClick={() => setFilterStatus(s)}
                 className={cn(
                   "px-3 py-1.5 rounded-full text-xs font-medium transition-colors border",
-                  filterStatus === s ? "bg-[#4A148C] text-white border-[#4A148C]" : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
+                  filterStatus === s ? "bg-[#28166F] text-white border-[#28166F]" : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
                 )}
               >
                 {label}
@@ -297,7 +297,7 @@ export function GafAdminOutreach() {
       {/* Activity list */}
       <Card className="border-0 shadow-md">
         <CardHeader className="pb-3">
-          <CardTitle className="text-lg text-[#4A148C] flex items-center gap-2">
+          <CardTitle className="text-lg text-[#28166F] flex items-center gap-2">
             <MapPin className="size-5 text-purple-500" />
             All Activities
             {data && (
@@ -308,7 +308,7 @@ export function GafAdminOutreach() {
         <CardContent>
           {loading && !data ? (
             <div className="py-16 flex flex-col items-center gap-3">
-              <Loader2 className="size-8 text-[#4A148C] animate-spin" />
+              <Loader2 className="size-8 text-[#28166F] animate-spin" />
               <p className="text-sm text-gray-500">Loading...</p>
             </div>
           ) : error ? (
@@ -340,7 +340,7 @@ export function GafAdminOutreach() {
                         <div className="min-w-0 flex-1">
                           <div className="flex items-start justify-between gap-2">
                             <div className="min-w-0">
-                              <p className="font-semibold text-[#4A148C]">{act.title}</p>
+                              <p className="font-semibold text-[#28166F]">{act.title}</p>
                               <div className="flex flex-wrap items-center gap-2 mt-1">
                                 <span className="text-xs font-medium text-gray-500">{act.member.fullName}</span>
                                 <span className={cn("px-2 py-0.5 rounded-full text-xs font-medium", typeColor)}>

@@ -112,7 +112,7 @@ export function SocialAdminDashboard() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#4A148C] to-[#6A1B9A] text-white px-6 py-6">
+      <div className="bg-gradient-to-r from-[#28166F] to-[#3D2080] text-white px-6 py-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -154,7 +154,7 @@ export function SocialAdminDashboard() {
               }}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
                 activeTab === tab.id
-                  ? "bg-white text-[#4A148C] shadow-sm"
+                  ? "bg-white text-[#28166F] shadow-sm"
                   : "text-gray-500 hover:text-gray-700"
               }`}
             >
@@ -271,7 +271,7 @@ export function SocialAdminDashboard() {
                     { href: "/social/prayer-circle", label: "Prayer Circle" },
                     { href: "/social/amen-wall", label: "Amen Wall" },
                   ].map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-sm text-[#4A148C] hover:underline">
+                    <Link key={link.href} href={link.href} className="block text-sm text-[#28166F] hover:underline">
                       → {link.label}
                     </Link>
                   ))}
@@ -291,7 +291,7 @@ export function SocialAdminDashboard() {
                 </h3>
                 <button
                   onClick={loadPrivatePrayers}
-                  className="text-sm text-[#4A148C] hover:underline"
+                  className="text-sm text-[#28166F] hover:underline"
                 >
                   Refresh
                 </button>

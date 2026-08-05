@@ -22,10 +22,10 @@ export function FeaturedSermon({ sermon, onPlay }: FeaturedSermonProps) {
       <div className="flex flex-col lg:flex-row">
         {/* Left: Visual / Player area */}
         <div className="relative lg:w-[420px] shrink-0">
-          <div className="aspect-video lg:aspect-auto lg:h-full bg-gradient-to-br from-[#4A148C] via-[#6A1B9A] to-[#7B1FA2] flex items-center justify-center">
+          <div className="aspect-video lg:aspect-auto lg:h-full bg-gradient-to-br from-[#28166F] via-[#3D2080] to-[#3D2080] flex items-center justify-center">
             <div className="absolute inset-0 opacity-5">
               <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-[60px]" />
-              <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#D32F2F] rounded-full blur-[60px]" />
+              <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#DA251D] rounded-full blur-[60px]" />
             </div>
             <div className="relative z-10 text-center px-6">
               <div className="w-20 h-20 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center mx-auto mb-4 cursor-pointer hover:bg-white/25 transition-colors group">
@@ -43,13 +43,13 @@ export function FeaturedSermon({ sermon, onPlay }: FeaturedSermonProps) {
         <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center flex-1">
           {/* Series badge */}
           {sermon.seriesId && (
-            <span className="inline-flex items-center self-start text-[11px] font-semibold uppercase tracking-wider text-[#D32F2F] bg-red-50 px-3 py-1 rounded-full mb-3">
+            <span className="inline-flex items-center self-start text-[11px] font-semibold uppercase tracking-wider text-[#DA251D] bg-red-50 px-3 py-1 rounded-full mb-3">
               <BookOpen className="size-3 mr-1.5" />
               {sermon.tags[0]}
             </span>
           )}
 
-          <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C] mb-3 leading-tight">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#28166F] mb-3 leading-tight">
             {sermon.title}
           </h2>
 
@@ -85,9 +85,9 @@ export function FeaturedSermon({ sermon, onPlay }: FeaturedSermonProps) {
               {sermon.scriptures.map((scripture) => (
                 <span
                   key={scripture}
-                  className="inline-flex items-center text-xs font-medium text-[#4A148C] bg-[#F3E5F5] px-2.5 py-1 rounded-lg"
+                  className="inline-flex items-center text-xs font-medium text-[#28166F] bg-[#E8E0F0] px-2.5 py-1 rounded-lg"
                 >
-                  <BookOpen className="size-3 mr-1.5 text-[#4A148C]/60" />
+                  <BookOpen className="size-3 mr-1.5 text-[#28166F]/60" />
                   {scripture}
                 </span>
               ))}
@@ -99,7 +99,7 @@ export function FeaturedSermon({ sermon, onPlay }: FeaturedSermonProps) {
             {sermon.hasVideo && (
               <Button
                 onClick={() => onPlay(sermon)}
-                className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-xl h-11 px-6 font-semibold shadow-md"
+                className="bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-xl h-11 px-6 font-semibold shadow-md"
               >
                 <Play className="size-4 fill-white" />
                 Watch Video
@@ -109,7 +109,7 @@ export function FeaturedSermon({ sermon, onPlay }: FeaturedSermonProps) {
               <Button
                 onClick={() => onPlay(sermon)}
                 variant="outline"
-                className="border-[#4A148C]/20 text-[#4A148C] hover:bg-[#F3E5F5] hover:text-[#4A148C] rounded-xl h-11 px-6 font-semibold"
+                className="border-[#28166F]/20 text-[#28166F] hover:bg-[#E8E0F0] hover:text-[#28166F] rounded-xl h-11 px-6 font-semibold"
               >
                 <Headphones className="size-4" />
                 Listen Audio

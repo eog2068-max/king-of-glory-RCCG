@@ -32,8 +32,8 @@ export interface ShareButtonProps
 
 export function ShareButton({
   url,
-  title = "MFM Youth Church",
-  text = "Join me at MFM Rehoborth Assembly!",
+  title = "RCCG King of Glory",
+  text = "Join me at RCCG King of Glory Parish, Zonal Headquarters!",
   label = "Share",
   showLabel = true,
   variant = "outline",

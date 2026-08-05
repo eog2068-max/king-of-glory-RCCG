@@ -18,37 +18,37 @@ export function LocationMap() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="MFM Youth Church Location"
+              title="RCCG King of Glory Location"
               className="w-full h-full"
             />
           </div>
 
           {/* Contact Info */}
           <div className="md:w-80 lg:w-96 shrink-0 bg-white rounded-2xl p-6 shadow-lg shadow-black/5 border border-gray-100">
-            <h3 className="text-lg font-bold text-[#4A148C] mb-6">Contact Information</h3>
+            <h3 className="text-lg font-bold text-[#28166F] mb-6">Contact Information</h3>
 
             <div className="space-y-5">
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-lg bg-[#EBF0FA] flex items-center justify-center shrink-0 mt-0.5">
-                  <MapPin className="size-4 text-[#4A148C]" />
+                  <MapPin className="size-4 text-[#28166F]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800 text-sm">Address</p>
                   <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">
-                    14 Ekukinam Street, Opp. Chisco Motor Park Utako, Abuja.
+                    No. 13 Ajose Adeogun Street, Utako, Abuja.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-lg bg-[#EBF0FA] flex items-center justify-center shrink-0 mt-0.5">
-                  <Phone className="size-4 text-[#4A148C]" />
+                  <Phone className="size-4 text-[#28166F]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800 text-sm">Phone</p>
                   <a
                     href="tel:+2349050017238"
-                    className="text-sm text-[#D32F2F] hover:underline mt-0.5 block"
+                    className="text-sm text-[#DA251D] hover:underline mt-0.5 block"
                   >
                     +234 905 001 7238
                   </a>
@@ -57,15 +57,15 @@ export function LocationMap() {
 
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-lg bg-[#EBF0FA] flex items-center justify-center shrink-0 mt-0.5">
-                  <Mail className="size-4 text-[#4A148C]" />
+                  <Mail className="size-4 text-[#28166F]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800 text-sm">Email</p>
                   <a
-                    href="mailto:thecenaclemfmycr10@gmail.com"
-                    className="text-sm text-[#D32F2F] hover:underline mt-0.5 block"
+                    href="mailto:info@rccgkingofglory.org"
+                    className="text-sm text-[#DA251D] hover:underline mt-0.5 block"
                   >
-                    thecenaclemfmycr10@gmail.com
+                    info@rccgkingofglory.org
                   </a>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export function LocationMap() {
 
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-lg bg-[#EBF0FA] flex items-center justify-center shrink-0 mt-0.5">
-                  <Clock className="size-4 text-[#4A148C]" />
+                  <Clock className="size-4 text-[#28166F]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800 text-sm">Office Hours</p>

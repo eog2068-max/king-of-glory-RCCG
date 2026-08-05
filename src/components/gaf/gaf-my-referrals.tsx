@@ -66,7 +66,7 @@ const STATUS_COLORS: Record<ReferralStatus, string> = {
   attended: "bg-amber-100 text-amber-700 border-amber-200",
   saved: "bg-emerald-100 text-emerald-700 border-emerald-200",
   baptized: "bg-purple-100 text-purple-700 border-purple-200",
-  member: "bg-[#4A148C] text-white border-[#4A148C]",
+  member: "bg-[#28166F] text-white border-[#28166F]",
   lost_contact: "bg-gray-100 text-gray-600 border-gray-200",
 };
 
@@ -160,12 +160,12 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-[#F3E5F5] min-h-screen">
+    <section className="py-12 md:py-16 bg-[#E8E0F0] min-h-screen">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         {/* Header + Add button */}
         <SectionWrapper className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C]">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#28166F]">
               My Referrals
             </h2>
             <p className="text-sm text-gray-600 mt-1">
@@ -175,21 +175,21 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
 
           <Dialog open={dialogOpen} onOpenChange={(open) => { setDialogOpen(open); if (!open) resetForm(); }}>
             <DialogTrigger asChild>
-              <Button className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl gap-2">
+              <Button className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl gap-2">
                 <Plus className="size-4" />
                 Add Referral
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
-                <DialogTitle className="flex items-center gap-2 text-[#4A148C]">
+                <DialogTitle className="flex items-center gap-2 text-[#28166F]">
                   <Fish className="size-5" />
                   Log a New Referral
                 </DialogTitle>
               </DialogHeader>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="inviteeName" className="text-[#4A148C]">
+                  <Label htmlFor="inviteeName" className="text-[#28166F]">
                     Invitee Name <span className="text-red-500">*</span>
                   </Label>
                   <Input
@@ -205,7 +205,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="inviteePhone" className="text-[#4A148C]">
+                    <Label htmlFor="inviteePhone" className="text-[#28166F]">
                       Phone (optional)
                     </Label>
                     <Input
@@ -218,7 +218,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="inviteeEmail" className="text-[#4A148C]">
+                    <Label htmlFor="inviteeEmail" className="text-[#28166F]">
                       Email (optional)
                     </Label>
                     <Input
@@ -233,7 +233,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="prayerPoint" className="text-[#4A148C]">
+                  <Label htmlFor="prayerPoint" className="text-[#28166F]">
                     Prayer Point (optional)
                   </Label>
                   <Input
@@ -247,7 +247,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="notes" className="text-[#4A148C]">
+                  <Label htmlFor="notes" className="text-[#28166F]">
                     Notes (optional)
                   </Label>
                   <Textarea
@@ -282,7 +282,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                   <Button
                     type="submit"
                     disabled={submitting || !inviteeName.trim()}
-                    className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl gap-2"
+                    className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl gap-2"
                   >
                     {submitting ? (
                       <>
@@ -327,7 +327,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                 onClick={() => setFilter(f.value)}
                 className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
                   filter === f.value
-                    ? "bg-[#4A148C] text-white"
+                    ? "bg-[#28166F] text-white"
                     : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
                 }`}
               >
@@ -370,7 +370,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                           <div className="min-w-0 flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <h3 className="font-semibold text-[#4A148C] truncate">
+                              <h3 className="font-semibold text-[#28166F] truncate">
                                 {ref.inviteeName}
                               </h3>
                               <span
@@ -407,7 +407,7 @@ export function GafMyReferrals({ referrals: initialReferrals }: GafMyReferralsPr
                               </span>
                             </div>
                             {ref.prayerPoint && (
-                              <p className="mt-2 text-sm text-[#D32F2F] italic">
+                              <p className="mt-2 text-sm text-[#DA251D] italic">
                                 🙏 {ref.prayerPoint}
                               </p>
                             )}

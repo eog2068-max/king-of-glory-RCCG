@@ -123,7 +123,7 @@ const menuCategories: MenuCategory[] = [
       accentBar: "bg-[#C62828]",
       accentText: "text-white",
       ctaBg: "bg-[#C62828]",
-      ctaHover: "hover:bg-[#B71C1C]",
+      ctaHover: "hover:bg-[#B91C1C]",
       iconBg: "bg-red-100",
       iconText: "text-[#C62828]",
       itemActiveBg: "bg-red-50",
@@ -145,15 +145,15 @@ const menuCategories: MenuCategory[] = [
     subtitle: "To CMS Home",
     headerLink: "/cms",
     color: {
-      headerBg: "bg-[#4A148C]",
-      accentBar: "bg-[#4A148C]",
+      headerBg: "bg-[#28166F]",
+      accentBar: "bg-[#28166F]",
       accentText: "text-white",
-      ctaBg: "bg-[#4A148C]",
-      ctaHover: "hover:bg-[#1A0033]",
+      ctaBg: "bg-[#28166F]",
+      ctaHover: "hover:bg-[#0D0B1A]",
       iconBg: "bg-purple-100",
-      iconText: "text-[#4A148C]",
+      iconText: "text-[#28166F]",
       itemActiveBg: "bg-purple-50",
-      itemActiveText: "text-[#4A148C]",
+      itemActiveText: "text-[#28166F]",
     },
     items: [
       { label: "Announcements", href: "/announcements", icon: Megaphone },
@@ -179,15 +179,15 @@ const menuCategories: MenuCategory[] = [
     subtitle: "To GAF Home",
     headerLink: "/go-a-fishing",
     color: {
-      headerBg: "bg-[#7B1FA2]",
-      accentBar: "bg-[#7B1FA2]",
+      headerBg: "bg-[#3D2080]",
+      accentBar: "bg-[#3D2080]",
       accentText: "text-white",
-      ctaBg: "bg-[#7B1FA2]",
-      ctaHover: "hover:bg-[#4A148C]",
+      ctaBg: "bg-[#3D2080]",
+      ctaHover: "hover:bg-[#28166F]",
       iconBg: "bg-purple-100",
-      iconText: "text-[#7B1FA2]",
+      iconText: "text-[#3D2080]",
       itemActiveBg: "bg-purple-50",
-      itemActiveText: "text-[#7B1FA2]",
+      itemActiveText: "text-[#3D2080]",
     },
     items: [
       { label: "My Dashboard", href: "/go-a-fishing/dashboard", icon: LayoutDashboard },
@@ -292,7 +292,7 @@ function MenuCategorySection({
                 {category.title}
               </span>
               {isAnyItemActive && (
-                <span className="h-1.5 w-1.5 rounded-full bg-[#D32F2F]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#DA251D]" />
               )}
             </div>
             <p className="text-[10px] text-gray-500 mt-0.5 ml-6 truncate">
@@ -417,8 +417,8 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         mounted && scrolled
-          ? "bg-[#1A0033]/95 backdrop-blur-xl shadow-lg shadow-black/10 border-b border-white/10"
-          : "bg-[#F3E5F5]/70 backdrop-blur-md border-b border-white/30"
+          ? "bg-[#0D0B1A]/95 backdrop-blur-xl shadow-lg shadow-black/10 border-b border-white/10"
+          : "bg-[#E8E0F0]/70 backdrop-blur-md border-b border-white/30"
       )}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -427,8 +427,8 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <div className="relative h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/90 p-0.5 shadow-md">
               <Image
-                src="/mfm-logo.png"
-                alt="Mountain of Fire and Miracles Ministries"
+                src="/king-of-glory-logo.png"
+                alt="The Redeemed Christian Church of God"
                 fill
                 sizes="40px"
                 className="object-contain"
@@ -441,10 +441,10 @@ export function Navbar() {
                   "text-sm font-bold leading-tight transition-colors",
                   mounted && scrolled
                     ? "text-white"
-                    : "text-[#4A148C]/90"
+                    : "text-[#28166F]/90"
                 )}
               >
-                Mountain of Fire and Miracles Ministries
+                The Redeemed Christian Church of God
               </p>
               <p
                 className={cn(
@@ -454,7 +454,7 @@ export function Navbar() {
                     : "text-gray-600"
                 )}
               >
-                (Youth Church)
+                (King of Glory Parish)
               </p>
             </div>
           </Link>
@@ -472,8 +472,8 @@ export function Navbar() {
                       ? "text-white bg-white/20 font-semibold"
                       : "text-purple-100/80 hover:text-white hover:bg-white/10"
                     : pathname === item.href
-                      ? "text-[#4A148C] bg-[#4A148C]/10 font-semibold"
-                      : "text-gray-600 hover:text-[#4A148C] hover:bg-[#4A148C]/5"
+                      ? "text-[#28166F] bg-[#28166F]/10 font-semibold"
+                      : "text-gray-600 hover:text-[#28166F] hover:bg-[#28166F]/5"
                 )}
               >
                 {item.label}
@@ -488,7 +488,7 @@ export function Navbar() {
                     "flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors outline-none",
                     mounted && scrolled
                       ? "text-purple-100/80 hover:text-white hover:bg-white/10"
-                      : "text-gray-600 hover:text-[#4A148C] hover:bg-[#4A148C]/5"
+                      : "text-gray-600 hover:text-[#28166F] hover:bg-[#28166F]/5"
                   )}
                 >
                   Explore
@@ -502,7 +502,7 @@ export function Navbar() {
                 className={cn(
                   "w-56 rounded-xl p-1.5 data-[side=bottom]:animate-in data-[side=bottom]:fade-in-0 data-[side=bottom]:zoom-in-95",
                   mounted && scrolled
-                    ? "bg-[#1A0033]/95 backdrop-blur-xl border-white/10"
+                    ? "bg-[#0D0B1A]/95 backdrop-blur-xl border-white/10"
                     : "bg-white border-gray-200 shadow-lg"
                 )}
               >
@@ -538,8 +538,8 @@ export function Navbar() {
                               )
                             : cn(
                                 pathname === item.href
-                                  ? "text-[#4A148C] bg-[#4A148C]/10 font-semibold"
-                                  : "text-gray-600 hover:text-[#4A148C] hover:bg-[#4A148C]/5"
+                                  ? "text-[#28166F] bg-[#28166F]/10 font-semibold"
+                                  : "text-gray-600 hover:text-[#28166F] hover:bg-[#28166F]/5"
                               )
                         )}
                       >
@@ -560,8 +560,8 @@ export function Navbar() {
                     className={cn(
                       "flex items-center justify-between gap-2.5 px-2.5 py-2 rounded-lg text-sm cursor-pointer transition-colors",
                       mounted && scrolled
-                        ? "text-[#CE93D8] hover:text-white hover:bg-white/10"
-                        : "text-[#4A148C] hover:text-[#1A0033] hover:bg-[#4A148C]/5"
+                        ? "text-[#8B6FAE] hover:text-white hover:bg-white/10"
+                        : "text-[#28166F] hover:text-[#0D0B1A] hover:bg-[#28166F]/5"
                     )}
                   >
                     View All
@@ -576,7 +576,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <Link
               href="/giving"
-              className="inline-flex items-center bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-lg pl-1 pr-2 h-8 sm:h-9 shadow-md transition-colors"
+              className="inline-flex items-center bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-lg pl-1 pr-2 h-8 sm:h-9 shadow-md transition-colors"
             >
               <svg width="26" height="33" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 self-start mt-[1px]" aria-hidden="true">
                 <path d="M12 3c-1 0-1.5.5-1.5 1.5V6L8 8.5C6.5 10 6 12 6 14c0 3.5 2.5 6 6 6s6-2.5 6-6c0-2-.5-4-2-5.5L13.5 6V4.5C13.5 3.5 13 3 12 3z" />
@@ -598,7 +598,7 @@ export function Navbar() {
             {/* Watch Live — icon + text always visible together, shorter height */}
             <Button
               asChild
-              className="inline-flex items-center gap-1.5 bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-lg px-2.5 py-1 h-8 sm:h-9 font-semibold shadow-md text-xs"
+              className="inline-flex items-center gap-1.5 bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-lg px-2.5 py-1 h-8 sm:h-9 font-semibold shadow-md text-xs"
             >
               <Link href="/live" className="flex items-center gap-1.5">
                 <Radio className="size-3.5" />
@@ -614,7 +614,7 @@ export function Navbar() {
                     "xl:hidden p-2 rounded-lg transition-colors",
                     mounted && scrolled
                       ? "text-white hover:bg-white/10"
-                      : "text-[#4A148C] hover:bg-[#4A148C]/5"
+                      : "text-[#28166F] hover:bg-[#28166F]/5"
                   )}
                   aria-label="Open menu"
                 >
@@ -623,18 +623,18 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-80 overflow-y-auto p-0">
                 {/* Sheet header */}
-                <SheetHeader className="px-4 pt-6 pb-4 bg-gradient-to-b from-[#F3E5F5] to-white">
-                  <SheetTitle className="text-[#4A148C] flex items-center gap-3">
-                    <div className="relative h-8 w-8 rounded-full bg-[#F3E5F5] p-0.5">
+                <SheetHeader className="px-4 pt-6 pb-4 bg-gradient-to-b from-[#E8E0F0] to-white">
+                  <SheetTitle className="text-[#28166F] flex items-center gap-3">
+                    <div className="relative h-8 w-8 rounded-full bg-[#E8E0F0] p-0.5">
                       <Image
-                        src="/mfm-logo.png"
-                        alt="Mountain of Fire and Miracles Ministries"
+                        src="/king-of-glory-logo.png"
+                        alt="The Redeemed Christian Church of God"
                         fill
                         sizes="32px"
                         className="object-contain"
                       />
                     </div>
-                    Youth Church
+                    RCCG King of Glory
                   </SheetTitle>
                 </SheetHeader>
 
@@ -655,7 +655,7 @@ export function Navbar() {
                 <div className="px-3 pb-6">
                   <Button
                     asChild
-                    className="w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white rounded-xl font-semibold py-3"
+                    className="w-full bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-xl font-semibold py-3"
                   >
                     <Link href="/live" onClick={closeMobile}>
                       <Radio className="size-4" />

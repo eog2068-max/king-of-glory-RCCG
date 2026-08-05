@@ -45,8 +45,8 @@ const departments: Department[] = [
       "Instrumental accompaniment for all services",
     ],
     meetingDay: "Saturdays, 4:00 PM",
-    accentColor: "text-[#D32F2F]",
-    bgColor: "bg-[#D32F2F]/10",
+    accentColor: "text-[#DA251D]",
+    bgColor: "bg-[#DA251D]/10",
   },
   {
     name: "Sunday School",
@@ -60,8 +60,8 @@ const departments: Department[] = [
       "Annual Sunday School retreat",
     ],
     meetingDay: "Sundays, 7:00 AM",
-    accentColor: "text-[#4A148C]",
-    bgColor: "bg-[#4A148C]/10",
+    accentColor: "text-[#28166F]",
+    bgColor: "bg-[#28166F]/10",
   },
   {
     name: "Ushering",
@@ -90,8 +90,8 @@ const departments: Department[] = [
       "Follow-up and new converts' integration",
     ],
     meetingDay: "Saturdays, 10:00 AM",
-    accentColor: "text-[#D32F2F]",
-    bgColor: "bg-[#D32F2F]/10",
+    accentColor: "text-[#DA251D]",
+    bgColor: "bg-[#DA251D]/10",
   },
   {
     name: "Children's Church",
@@ -105,8 +105,8 @@ const departments: Department[] = [
       "Parent-child dedication services",
     ],
     meetingDay: "Sundays, 9:00 AM",
-    accentColor: "text-[#4A148C]",
-    bgColor: "bg-[#4A148C]/10",
+    accentColor: "text-[#28166F]",
+    bgColor: "bg-[#28166F]/10",
   },
   {
     name: "Youth & Teens Ministry",
@@ -120,8 +120,8 @@ const departments: Department[] = [
       "Academic support and career guidance",
     ],
     meetingDay: "Fridays, 5:00 PM",
-    accentColor: "text-[#D32F2F]",
-    bgColor: "bg-[#D32F2F]/10",
+    accentColor: "text-[#DA251D]",
+    bgColor: "bg-[#DA251D]/10",
   },
   {
     name: "Women's Fellowship",
@@ -150,8 +150,8 @@ const departments: Department[] = [
       "Community development projects",
     ],
     meetingDay: "Third Saturdays, 11:00 AM",
-    accentColor: "text-[#4A148C]",
-    bgColor: "bg-[#4A148C]/10",
+    accentColor: "text-[#28166F]",
+    bgColor: "bg-[#28166F]/10",
   },
   {
     name: "Technical & Media",
@@ -165,8 +165,8 @@ const departments: Department[] = [
       "Website and IT infrastructure maintenance",
     ],
     meetingDay: "Saturdays, 12:00 PM",
-    accentColor: "text-[#D32F2F]",
-    bgColor: "bg-[#D32F2F]/10",
+    accentColor: "text-[#DA251D]",
+    bgColor: "bg-[#DA251D]/10",
   },
   {
     name: "Follow-Up & Welfare",
@@ -195,23 +195,23 @@ const departments: Department[] = [
       "Creative workshops and talent development",
     ],
     meetingDay: "Saturdays, 3:00 PM",
-    accentColor: "text-[#4A148C]",
-    bgColor: "bg-[#4A148C]/10",
+    accentColor: "text-[#28166F]",
+    bgColor: "bg-[#28166F]/10",
   },
   {
     name: "Mission & Missions",
     icon: Globe,
     description:
-      "The Mission and Missions Department coordinates the church's involvement in local and international missions. This includes supporting MFM mission fields, organising short-term mission trips, collecting mission offerings, and raising awareness about the global mandate to reach unreached people groups with the Gospel of Jesus Christ.",
+      "The Mission and Missions Department coordinates the church's involvement in local and international missions. This includes supporting RCCG mission fields, organising short-term mission trips, collecting mission offerings, and raising awareness about the global mandate to reach unreached people groups with the Gospel of Jesus Christ.",
     activities: [
       "Monthly mission awareness and prayer meetings",
-      "Support for MFM mission fields and missionaries",
+      "Support for RCCG mission fields and missionaries",
       "Short-term mission trip coordination",
       "Mission offering collection and remittance",
     ],
     meetingDay: "First Sundays, 4:00 PM",
-    accentColor: "text-[#D32F2F]",
-    bgColor: "bg-[#D32F2F]/10",
+    accentColor: "text-[#DA251D]",
+    bgColor: "bg-[#DA251D]/10",
   },
 ];
 
@@ -232,7 +232,7 @@ export function DepartmentsList() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-30px" }}
               transition={{ duration: 0.5, delay: index * 0.03 }}
-              className="group bg-white rounded-2xl border border-gray-100 hover:border-[#4A148C]/10 hover:shadow-xl hover:shadow-[#4A148C]/5 transition-all duration-300 overflow-hidden"
+              className="group bg-white rounded-2xl border border-gray-100 hover:border-[#28166F]/10 hover:shadow-xl hover:shadow-[#28166F]/5 transition-all duration-300 overflow-hidden"
             >
               <div className="p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-start gap-5">
@@ -246,9 +246,9 @@ export function DepartmentsList() {
                   {/* Content */}
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-                      <h3 className="text-xl font-bold text-[#4A148C]">{dept.name}</h3>
+                      <h3 className="text-xl font-bold text-[#28166F]">{dept.name}</h3>
                       {dept.meetingDay && (
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#F3E5F5] text-[#4A148C] whitespace-nowrap">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#E8E0F0] text-[#28166F] whitespace-nowrap">
                           {dept.meetingDay}
                         </span>
                       )}
@@ -262,7 +262,7 @@ export function DepartmentsList() {
                     <div className="grid sm:grid-cols-2 gap-2">
                       {dept.activities.map((activity, i) => (
                         <div key={i} className="flex items-start gap-2 text-sm text-gray-500">
-                          <div className="w-1.5 h-1.5 rounded-full bg-[#D32F2F] shrink-0 mt-1.5" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-[#DA251D] shrink-0 mt-1.5" />
                           <span>{activity}</span>
                         </div>
                       ))}

@@ -18,7 +18,7 @@ export function GivingSection() {
             <div className="w-12 h-12 bg-[#E8F5E9] rounded-xl flex items-center justify-center mb-4">
               <Building2 className="size-6 text-[#2E7D32]" />
             </div>
-            <h3 className="text-lg font-bold text-[#4A148C] mb-3">Bank Transfer</h3>
+            <h3 className="text-lg font-bold text-[#28166F] mb-3">Bank Transfer</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-gray-500">Bank Name</span>
@@ -29,7 +29,7 @@ export function GivingSection() {
                 <div className="flex items-center gap-1.5">
                   <span className="font-mono font-medium text-gray-700">1234567890</span>
                   <button
-                    className="text-[#4A148C]/50 hover:text-[#4A148C] transition-colors"
+                    className="text-[#28166F]/50 hover:text-[#28166F] transition-colors"
                     aria-label="Copy account number"
                   >
                     <Copy className="size-3.5" />
@@ -38,7 +38,7 @@ export function GivingSection() {
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-500">Account Name</span>
-                <span className="font-medium text-gray-700">MFM Youth Church</span>
+                <span className="font-medium text-gray-700">RCCG King of Glory</span>
               </div>
             </div>
           </div>
@@ -46,16 +46,16 @@ export function GivingSection() {
           {/* Online Giving */}
           <div className="bg-white rounded-2xl p-6 shadow-lg shadow-black/5 border border-gray-100">
             <div className="w-12 h-12 bg-[#EBF0FA] rounded-xl flex items-center justify-center mb-4">
-              <CreditCard className="size-6 text-[#4A148C]" />
+              <CreditCard className="size-6 text-[#28166F]" />
             </div>
-            <h3 className="text-lg font-bold text-[#4A148C] mb-3">Online Giving</h3>
+            <h3 className="text-lg font-bold text-[#28166F] mb-3">Online Giving</h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">
               Give securely online using your debit card or bank account through our trusted
               payment partners.
             </p>
             <Button
               asChild
-              className="w-full bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+              className="w-full bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
             >
               <Link href="/giving">
                 Give Now
@@ -69,7 +69,7 @@ export function GivingSection() {
             <div className="w-12 h-12 bg-[#FFF3E0] rounded-xl flex items-center justify-center mb-4">
               <QrCode className="size-6 text-[#C62828]" />
             </div>
-            <h3 className="text-lg font-bold text-[#4A148C] mb-3">QR Code</h3>
+            <h3 className="text-lg font-bold text-[#28166F] mb-3">QR Code</h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">
               Scan the QR code with your mobile banking app to give directly.
             </p>

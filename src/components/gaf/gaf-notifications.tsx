@@ -189,13 +189,13 @@ export function GafNotifications() {
   }
 
   return (
-    <section className="py-12 md:py-16 bg-[#F3E5F5] min-h-screen">
+    <section className="py-12 md:py-16 bg-[#E8E0F0] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#4A148C] flex items-center gap-3">
-              <div className="flex items-center justify-center size-10 rounded-xl bg-[#4A148C] text-white">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#28166F] flex items-center gap-3">
+              <div className="flex items-center justify-center size-10 rounded-xl bg-[#28166F] text-white">
                 <Bell className="size-5" />
               </div>
               Notifications
@@ -208,7 +208,7 @@ export function GafNotifications() {
             {unreadCount > 0 && (
               <Badge
                 variant="secondary"
-                className="bg-[#D32F2F] text-white rounded-full px-3"
+                className="bg-[#DA251D] text-white rounded-full px-3"
               >
                 {unreadCount} unread
               </Badge>
@@ -234,7 +234,7 @@ export function GafNotifications() {
             onClick={() => setTypeFilter("all")}
             className={`rounded-full shrink-0 gap-1.5 ${
               typeFilter === "all"
-                ? "bg-[#4A148C] text-white hover:bg-[#1A0033]"
+                ? "bg-[#28166F] text-white hover:bg-[#0D0B1A]"
                 : ""
             }`}
           >
@@ -251,7 +251,7 @@ export function GafNotifications() {
                 onClick={() => setTypeFilter(type)}
                 className={`rounded-full shrink-0 gap-1.5 ${
                   typeFilter === type
-                    ? "bg-[#4A148C] text-white hover:bg-[#1A0033]"
+                    ? "bg-[#28166F] text-white hover:bg-[#0D0B1A]"
                     : ""
                 }`}
               >
@@ -265,7 +265,7 @@ export function GafNotifications() {
         {/* Loading */}
         {loading && (
           <div className="flex flex-col items-center justify-center py-20">
-            <div className="animate-spin size-8 border-3 border-[#4A148C] border-t-transparent rounded-full mb-4" />
+            <div className="animate-spin size-8 border-3 border-[#28166F] border-t-transparent rounded-full mb-4" />
             <p className="text-sm text-gray-500">Loading notifications...</p>
           </div>
         )}
@@ -288,7 +288,7 @@ export function GafNotifications() {
         {!loading && !error && notifications.length === 0 && (
           <Card className="border-0 shadow-md p-12 text-center">
             <Inbox className="size-16 text-gray-200 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-[#4A148C] mb-2">
+            <h3 className="text-lg font-semibold text-[#28166F] mb-2">
               No notifications yet
             </h3>
             <p className="text-sm text-gray-500 mb-6 max-w-sm mx-auto">
@@ -308,7 +308,7 @@ export function GafNotifications() {
             {typeFilter === "all" && (
               <Button
                 asChild
-                className="bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl"
+                className="bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl"
               >
                 <Link href="/go-a-fishing/dashboard">Go to Dashboard</Link>
               </Button>
@@ -339,7 +339,7 @@ export function GafNotifications() {
                         <Card
                           className={`border-0 shadow-sm transition-all hover:shadow-md cursor-pointer ${
                             !n.read
-                              ? "bg-white border-l-4 border-l-[#4A148C]"
+                              ? "bg-white border-l-4 border-l-[#28166F]"
                               : "bg-gray-50/50"
                           }`}
                           onClick={() => !n.read && markRead(n.id)}
@@ -357,7 +357,7 @@ export function GafNotifications() {
                                     className={`text-sm leading-snug ${
                                       n.read
                                         ? "text-gray-600"
-                                        : "font-semibold text-[#4A148C]"
+                                        : "font-semibold text-[#28166F]"
                                     }`}
                                   >
                                     {n.title}
@@ -368,7 +368,7 @@ export function GafNotifications() {
                                 </div>
                                 <div className="flex items-center gap-2 shrink-0">
                                   {!n.read && (
-                                    <span className="size-2.5 rounded-full bg-[#4A148C]" />
+                                    <span className="size-2.5 rounded-full bg-[#28166F]" />
                                   )}
                                 </div>
                               </div>
@@ -414,12 +414,12 @@ export function GafNotifications() {
 
         {/* Scripture footer */}
         <div className="text-center py-8">
-          <Heart className="size-8 mx-auto text-[#D32F2F] mb-3" />
+          <Heart className="size-8 mx-auto text-[#DA251D] mb-3" />
           <p className="text-sm text-gray-600 italic max-w-md mx-auto leading-relaxed">
             &ldquo;And let us consider how we may spur one another on toward
             love and good deeds.&rdquo;
             <br />
-            <span className="text-[#D32F2F] font-medium">
+            <span className="text-[#DA251D] font-medium">
               — Hebrews 10:24
             </span>
           </p>

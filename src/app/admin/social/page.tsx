@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function SocialAdminPage() {
   return (
-    <div className="min-h-screen bg-[#F3E5F5]">
+    <div className="min-h-screen bg-[#E8E0F0]">
       <SocialAdminDashboard />
     </div>
   );

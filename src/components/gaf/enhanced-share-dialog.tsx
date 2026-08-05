@@ -59,8 +59,8 @@ const SHARE_CHANNELS = [
     id: "email" as const,
     label: "Email",
     icon: Mail,
-    color: "bg-[#4A148C] hover:bg-[#1A0033] text-white",
-    outlineColor: "border-[#4A148C] text-[#4A148C] hover:bg-[#4A148C]/5",
+    color: "bg-[#28166F] hover:bg-[#0D0B1A] text-white",
+    outlineColor: "border-[#28166F] text-[#28166F] hover:bg-[#28166F]/5",
   },
   {
     id: "facebook" as const,
@@ -122,9 +122,9 @@ export function EnhancedShareDialog({
   const [copied, setCopied] = useState(false);
   const [shareMessage, setShareMessage] = useState(
     customMessage ||
-      `You're warmly invited to worship with us at MFM Youth Church, Abuja. We'd love to see you! God bless.`
+      `You're warmly invited to worship with us at RCCG King of Glory, Abuja. We'd love to see you! God bless.`
   );
-  const [qrColor, setQrColor] = useState("#4A148C");
+  const [qrColor, setQrColor] = useState("#28166F");
 
   const fullUrl = useMemo(
     () => buildShareUrl(baseUrl, referralCode),
@@ -198,7 +198,7 @@ export function EnhancedShareDialog({
         case "email":
           shareUrl = buildEmailUrl(
             fullUrl,
-            "Invitation to MFM Youth Church",
+            "Invitation to RCCG King of Glory",
             shareMessage
           );
           break;
@@ -223,7 +223,7 @@ export function EnhancedShareDialog({
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {trigger || (
-          <Button className="gap-2 bg-[#4A148C] hover:bg-[#1A0033] text-white rounded-xl">
+          <Button className="gap-2 bg-[#28166F] hover:bg-[#0D0B1A] text-white rounded-xl">
             <Share2 className="size-4" />
             Share
           </Button>
@@ -232,18 +232,18 @@ export function EnhancedShareDialog({
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Share2 className="size-5 text-[#4A148C]" />
+            <Share2 className="size-5 text-[#28166F]" />
             Share Your Link
           </DialogTitle>
         </DialogHeader>
 
         <div className="space-y-5 py-2">
           {/* Link display */}
-          <div className="bg-[#F3E5F5] rounded-xl p-3 border border-[#4A148C]/10">
+          <div className="bg-[#E8E0F0] rounded-xl p-3 border border-[#28166F]/10">
             <p className="text-xs text-gray-500 mb-1 uppercase tracking-wide font-medium">
               Your Referral Link
             </p>
-            <p className="text-sm font-mono text-[#4A148C] break-all leading-relaxed">
+            <p className="text-sm font-mono text-[#28166F] break-all leading-relaxed">
               {fullUrl}
             </p>
           </div>
@@ -316,7 +316,7 @@ export function EnhancedShareDialog({
               onChange={(e) => setShareMessage(e.target.value)}
               rows={3}
               maxLength={500}
-              className="w-full rounded-xl border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#4A148C]/20 focus:border-[#4A148C] resize-none"
+              className="w-full rounded-xl border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#28166F]/20 focus:border-[#28166F] resize-none"
               placeholder="Write a personal invitation message..."
             />
             <p className="text-[10px] text-gray-400 mt-1 text-right">
@@ -331,14 +331,14 @@ export function EnhancedShareDialog({
             </Label>
             <div className="flex items-center gap-3">
               <div className="flex gap-2">
-                {["#4A148C", "#D32F2F", "#2E7D32", "#F57F17", "#6A1B9A", "#000000"].map(
+                {["#28166F", "#DA251D", "#2E7D32", "#F57F17", "#3D2080", "#000000"].map(
                   (color) => (
                     <button
                       key={color}
                       onClick={() => setQrColor(color)}
                       className={`w-8 h-8 rounded-full border-2 transition-all ${
                         qrColor === color
-                          ? "border-[#4A148C] scale-110"
+                          ? "border-[#28166F] scale-110"
                           : "border-transparent hover:scale-105"
                       }`}
                       style={{ backgroundColor: color }}
@@ -360,7 +360,7 @@ export function EnhancedShareDialog({
 
           {/* QR Preview */}
           <div className="flex justify-center">
-            <div className="bg-white p-3 rounded-2xl border-2 border-[#4A148C]/10 shadow-sm">
+            <div className="bg-white p-3 rounded-2xl border-2 border-[#28166F]/10 shadow-sm">
               <QRCodeSVG
                 data-gaf-share-qr="true"
                 value={fullUrl}
@@ -374,7 +374,7 @@ export function EnhancedShareDialog({
           </div>
 
           <p className="text-xs text-gray-500 text-center leading-relaxed">
-            Your referral code <span className="font-mono font-semibold text-[#4A148C]">{referralCode}</span> is
+            Your referral code <span className="font-mono font-semibold text-[#28166F]">{referralCode}</span> is
             automatically included. Share with someone you&apos;re fishing for Christ!
           </p>
         </div>
