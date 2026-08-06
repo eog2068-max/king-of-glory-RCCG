@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-20 sm:pt-24 md:pt-28 pb-3">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080]" />
 
@@ -32,7 +32,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-2"
         >
-          <div className="relative h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36 mx-auto rounded-full bg-white p-2 shadow-2xl shadow-black/30">
+          <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40 mx-auto rounded-full bg-white p-2 shadow-2xl shadow-black/30">
             <Image
               src="/king-of-glory-logo.png"
               alt="The Redeemed Christian Church of God Logo"
@@ -70,7 +70,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-3 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-normal"
+          className="mt-2 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-normal"
         >
           Jesus Christ the same yesterday, and today, and forever. — Heb. 13:8
         </motion.p>
@@ -80,20 +80,20 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-4 flex flex-col gap-2.5 max-w-sm mx-auto"
+          className="mt-3 flex flex-col gap-2.5 max-w-sm mx-auto"
         >
           {/* 1. Konnect2Glory — Same red as Watch Now, compact, barely rounded */}
           <Link
             href="/social"
             className="flex flex-col items-center justify-center bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-red-500/20 border border-white/20"
           >
-            <span className="text-sm md:text-base font-bold tracking-wide">
+            <span className="text-[15px] md:text-lg font-bold tracking-wide">
               Konnect2Glory
             </span>
-            <span className="text-xs font-medium leading-tight">
+            <span className="text-[13px] font-medium leading-tight">
               Connecting Members 24/7 Round The Week
             </span>
-            <span className="text-[10px] font-normal leading-tight text-white/80">
+            <span className="text-[11px] font-normal leading-tight text-white/80">
               Church Connect System - CCS
             </span>
           </Link>
@@ -103,13 +103,13 @@ export function HeroSection() {
             href="/go-a-fishing"
             className="flex flex-col items-center justify-center bg-[#3D2080] hover:bg-[#28166F] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-purple-500/20 border border-white/20 shadow-md shadow-black/10"
           >
-            <span className="text-sm md:text-base font-bold tracking-wide">
+            <span className="text-[15px] md:text-lg font-bold tracking-wide">
               Go-A-Fishing
             </span>
-            <span className="text-xs font-medium leading-tight">
+            <span className="text-[13px] font-medium leading-tight">
               Engage & Get Rewarded
             </span>
-            <span className="text-[10px] font-normal leading-tight text-white/80">
+            <span className="text-[11px] font-normal leading-tight text-white/80">
               Digital Evangelism System - DES
             </span>
           </Link>
@@ -119,13 +119,13 @@ export function HeroSection() {
             href="/cms"
             className="flex flex-col items-center justify-center bg-[#5C6BC0] hover:bg-[#3F51B5] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-indigo-500/20 border border-white/20 shadow-md shadow-black/10"
           >
-            <span className="text-sm md:text-base font-bold tracking-wide">
+            <span className="text-[15px] md:text-lg font-bold tracking-wide">
               Organa
             </span>
-            <span className="text-xs font-medium leading-tight">
+            <span className="text-[13px] font-medium leading-tight">
               We're Well Organized
             </span>
-            <span className="text-[10px] font-normal leading-tight text-white/80">
+            <span className="text-[11px] font-normal leading-tight text-white/80">
               Church Management System - CMS
             </span>
           </Link>
