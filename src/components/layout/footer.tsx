@@ -14,7 +14,7 @@ import {
 const pillarLinks = [
   {
     title: "CONNECT",
-    subtitle: "YouthConnect",
+    subtitle: "Konnect2Glory",
     color: "text-[#C62828]",
     links: [
       { label: "FamilyChat", href: "/social/family-chat" },
@@ -67,7 +67,11 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 space-y-8 lg:space-y-0">
           {/* Column 1 — About */}
           <div>
-            <h3 className="text-lg font-bold leading-tight">RCCG King of Glory Parish, Zonal Headquarters</h3>
+            <h3 className="text-lg font-bold leading-tight">
+              <span className="block">RCCG</span>
+              <span className="block">King of Glory Parish</span>
+              <span className="block">Zonal HQ, Abuja</span>
+            </h3>
             <p className="text-sm text-purple-200/70 mt-0.5">The Redeemed Christian Church of God</p>
             <p className="text-sm text-purple-200/60 mt-4 leading-relaxed">
               A place of worship, fellowship, and spiritual growth. Jesus Christ the same yesterday, and today, and forever. — Heb. 13:8
@@ -243,7 +247,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <p className="text-center text-xs sm:text-sm text-purple-200/50">
-            &copy; 2026 RCCG King of Glory Parish, Zonal Headquarters. All rights reserved.
+            &copy; 2026 RCCG King of Glory Parish, Zonal HQ, Abuja. All rights reserved.
           </p>
         </div>
       </div>

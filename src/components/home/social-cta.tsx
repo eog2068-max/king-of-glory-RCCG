@@ -55,7 +55,7 @@ export function SocialCTA() {
               transition={{ delay: 0.1 }}
               className="text-purple-100/70 mb-8 max-w-lg mx-auto"
             >
-              Join YouthConnect — a place to connect, pray, encourage, and grow together. No account needed.
+              Join Konnect2Glory — a place to connect, pray, encourage, and grow together. No account needed.
             </motion.p>
 
             {/* Feature pills */}

@@ -114,9 +114,9 @@ interface MenuCategory {
 const menuCategories: MenuCategory[] = [
   // ── YOUTHCONNECT SOCIAL ──
   {
-    id: "youth-connect-social",
-    title: "YouthConnect",
-    subtitle: "To Youth Home",
+    id: "konnect2glory-social",
+    title: "Konnect2Glory",
+    subtitle: "To Social Home",
     headerLink: "/social",
     color: {
       headerBg: "bg-[#C62828]",
@@ -625,7 +625,7 @@ export function Navbar() {
                 {/* Sheet header */}
                 <SheetHeader className="px-4 pt-6 pb-4 bg-gradient-to-b from-[#E8E0F0] to-white">
                   <SheetTitle className="text-[#28166F] flex items-center gap-3">
-                    <div className="relative h-8 w-8 rounded-full bg-[#E8E0F0] p-0.5">
+                    <div className="relative h-8 w-8 rounded-full bg-[#E8E0F0] p-0.5 shrink-0">
                       <Image
                         src="/king-of-glory-logo.png"
                         alt="The Redeemed Christian Church of God"
@@ -634,7 +634,11 @@ export function Navbar() {
                         className="object-contain"
                       />
                     </div>
-                    RCCG King of Glory
+                    <div className="flex flex-col leading-tight">
+                      <span className="text-sm font-bold">RCCG</span>
+                      <span className="text-xs font-bold">King of Glory Parish</span>
+                      <span className="text-[10px] font-medium text-gray-500">Zonal HQ, Abuja</span>
+                    </div>
                   </SheetTitle>
                 </SheetHeader>
 

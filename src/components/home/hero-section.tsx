@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-36 pb-3">
+    <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-20 sm:pt-24 md:pt-28 pb-3">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D0B1A] via-[#28166F] to-[#3D2080]" />
 
@@ -30,9 +30,9 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-3"
+          className="mb-2"
         >
-          <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40 mx-auto rounded-full bg-white p-2 shadow-2xl shadow-black/30">
+          <div className="relative h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36 mx-auto rounded-full bg-white p-2 shadow-2xl shadow-black/30">
             <Image
               src="/king-of-glory-logo.png"
               alt="The Redeemed Christian Church of God Logo"
@@ -51,7 +51,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
-            RCCG King of Glory Parish, Zonal Headquarters, Abuja
+            <span className="block sm:inline">RCCG</span>{" "}
+            <span className="block sm:inline">King of Glory Parish</span>{" "}
+            <span className="block sm:inline">Zonal HQ, Abuja</span>
           </h1>
         </motion.div>
 
@@ -60,7 +62,7 @@ export function HeroSection() {
           initial={{ width: 0 }}
           animate={{ width: 80 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="h-1 bg-[#DA251D] mx-auto rounded-full mt-5"
+          className="h-1 bg-[#DA251D] mx-auto rounded-full mt-3"
         />
 
         {/* Tagline — normal sentence case, pure white, regular (not italic) */}
@@ -68,7 +70,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-5 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-normal"
+          className="mt-3 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-normal"
         >
           Jesus Christ the same yesterday, and today, and forever. — Heb. 13:8
         </motion.p>
@@ -78,15 +80,15 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-6 flex flex-col gap-2.5 max-w-sm mx-auto"
+          className="mt-4 flex flex-col gap-2.5 max-w-sm mx-auto"
         >
-          {/* 1. YouthConnect — Same red as Watch Now, compact, barely rounded */}
+          {/* 1. Konnect2Glory — Same red as Watch Now, compact, barely rounded */}
           <Link
             href="/social"
             className="flex flex-col items-center justify-center bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-red-500/20 border border-white/20"
           >
             <span className="text-sm md:text-base font-bold tracking-wide">
-              YouthConnect
+              Konnect2Glory
             </span>
             <span className="text-xs font-medium leading-tight">
               Connecting Members 24/7 Round The Week

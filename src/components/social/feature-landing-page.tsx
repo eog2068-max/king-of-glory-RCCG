@@ -18,7 +18,7 @@ export function FeatureLandingPage({
 }: FeatureLandingPageProps) {
   return (
     <div className="min-h-screen bg-[#F8FAFF]">
-      {/* Back to YouthConnect */}
+      {/* Back to Konnect2Glory */}
       <motion.div
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
@@ -29,7 +29,7 @@ export function FeatureLandingPage({
           className="inline-flex items-center gap-2 text-sm font-medium text-[#28166F] hover:text-[#0D0B1A] transition-colors"
         >
           <ArrowLeft className="size-4" />
-          Back to YouthConnect
+          Back to Konnect2Glory
         </Link>
       </motion.div>
 

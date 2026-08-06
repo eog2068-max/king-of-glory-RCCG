@@ -7,7 +7,7 @@ import { SectionWrapper, SectionTitle } from "@/components/home/section-wrapper"
 const missions = [
   {
     name: "CONNECT",
-    purpose: "YouthConnect",
+    purpose: "Konnect2Glory",
     description: "Keep your Church family connected throughout the week.",
     icon: Heart,
     accentColor: "#C62828",

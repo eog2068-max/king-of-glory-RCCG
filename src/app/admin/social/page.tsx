@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SocialAdminDashboard } from "@/components/admin/social-admin-dashboard";
 
 export const metadata: Metadata = {
-  title: "YouthConnect Admin",
-  description: "Manage YouthConnect features, moderation, and content.",
+  title: "Konnect2Glory Admin",
+  description: "Manage Konnect2Glory features, moderation, and content.",
 };
 
 export default function SocialAdminPage() {

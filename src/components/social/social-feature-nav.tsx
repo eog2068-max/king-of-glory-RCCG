@@ -11,7 +11,7 @@ interface SocialFeatureNavProps {
 }
 
 /**
- * Bottom navigation bar shown on every YouthConnect feature page.
+ * Bottom navigation bar shown on every Konnect2Glory feature page.
  * Lets users jump between the 5 social features without going back to /social.
  *
  * Design notes:

@@ -8,7 +8,7 @@ import { SectionWrapper, SectionTitle } from "@/components/home/section-wrapper"
 const pillars = [
   {
     badge: "CONNECT",
-    subtitle: "YouthConnect",
+    subtitle: "Konnect2Glory",
     description: "Customized Social Media Platform",
     icon: Heart,
     gradient: "from-[#C62828] to-[#E53935]",

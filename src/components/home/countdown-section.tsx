@@ -151,7 +151,7 @@ export function CountdownSection() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link href="/social" className="inline-flex items-center gap-1.5 bg-[#C62828]/10 text-[#C62828] rounded-full px-4 py-2 text-xs font-semibold hover:bg-[#C62828]/20 transition-colors">
             <Heart className="size-3.5" />
-            YouthConnect
+            Konnect2Glory
           </Link>
           <Link href="/announcements" className="inline-flex items-center gap-1.5 bg-[#28166F]/10 text-[#28166F] rounded-full px-4 py-2 text-xs font-semibold hover:bg-[#28166F]/20 transition-colors">
             <Megaphone className="size-3.5" />

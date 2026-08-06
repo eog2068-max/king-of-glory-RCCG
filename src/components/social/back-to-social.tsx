@@ -16,7 +16,7 @@ export function BackToSocial() {
         className="inline-flex items-center gap-2 text-sm font-medium text-[#28166F] hover:text-[#0D0B1A] transition-colors"
       >
         <ArrowLeft className="size-4" />
-        Back to YouthConnect
+        Back to Konnect2Glory
       </Link>
     </motion.div>
   );

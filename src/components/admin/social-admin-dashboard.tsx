@@ -121,7 +121,7 @@ export function SocialAdminDashboard() {
               </Link>
               <div>
                 <h1 className="text-2xl font-bold flex items-center gap-2">
-                  ❤️ YouthConnect Admin
+                  ❤️ Konnect2Glory Admin
                 </h1>
                 <p className="text-purple-200/70 text-sm mt-1">Manage social features, moderation, and community content</p>
               </div>

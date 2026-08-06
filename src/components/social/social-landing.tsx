@@ -116,7 +116,7 @@ export function SocialLandingPage() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6"
           >
             <span className="bg-gradient-to-r from-white via-purple-100 to-purple-200 bg-clip-text text-transparent">
-              YouthConnect
+              Konnect2Glory
             </span>
           </motion.h1>
 

@@ -64,7 +64,7 @@ export function SocialShowcase() {
     <SectionWrapper className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionTitle
-          title="YouthConnect"
+          title="Konnect2Glory"
           subtitle="I REMAIN CONNECTED TO MY CHURCH FAMILY THROUGHOUT THE WEEK."
         />
 
