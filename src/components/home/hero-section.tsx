@@ -87,7 +87,7 @@ export function HeroSection() {
             href="/social"
             className="flex flex-col items-center justify-center bg-[#DA251D] hover:bg-[#B91C1C] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-red-500/20 border border-white/20"
           >
-            <span className="text-[15px] md:text-lg font-bold tracking-wide">
+            <span className="text-base md:text-[17px] font-bold tracking-wide">
               Konnect2Glory
             </span>
             <span className="text-[13px] font-medium leading-tight">
@@ -103,7 +103,7 @@ export function HeroSection() {
             href="/go-a-fishing"
             className="flex flex-col items-center justify-center bg-[#3D2080] hover:bg-[#28166F] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-purple-500/20 border border-white/20 shadow-md shadow-black/10"
           >
-            <span className="text-[15px] md:text-lg font-bold tracking-wide">
+            <span className="text-base md:text-[17px] font-bold tracking-wide">
               Go-A-Fishing
             </span>
             <span className="text-[13px] font-medium leading-tight">
@@ -119,7 +119,7 @@ export function HeroSection() {
             href="/cms"
             className="flex flex-col items-center justify-center bg-[#5C6BC0] hover:bg-[#3F51B5] text-white rounded-sm py-2 px-6 transition-all hover:shadow-lg hover:shadow-indigo-500/20 border border-white/20 shadow-md shadow-black/10"
           >
-            <span className="text-[15px] md:text-lg font-bold tracking-wide">
+            <span className="text-base md:text-[17px] font-bold tracking-wide">
               Organa
             </span>
             <span className="text-[13px] font-medium leading-tight">
